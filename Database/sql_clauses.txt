@@ -1,0 +1,317 @@
+1. Clauses
+
+WHERE
+👉 Filter rows
+👉 WHERE price > 100
+
+ORDER BY
+👉 Sort results (ASC or DESC)
+👉 ORDER BY name DESC
+
+LIMIT
+👉 Limit number of returned rows
+👉 LIMIT 10
+
+OFFSET
+👉 Skip a number of rows 
+👉 LIMIT 10 OFFSET 20
+
+GROUP BY
+👉 Group rows with same values
+👉 GROUP BY customer_id
+
+HAVING
+👉 Filter groups after aggregation
+👉 HAVING COUNT(*) > 5
+
+>>>> Execution order
+
+WHERE → GROUP BY → HAVING → ORDER BY → LIMIT/OFFSET
+
+
+2. Arithmetic Operators
+
++
+👉 Addition
+👉 price + 500
+
+-
+👉 Subtraction
+👉 price - discount
+
+*
+👉 Multiplication
+👉 quantity * price
+
+/
+👉 Division
+👉 total / quantity
+
+%
+👉 Modulus (remainder)
+👉 id % 2 = 0
+
+
+3. Comparison Operators
+
+=
+👉 Equal to
+👉 status = 'active'
+
+!= or <>
+👉 Not equal to
+👉 price != 100
+
+<   >
+👉 Less than / Greater than
+👉 price > 50
+
+<=   >=
+👉 Less than or equal / Greater than or equal
+👉 price >= 100
+
+BETWEEN
+👉 Within inclusive range
+👉 price BETWEEN 50 AND 200
+
+IN
+👉 Match any value in list
+👉 id IN (1, 5, 10)
+
+LIKE
+👉 Pattern matching with wildcards
+👉 name LIKE 'A%'
+
+IS NULL
+👉 Check for NULL value
+👉 email IS NULL
+
+IS NOT NULL
+👉 Check for non-NULL value
+👉 phone IS NOT NULL
+
+
+4. Logical Operators
+
+AND
+👉 Both conditions must be true
+👉 price > 100 AND stock > 0
+
+OR
+👉 Any one condition true
+👉 category = 'A' OR category = 'B'
+
+NOT
+👉 Reverse the condition
+👉 NOT status = 'inactive'
+
+
+5. LIKE Wildcards
+
+%
+👉 Zero or more characters
+👉 'A%' → starts with A
+
+_
+👉 Exactly one character
+👉 'A__' → 3 letters starting with A
+
+>>>> Examples
+
+WHERE name LIKE 'A_a%'      -- A then any char, then a, then anything 
+WHERE name LIKE '%ing'      -- ends with "ing"
+WHERE name LIKE '%o%a%'     -- contains o and a
+WHERE name NOT LIKE 'A__'   -- not 3-letter names starting with A
+
+
+6. Filtering Keywords
+
+BETWEEN
+👉 Inclusive range
+👉 price BETWEEN 100 AND 500
+
+NOT BETWEEN
+👉 Outside the range
+👉 price NOT BETWEEN 10 AND 50
+
+IN
+👉 Match any value from list
+👉 status IN ('active', 'pending')
+
+NOT IN
+👉 Not in the list
+👉 id NOT IN (1, 3, 5)
+
+IS NULL
+👉 Field is NULL
+👉 email IS NULL
+
+IS NOT NULL
+👉 Field has value
+👉 phone IS NOT NULL
+
+DISTINCT
+👉 Remove duplicate rows/values
+👉 SELECT DISTINCT city FROM customers
+
+
+7. Sorting
+
+ORDER BY column ASC
+👉 Sort ascending (default)
+👉 ORDER BY name
+
+ORDER BY column DESC
+👉 Sort descending
+👉 ORDER BY price DESC
+
+ORDER BY col1, col2
+👉 Sort by multiple columns
+👉 ORDER BY price DESC, name ASC
+
+
+8. Aggregate Functions
+
+COUNT(*)
+👉 Count all rows
+👉 COUNT(*)
+
+COUNT(column)
+👉 Count non-NULL values
+👉 COUNT(email)
+
+SUM(column)
+👉 Total sum
+👉 SUM(amount)
+
+AVG(column)
+👉 Average value
+👉 AVG(price)
+
+MIN(column)
+👉 Minimum value
+👉 MIN(salary)
+
+MAX(column)
+👉 Maximum value
+👉 MAX(order_date)
+
+
+9. WHERE vs HAVING
+
+WHERE
+👉 Filters individual rows BEFORE grouping
+👉 Cannot use aggregate functions
+
+HAVING
+👉 Filters grouped results AFTER aggregation
+👉 Can use COUNT, SUM, AVG, etc.
+
+>>>> Examples
+
+SELECT 
+    customer_id, 
+    SUM(amount) AS total_spent
+FROM orders
+WHERE amount > 100              -- Step 1: Remove small orders
+GROUP BY customer_id            -- Step 2: Group remaining rows
+HAVING SUM(amount) > 400        -- Step 3: Keep only big spenders
+ORDER BY total_spent DESC;
+
+
+10. Common Functions
+
+>>>> String Functions
+
+CONCAT()
+👉 Join strings
+👉 CONCAT(first_name, ' ', last_name)
+
+UPPER()
+👉 Convert to uppercase
+👉 UPPER('hello') → HELLO
+
+LOWER()
+👉 Convert to lowercase
+👉 LOWER('HELLO') → hello
+
+LENGTH()
+👉 Length of string
+👉 LENGTH('hello') → 5
+
+SUBSTRING()
+👉 Extract part of string
+👉 SUBSTRING('HelloWorld', 1, 5) → Hello
+
+>>>> Date Functions
+
+NOW()
+👉 Current date and time
+👉 NOW()
+
+CURDATE()
+👉 Current date only
+👉 CURDATE()
+
+DATE_ADD()
+👉 Add days/months/years
+👉 DATE_ADD(curdate(), INTERVAL 7 DAY)
+
+DATEDIFF()
+👉 Days between two dates
+👉 DATEDIFF('2025-12-31', '2025-01-01')
+
+>>>> Math Functions
+
+ROUND()
+👉 Round number
+👉 ROUND(65.536, 1) → 65.5
+
+CEIL()
+👉 Round up
+👉 CEIL(65.1) → 66
+
+FLOOR()
+👉 Round down
+👉 FLOOR(65.9) → 65
+
+ABS()
+👉 Absolute value
+👉 ABS(-50) → 50
+
+
+11. Alias (AS)
+
+AS
+👉 Rename column or table
+👉 SELECT name AS product_name FROM products
+
+👉 Without AS (space also works)
+👉 SELECT name product_name FROM products p
+
+
+>>>> Quick Quiz & Answer
+
+👉 Get top 10 most expensive items,
+
+SELECT * FROM products ORDER BY price DESC LIMIT 10;
+
+👉 Customers who spent > $1000,
+
+"SELECT customer_id, SUM(amount) FROM orders GROUP BY customer_id HAVING SUM(amount) > 1000;"
+
+👉 Names starting with 'A',
+
+WHERE name LIKE 'A%'
+
+👉 Active users with email,
+
+WHERE status = 'active' AND email IS NOT NULL
+
+👉 Products priced 50–100,
+
+WHERE price BETWEEN 50 AND 100
+
+👉 Remove duplicates,
+
+SELECT DISTINCT city FROM customers

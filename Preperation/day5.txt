@@ -1,0 +1,62 @@
+🌐 Introduction to Databases
+
+A database is a structured collection of data 
+that can be easily accessed, managed, and updated by applications.
+
+Why Applications Need Databases
+
+Every app needs a place to store and recall data.
+
+🌐 Types of Databases
+
+1. Relational Databases (SQL)
+
+Data is stored in tables (rows & columns).
+
+Each table has relationships with others.
+
+Uses SQL (Structured Query Language) for communication.
+
+Examples: MySQL, PostgreSQL, SQLite.
+
+| ID | Name  | Marks |
+| -- | ----- | ----- |
+| 1  | Arjun | 85    |
+| 2  | Maria | 90    |
+
+2. NoSQL Databases
+
+Stores data in a flexible format (not tables).
+
+Best for apps needing speed, scalability, and large unstructured data (like social media).
+
+Examples: MongoDB, Firebase, Cassandra.
+
+{
+  "name": "Arjun",
+  "marks": 85
+}
+
+🌐 SQL vs NoSQL - Comparison
+
+| Feature     | SQL (Relational)        | NoSQL (Non-Relational) |
+| ----------- | ----------------------- | ---------------------- |
+| Data Format | Tables (Rows & Columns) | Documents or Key-Value |
+| Structure   | Fixed schema            | Flexible schema        |
+| Examples    | MySQL, PostgreSQL       | MongoDB, Firebase      |
+| Best For    | Structured data         | Dynamic or large data  |
+| Language    | SQL                     | JSON-style queries     |
+
+
+🌐 Basic SQL Commands
+
+| Command| Purpose               | Example                                                    | Explanation                                  |
+| -------| --------------------- | ---------------------------------------------------------- | -------------------------------------------- |
+| SELECT | Fetches data          | `SELECT * FROM students;`                                  | Shows all records from the “students” table. |
+| INSERT | Adds new data         | `INSERT INTO students (name, marks) VALUES ('Arjun', 85);` | Adds a new student record.                   |
+| UPDATE | Changes existing data | `UPDATE students SET marks = 95 WHERE name = 'Arjun';`     | Updates Arjun’s marks to 95.                 |
+| DELETE | Removes data          | `DELETE FROM students WHERE name = 'Arjun';`               | Deletes Arjun’s record.                      |
+
+These 4 are called the CRUD operations:
+Create → Read → Update → Delete
+

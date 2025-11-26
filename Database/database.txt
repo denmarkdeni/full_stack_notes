@@ -1,0 +1,35 @@
+Database
+	👉 A database is an organized collection of data 
+	that can be easily accessed, managed, and updated.
+
+Why we need databases:
+	👉 To store large amounts of data safely.
+	👉 To retrieve and update data quickly.
+	
+Relational Database
+	👉 Stores data in tables (rows & columns). 
+	👉 Uses relationships (foreign keys).
+	👉 MySQL, PostgreSQL, SQLite, Oracle
+	👉 Banking, ERP, Student systems
+	
+Non Relational Database
+	👉 Stores data in non-tabular form (documents, key-value, graphs). 
+	👉 Used for flexibility and scalability.
+	👉 MongoDB, Firebase, Cassandra, Redis
+	👉 Social media, IoT, real-time analytics
+	
+SQL(Structured Query Language)
+
+	👉 SQL is a standard language used to communicate with relational databases.
+	
+Purpose:
+	👉 Create databases and tables.
+	👉 Insert, update, delete data.
+	👉 Query (retrieve) data.
+	👉 Control access and permissions.
+
+
+
+
+
+

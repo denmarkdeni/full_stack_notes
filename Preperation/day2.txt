@@ -1,0 +1,40 @@
+⚙️ 1. Command Prompt (Terminal Basics)
+
+What is a Command Prompt?
+
+The Command Prompt is a text-based interface 
+used to interact with your computer.
+Instead of clicking icons, you type commands to perform actions 
+like creating folders, viewing files, or navigating directories.
+
+Why it’s Important:
+
+Helps developers and system admins work faster.
+Used for coding, testing, running scripts, and managing files.
+
+Basic Commands
+
+dir   - Lists files and folders in the current directory
+cd    - Changes the current directory
+mkdir - Creates a new folder (directory)
+cls   - Clears the terminal screen
+
+⚙️ 2. What is a Compiler?
+
+A compiler is a program that translates source code (written by humans) 
+into machine code (understood by the computer) — all at once.
+
+Example:
+
+When you write a C program, 
+the compiler translates it into a file the computer can execute.
+
+⚙️ Compiler vs Interpreter
+
+| Feature           | Compiler                         | Interpreter                   |
+| ----------------- | -------------------------------- | ----------------------------- |
+| Translation       | Converts the entire code at once | Converts line by line         |
+| Speed             | Faster execution                 | Slower execution              |
+| Error Detection   | Shows all errors after compiling | Stops when first error occurs |
+| Example Languages | C, C++                           | Python, JavaScript            |
+

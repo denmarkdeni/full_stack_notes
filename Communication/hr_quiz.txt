@@ -1,0 +1,71 @@
+🔹 HR & Personality
+
+    Tell me about yourself.
+
+    Why do you want to become a developer?
+
+    What are your strengths and weaknesses?
+
+    How do you handle pressure or deadlines?
+
+    Where do you see yourself in 3 years?
+
+    Have you worked on any project team? What was your role?
+
+    Why should we hire you?
+
+🔹 SQL / Database
+
+    Difference between Primary Key and Foreign Key.
+
+    Write a query to fetch top 5 records.
+
+    What is JOIN? Types of JOINs.
+
+    What is normalization?
+
+    Write query to count number of students per department.
+
+🔹 Web / Full Stack
+
+    What is REST API?
+
+    What is MVC architecture?
+
+    What is ORM (Hibernate / Django ORM)?
+
+    Difference between GET and POST.
+
+    Explain CRUD operations with example.
+
+    How do you secure user passwords?
+
+    What are HTTP status codes 200, 404, 500?
+
+    What are cookies and sessions?
+
+    Explain JSON and why it’s used.
+
+    What is CSRF protection?
+
+🔹 Technical (Core Programming)
+
+    Explain OOPs principles with examples.
+
+    Difference between == and .equals() (Java) / is and == (Python).
+
+    What is the difference between list and tuple?
+
+    What are access modifiers?
+
+    What is inheritance? Give an example.
+
+    What are constructors?
+
+    What are static methods / variables?
+
+    What is exception handling? Try-catch-finally example.
+
+    Explain garbage collection.
+
+    How do you connect your backend to a database?

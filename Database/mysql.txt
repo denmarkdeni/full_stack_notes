@@ -1,0 +1,74 @@
+MySQL
+
+👉 MySQL is an open-source relational database that uses SQL.
+👉 It’s widely used in web applications (PHP, Django, Node.js, etc.)
+
+MySQL Commands
+
+👉 Database Commands
+
+| Command                 | Description                        |
+| ----------------------- | ---------------------------------- |
+| SHOW DATABASES;         | Lists all available databases.     |
+| CREATE DATABASE dbname; | Creates a new database.            |
+| USE dbname;             | Switches to a particular database. |
+| DROP DATABASE dbname;   | Deletes a database permanently.    |
+
+👉 Table Commands
+
+| Command               | Description                                             |
+| --------------------- | ------------------------------------------------------- |
+| SHOW TABLES;          | Lists all tables in the current database.               |
+| CREATE TABLE          | Creates a new table.                                    |
+| DESCRIBE tablename;   | Shows structure of a table (columns, data types, etc).  |
+| DROP TABLE tablename; | Deletes a table.                                        |
+
+CREATE TABLE tablename ( id int primary key , name varchar(100) , duration int );
+
+MySQL Data Types
+
+👉 Data types tell MySQL what kind of data can be stored in each column of a table.
+
+👉 Numeric Types
+
+| Type          | Description                               | Example                          |
+| --------------| ------------------------------------------| ---------------------------------|
+| INT           | Whole numbers (no decimals). 	            | age = 25                         |
+| TINYINT       | Very small integer (-128 to 127).         | flag = 1                         |
+| SMALLINT      | Small integer (-32,768 to 32,767).        | marks = 95                       |
+| BIGINT        | Very large integer values.                | population = 1350000000          |
+| FLOAT         | Approximate decimal (single precision).   | height = 5.8                     |
+| DOUBLE        | More precise decimal (double precision).  | salary = 25000.75                |
+| DECIMAL(M, D) | Exact decimal values (money).    	  		| price = DECIMAL(8,2) → 4999.99   |
+
+👉 String (Character) Types
+
+| Type         | Description                            | Example                                       |
+| -------------| -------------------------------------- | --------------------------------------------- |
+| CHAR(n)      | Fixed-length string. 					| CHAR(10) always uses 10 spaces.               |
+| VARCHAR(n)   | Variable-length string.    			| name = 'Buddy' → only 5 chars used.           |
+| TEXT         | Large blocks of text.              	| description = 'This product is high quality.' |
+| MEDIUMTEXT   | For even larger text content.          | Blog posts, articles, etc.                    |
+| LONGTEXT	   | Store more than medium text	   	    | Blog posts, articles, etc.                    |
+| ENUM(values) | Predefined list of possible values.    | gender ENUM('Male', 'Female', 'Other')        |
+| SET(values)  | Can store multiple values from a list. | hobbies SET('Reading','Sports','Coding')      |
+
+👉 Date and Time Types
+
+| Type      | Description                       | Example              |
+| ----------| ----------------------------------| -------------------- |
+| DATE      | Stores only date (YYYY-MM-DD).    | 2025-11-11           |
+| TIME      | Stores only time (HH:MM:SS).      | 10:45:30             |
+| DATETIME  | Stores both date and time.        | 2025-11-11 10:45:30  |
+| TIMESTAMP | Automatic updates. 				| updated_at TIMESTAMP |
+| YEAR      | Stores only year (4 digits).      | 2025                 |
+
+👉 Boolean and Binary Types
+
+| Type                       | Description                     | Example          |
+| ---------------------------| --------------------------------| -----------------|
+| BOOLEAN / BOOL             | True (1) or False (0).          | is_active = TRUE |
+| BLOB (Binary Large Object) | binary data like images, files. | photo BLOB       |
+
+
+

@@ -1,0 +1,116 @@
+🔑 What is a JOIN in SQL?
+
+A JOIN is used in SQL to combine rows from two or more tables 
+based on a related column between them 
+(usually a primary key – foreign key relationship).
+
+🔑 Why JOIN is important?
+
+Real-world databases don’t keep all information in one big table.
+
+Instead, data is split into multiple related tables.
+
+JOIN lets us combine data logically whenever we need.
+
+🔑 Example:
+
+INSERT INTO students (name, class_id) VALUES
+('John', 101),
+('Alice', 102),
+('Bob', 103),
+('Emma', NULL);
+
+INSERT INTO classes (class_id, class_name) VALUES
+(101, 'Physics'),
+(102, 'Chemistry'),
+(104, 'Biology');
+
+🔑 INNER JOIN
+
+Returns only rows with matching values in both tables.
+
+SELECT s.student_id, s.name, c.class_name
+FROM students s
+INNER JOIN classes c
+ON s.class_id = c.class_id;
+
+student_id | name  | class_name
+-----------+-------+-----------
+1          | John  | Physics
+2          | Alice | Chemistry
+
+🔑 LEFT JOIN
+
+Returns all rows from the left table (students),
+with NULL if no match in classes.
+
+SELECT s.student_id, s.name, c.class_name
+FROM students s
+LEFT JOIN classes c
+ON s.class_id = c.class_id;
+
+student_id | name  | class_name
+-----------+-------+-----------
+1          | John  | Physics
+2          | Alice | Chemistry
+3          | Bob   | NULL
+4          | Emma  | NULL
+
+🔑 RIGHT JOIN
+
+Returns all rows from the right table (classes), 
+with NULL if no match in students.
+
+SELECT s.student_id, s.name, c.class_name
+FROM students s
+RIGHT JOIN classes c
+ON s.class_id = c.class_id;
+
+student_id | name  | class_name
+-----------+-------+-----------
+1          | John  | Physics
+2          | Alice | Chemistry
+NULL       | NULL  | Biology
+
+🔑 FULL OUTER JOIN
+
+Returns all rows when there is a match in either table.
+
+SELECT s.student_id, s.name, c.class_name
+FROM students s
+FULL JOIN classes c
+ON s.class_id = c.class_id;
+
+student_id | name  | class_name
+-----------+-------+-----------
+1          | John  | Physics
+2          | Alice | Chemistry
+3          | Bob   | NULL
+4          | Emma  | NULL
+NULL       | NULL  | Biology
+
+🔑 SELF JOIN
+
+A table joined with itself.
+
+SELECT a.name AS student1, b.name AS student2, a.class_id
+FROM students a
+JOIN students b
+ON a.class_id = b.class_id
+AND a.student_id < b.student_id;
+
+student1 | student2 | class_id
+---------+----------+----------
+John     | Alice    | 101
+
+🔑 Summary
+
+INNER JOIN → Only matches
+
+LEFT JOIN → All from left + matches
+
+RIGHT JOIN → All from right + matches
+
+FULL JOIN → All rows from both sides
+
+SELF JOIN → Join table to itself

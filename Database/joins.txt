@@ -1,0 +1,142 @@
+🧩 JOINS
+
+CREATE TABLE classes (
+    class_id INT PRIMARY KEY,
+    class_name VARCHAR(50) NOT NULL
+); 
+
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    class_id INT,
+    FOREIGN KEY (class_id) REFERENCES classes(class_id)
+);
+
+students table:
+
+| student_id  | name  | class_id  |
+| ----------- | ----- | --------- |
+| 1           | John  | 101       |
+| 2           | Alice | 102       |
+| 3           | Bob   | 102       |
+| 4           | Emma  | NULL      |
+
+classes table:
+
+| class_id  | class_name  |
+| --------- | ----------- |
+| 101       | Physics     |
+| 102       | Chemistry   |
+| 104       | Biology     |
+
+
+🔹 1. INNER JOIN
+
+👉 Returns rows when there is a match in both tables.
+
+SELECT s.name, c.class_name
+FROM students s
+INNER JOIN classes c ON s.class_id = c.class_id;
+
+| name  | class_name  |
+| ----- | ----------- |
+| John  | Physics     |
+| Alice | Chemistry   |
+
+⚡ Only students with a matching class_id in classes.
+
+🔹 2. LEFT JOIN
+
+👉 Returns all rows from left table, 
+and matched rows from right. If no match → NULL.
+
+SELECT s.name, c.class_name
+FROM students s
+LEFT JOIN classes c ON s.class_id = c.class_id;
+
+| name  | class_name  |
+| ----- | ----------- |
+| John  | Physics     |
+| Alice | Chemistry   |
+| Bob   | NULL        |
+| Emma  | NULL        |
+
+⚡ Every student is shown (even if class not found).
+
+🔹 3. RIGHT JOIN
+
+👉 Returns all rows from right table, 
+and matched rows from left. If no match → NULL.
+
+SELECT s.name, c.class_name
+FROM students s
+RIGHT JOIN classes c ON s.class_id = c.class_id;
+
+| name  | class_name  |
+| ----- | ----------- |
+| John  | Physics     |
+| Alice | Chemistry   |
+| NULL  | Biology     |
+
+⚡ Every class is shown (even if no student assigned).
+
+🔹 4. FULL JOIN (Not Direct in MySQL 🚫)
+
+👉 MySQL doesn’t have FULL OUTER JOIN.
+👉 Workaround: LEFT JOIN + RIGHT JOIN with UNION.
+
+SELECT s.name, c.class_name
+FROM students s
+LEFT JOIN classes c ON s.class_id = c.class_id
+UNION
+SELECT s.name, c.class_name
+FROM students s
+RIGHT JOIN classes c ON s.class_id = c.class_id;
+
+| name  | class_name  |
+| ----- | ----------- |
+| John  | Physics     |
+| Alice | Chemistry   |
+| Bob   | NULL        |
+| Emma  | NULL        |
+| NULL  | Biology     |
+
+⚡ Shows everything from both tables.
+
+🔹 5. SELF JOIN
+
+👉 A table joined with itself (useful for hierarchical data).
+
+Example: employees
+
+| emp_id  | emp_name  | manager_id  |
+| ------- | --------- | ----------- |
+| 1       | Alice     | NULL        |
+| 2       | Bob       | 1           |
+| 3       | Charlie   | 1           |
+| 4       | David     | 2           |
+
+SELECT e.emp_name AS Employee, m.emp_name AS Manager
+FROM employees e
+LEFT JOIN employees m ON e.manager_id = m.emp_id;
+
+| Employee | Manager |
+| -------- | ------- |
+| Alice    | NULL    |
+| Bob      | Alice   |
+| Charlie  | Alice   |
+| David    | Bob     |
+
+⚡ Shows employee → manager relationship.
+
+💡 Recap:
+
+INNER JOIN → only matches.
+
+LEFT JOIN → all left + matches.
+
+RIGHT JOIN → all right + matches.
+
+FULL JOIN → all rows from both (use UNION in MySQL).
+
+SELF JOIN → join table with itself.

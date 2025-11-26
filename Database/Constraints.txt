@@ -1,0 +1,114 @@
+🔑 Constraints in SQL
+
+Constraints are rules you apply on columns  
+to ensure data integrity and validity.
+
+🔑 NOT NULL
+
+Ensures a column cannot have NULL values.
+
+    name VARCHAR(50) NOT NULL
+
+name must have a value.
+
+🔑 UNIQUE
+
+Ensures all values in a column are different.
+
+    email VARCHAR(100) UNIQUE
+
+No two employees can have the same email.
+
+🔑 CHECK
+
+Ensures values meet a condition.
+
+    balance DECIMAL(10,2) CHECK (balance >= 0)
+
+balance cannot be negative.
+
+🔑 DEFAULT
+
+Sets a default value when no value is provided.
+
+    status VARCHAR(20) DEFAULT 'Pending'
+
+If no status is given, it will be 'Pending'.
+
+🔑 SERIAL
+
+Automatically generates unique numbers.
+
+    user_id SERIAL PRIMARY KEY
+
+If no user_id specified , it will auto increment values.
+
+🔑 PRIMARY KEY
+
+Combination of NOT NULL + UNIQUE.
+
+Uniquely identifies each row in a table.
+
+    course_id INT PRIMARY KEY
+
+🔑 FOREIGN KEY
+
+Establishes a link between two tables.
+
+    CREATE TABLE classes (
+        class_id INT PRIMARY KEY,
+        class_name VARCHAR(50)
+    );
+
+    CREATE TABLE students (
+        student_id INT PRIMARY KEY,
+        name VARCHAR(50),
+        class_id INT,
+        FOREIGN KEY (class_id) REFERENCES classes(class_id)
+    );
+
+
+🔑 Relationship between tables
+
+    One to One 
+        user -> profile
+
+    One to Many
+        students -> courses 
+        one student can get many subjects
+
+    Many to Many
+        students -> courses 
+        one student can get many subjects
+        one course can taken by many students
+
+🔑 MySQL Foreign Keys Options
+
+Decide what happens to the child table 
+when you delete or update the parent row.
+
+  CASCADE
+
+  SET NULL
+
+  RESTRICT
+
+  NO ACTION
+
+ON DELETE CASCADE      -- delete children automatically
+ON UPDATE CASCADE      -- update children automatically
+
+ON DELETE SET NULL     -- children become orphans (NULL)
+ON UPDATE SET NULL     -- children lose the link
+
+ON DELETE RESTRICT     -- block delete if children exist
+ON UPDATE RESTRICT     -- block update if children exist
+
+ON DELETE NO ACTION    -- same as RESTRICT in MySQL
+ON UPDATE NO ACTION    -- same as RESTRICT
+
+Real world examples:
+
+ON DELETE CASCADE ON UPDATE CASCADE    → Order & OrderItems
+ON DELETE SET NULL ON UPDATE CASCADE   → Employee & Department
+ON DELETE RESTRICT ON UPDATE RESTRICT  → Department & Employee (strict)

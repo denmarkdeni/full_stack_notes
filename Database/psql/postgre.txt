@@ -1,0 +1,59 @@
+| Action         | `psql` Command | SQL Equivalent                                      |
+| -------------- | -------------- | --------------------------------------------------- |
+| Create DB      | —              | `CREATE DATABASE dbname;`                           |
+| Connect to DB  | `\c dbname`    | —                                                   |
+| Show databases | `\l`           | `SELECT datname FROM pg_database;`                  |
+| Show tables    | `\dt`          | `SELECT table_name FROM information_schema.tables;` |
+| Create table   | —              | `CREATE TABLE ...`                                  |
+
+
+
+Command Prompt
+psql -U postgres -d postgres
+
+ALTER USER postgres WITH PASSWORD 'new_secure_password';
+
+👉 Data Types in PostgreSQL
+
+| Category  | Data Types                                                        |
+| --------- | ------------------------------------------------------------------|
+| Numeric   | INTEGER, SERIAL, BIGINT, DECIMAL, NUMERIC, REAL, DOUBLE PRECISION |
+| Character | CHAR(n), VARCHAR(n), TEXT                                         |
+| Date/Time | DATE, TIME, TIMESTAMP, INTERVAL                                   |
+| Boolean   | BOOLEAN                                                           |
+| UUID      | UUID                                                              |
+| JSON/XML  | JSON, JSONB, XML                                                  |
+| Arrays    | INTEGER[], TEXT[]                                                 |
+| Special   | BYTEA, ENUM, MONEY, CIDR, INET                                    |
+
+👉 DDL – Data Definition 
+
+CREATE TABLE, ALTER TABLE, DROP TABLE
+
+CREATE DATABASE, DROP DATABASE
+
+👉 DML – Data Manipulation Language
+
+SELECT – with WHERE, ORDER BY, GROUP BY, HAVING
+
+INSERT INTO ... VALUES ...
+
+UPDATE ... SET ... WHERE
+
+DELETE FROM ... WHERE
+
+👉 DCL – Data Control Language
+
+GRANT – grant privileges to users
+
+REVOKE – remove privileges
+
+👉 TCL – Transaction Control Language
+
+BEGIN
+
+COMMIT
+
+ROLLBACK
+
+SAVEPOINT, RELEASE SAVEPOINT

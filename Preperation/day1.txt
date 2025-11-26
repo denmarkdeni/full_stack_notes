@@ -1,0 +1,39 @@
+⚙️ 1. What is a Computer?
+
+A computer is an electronic device that takes input, 
+processes it, and gives output, 
+while also storing information for future use.
+
+Simple Explanation:
+
+Input: Data or instructions given to the computer.
+Processing: The computer’s brain (CPU) works on the input.
+Output: The result we see on screen or in print.
+Storage: The place where data is saved for future use.
+
+⚙️ 2. What is an Application?
+
+An application (or app) is a software 
+that helps users perform specific tasks.
+
+| Type                 | Purpose                                | Examples                  |
+| ---------------------| -------------------------------------- | ------------------------- |
+| Application Software | Used by users for specific tasks       | MS Word, Chrome, WhatsApp |
+| System Software      | Runs and manages the computer hardware | Windows, macOS, Android   |
+
+Examples of Applications:
+
+Mobile Apps: WhatsApp, Instagram
+Web Apps: Google Docs, YouTube
+Desktop Apps: Microsoft Word, VLC Media Player
+
+⚙️ 3. Types of Applications
+
+| Type               | Description                                | Example               |
+| -------------------| ------------------------------------------ | --------------------- |
+| Standalone         | Works independently on one device          | Calculator, MS Paint  |
+| Client-Server      | Client requests data from a central server | Gmail, Online Games   |
+| Web Application    | Runs in a browser                          | YouTube, Google Forms |
+| Mobile Application | Installed on phones or tablets             | WhatsApp, Paytm       |
+
+

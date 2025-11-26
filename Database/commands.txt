@@ -1,0 +1,75 @@
+DDL - Data Definition Language
+DML - Data Manipulation Language
+DCL - Data Control Language
+TCL - Transaction Control Language
+
+DDL - Data Definition Language
+  Create , Alter , Drop , Rename , Add , Modify, Truncate
+
+DML - Data Manipulation Language
+  Select , Insert , Update , Delete 
+
+DCL - Data Control Language
+  Grant , Revoke
+
+TCL - Transaction Control Language
+  Start Transaction,Commit,Rollback,Savepoint,Release Savepoint
+
+----> Create
+
+CREATE database db_name;   // creates new database
+CREATE table table_name(
+    field_name  data_type ,field_name  data_type 
+)                          // creates new table
+
+----> Alter
+add , modify , delete , rename
+
+ALTER table table_name ADD column field_name datatype ;
+ALTER table table_name MODIFY column field_name datatype ;
+ALTER table table_name DROP column field_name ;
+ALTER table table_name RENAME column field_name TO new_name ;
+
+----> Drop 
+Drop Database db_name;
+Drop Table table_name;   
+
+----> Rename
+RENAME TABLE table_name TO new_name;
+
+-----> Select 
+SELECT * FROM table_name;
+SELECT field1, field2 from table_name;
+
+-----> Insert
+INSERT INTO table_name(field1, field2) values(data1,data2);
+INSERT INTO table_name values(all data);
+INSERT INTO table_name values(all data),(all data);
+
+-----> Update 
+UPDATE table_name SET field_name = 'value' WHERE field_name = 'data';
+
+-----> Delete
+DELETE FROM table_name WHERE field_name = 'data'
+
+-----> Truncate
+TRUNCATE TABLE table_name;
+
+-----> Grant 
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' ;
+
+-----> Revoke
+REVOKE SELECT , INSERT ON *.* FROM 'user'@'localhost' ;
+
+-----> Transaction
+START TRANSACTION;
+  // some changes
+SAVEPOINT sp1;
+  // some changes
+SAVEPOINT sp2;         // creates Savepoint
+  // some changes
+RELEASE SAVEPOINT sp1; // deletes the sp1 Savepoint
+  // some changes
+ROLLBACK TO sp1;       // undo changes to sp1 Savepoint
+  // some changes
+COMMIT;                // saves permanently 

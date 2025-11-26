@@ -1,0 +1,16 @@
+⚙️ Software Development Life Cycle (SDLC)
+
+The SDLC is the process developers follow 
+to plan, design, build, test, and deliver software efficiently.
+It ensures the project is successful, on time, and meets user needs.
+
+⚙️ Phases of SDLC
+
+| Phase                    | Description                                        | Example (To-Do List App)                                            |
+| -------------------------| -------------------------------------------------- | ------------------------------------------------------------------- |
+| 1. Requirement Gathering | Understand what the user needs.                    | App should let users add, edit, delete, and mark tasks as complete. |
+| 2. Design                | Plan how the app looks and how data flows.         | Create wireframes or sketches of the to-do list screen.             |
+| 3. Development           | Write the actual code using programming languages. | Code the front-end (HTML/CSS/React) and back-end (Python/Django).   |
+| 4. Testing               | Check if the app works correctly and has no bugs.  | Test if tasks save, delete, and update properly.                    |
+| 5. Deployment            | Make the app live for users to access.             | Host it on a web server or Play Store.                              |
+| 6. Maintenance           | Fix issues and update features after release.      | Add “Dark Mode” or “Reminder Notification” in future versions.      |

@@ -1,0 +1,93 @@
+1️⃣ Set Operators
+
+UNION vs UNION ALL
+
+INTERSECT (not in MySQL, workaround with INNER JOIN)
+
+2️⃣ Subqueries (Nested Queries)
+
+  Query inside another query.
+
+Types:
+
+  Scalar subquery (returns 1 value)
+
+  Row subquery (returns 1 row)
+
+  Table subquery (used with IN, EXISTS)
+
+Example:
+
+  SELECT name FROM students
+  WHERE class_id IN (SELECT class_id FROM classes 
+  WHERE class_name = 'Physics');
+
+3️⃣ Views
+
+  A saved query that behaves like a table.
+
+  Great for reusable queries & simplifying reports.
+
+Example:
+
+  CREATE VIEW class_summary AS
+  SELECT class_id, COUNT(*) AS student_count
+  FROM students
+  GROUP BY class_id;
+
+4️⃣ Indexes
+
+  Boost query performance.
+
+Types:
+
+  Single-column index
+
+  Composite index
+
+  Unique index
+
+Example:
+
+  CREATE INDEX idx_class_id ON students(class_id);
+
+5️⃣ Stored Procedures & Functions
+
+  Encapsulate SQL logic for reuse.
+
+Example (procedure):
+
+  DELIMITER //
+  CREATE PROCEDURE get_students_by_class(IN cid INT)
+  BEGIN
+    SELECT * FROM students WHERE class_id = cid;
+  END //
+  DELIMITER ;
+
+6️⃣ Window Functions (Analytical Functions) 💯 (very important for analytics)
+
+Add powerful reporting tools:
+
+  ROW_NUMBER(), RANK(), DENSE_RANK()
+
+  OVER(PARTITION BY ...)
+
+  Running totals, moving averages.
+
+Example:
+
+  SELECT name, class_id,
+       RANK() OVER (PARTITION BY class_id ORDER BY student_id) AS rank_in_class
+  FROM students;
+
+7️⃣ Advanced Filtering
+
+CASE WHEN for conditional logic.
+
+Complex WHERE with nested conditions.
+
+8️⃣ Data Import/Export
+
+Loading data from CSV/Excel (LOAD DATA INFILE).
+
+Exporting results for reporting.

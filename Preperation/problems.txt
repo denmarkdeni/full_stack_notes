@@ -1,0 +1,73 @@
+Interview Problems 
+
+1. Aptitude 
+
+2. Technical 
+
+Problems , MCQ , Face to Face
+
+3. Behavioural 
+
+4. HR round 
+
+``
+problems :
+
+1. Armstrong number    153 == 1 ^ 3 + 5 ^ 3 + 5 ^ 3
+2. Palindrome number   153 != 351 , 121 == 121
+3. Odd or Even         num % 2 == 0 -> even else odd
+4. Prime number        1 or same number can divide , 7 , 13 , 14 
+5. Patterns            ****
+6. Perfect number      28 == 1 + 2 + 4 + 7 + 14
+7. Strong number       231 == 2! + 3! + 1!
+8. Fibonacci series    0 1 1 2 3 5 8 13......
+
+
+write a program to find a Armstrong number?
+
+solution :
+1. find the digit count 
+2. loop the number , find remainder with % 10
+3. decrease the number everytime with // 10
+4. find the value of digit ^ digit count
+5. sum of the all values
+6. check the number and the sum is same
+
+
+134 , loop , % , / , //
+
+10 / 3 = 3.33333
+10 // 3 = 3
+
+134 // 10 = 13 // 10 = 1 // 10 = 0
+134 % 10 = 4 ^ digit count 
+13 % 10 = 3 ^ digit count 
+1 % 10 = 1 ^ digit count
+len("134") "134".length
+
+
+Odd or Even 
+
+1. if number is divisble by 2 , that is even
+2. else odd 
+
+267 % 10 / 267 // 10  => 26 % 10 / 26 // 10 => 2 % 10 
+
+0 (x 10 + digit) = 7 => 76 => 762 
+
+"762".reverse()
+
+
+Time Complexity 
+
+array = [2,4,5,3,6,7,8]
+count = 7 
+steps = 7  , steps = 3
+
+O(1)
+O(log n)
+O(n)
+O(n2)
+
+
+

@@ -1,0 +1,71 @@
+🌐 Basic Understanding of Programming
+
+Programming is the process of giving instructions 
+to a computer so it can perform specific tasks.
+
+🌐 Key Programming Concepts
+
+1. Variables
+
+A variable is like a box that stores a value.
+You can change the value anytime.
+
+name = "Arjun" --> declaration 
+name = "Arun"
+Pi = 3.14
+print(name)
+System.out.println(name)
+console.log(name)
+
+2. Data Types
+
+Data types define the kind of data stored in a variable.
+
+| Type    | Example           | Description             |
+| ------- | ----------------- | ----------------------- |
+| `int`   | `10`              | Integer (whole numbers) |
+| `float` | `12.5`            | Decimal number          |
+| `str`   | `"Hello"`         | String (text)           |
+| `bool`  | `True` or `False` | Boolean (yes/no value)  |
+
+3. Conditional Statements (if–else)
+
+Used to make decisions in your program.
+
+age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+4. Loops
+
+Loops are used to repeat tasks multiple times.
+
+for i in range(5):
+    print("Hello!", i)
+
+
+5. Functions 
+
+Block of code can be reuse when we call 
+
+function greet(){
+    code 
+    code 
+    code
+}
+greet()
+
+6. Class & Object ( OOPS )
+
+blueprint of entity 
+
+class Bike :
+    tyre = True
+    wheel = True
+
+ktm = Bike();
+ktm.tyre = false
+
+
