@@ -1,0 +1,100 @@
+Function
+
+function is a block of code that can be reuse.
+
+function function_name(parameters){
+    statements;                      // declaration
+}
+function_name(arguments);           // function called
+
+example:
+
+function greet(){
+    console.log('welcome');
+    console.log('Nice to meet you');
+}
+greet();
+
+parameters:
+    variables used in function when declaration
+arguments:
+    values for the variables when call the function
+
+function greet(name, profession){
+    console.log(`welcome mr/mrs.${name}`);
+}
+greet("kumar", "Developer");
+
+Functions types
+Regular       -- normal function
+Anonymous     -- without name
+Arrow         -- single line 
+Callback      -- callbacks another function
+Higher Order  -- returns another function
+
+------> Regular Function
+
+function function_name(parameters){
+  statements
+}
+function_name(arguments);
+
+example : 
+function add(a,b){
+  return a+b
+}
+let answer = add(1,3);
+console.log(add(1,3));
+
+
+-------> Anonymous Function
+
+let variable = function (parameters){
+  statements
+}
+variable(arguments)
+example:
+let add = function(a,b){
+  return a-b;
+}
+add(3,4);
+
+------> Arrow Function
+
+let variable = (parameters) => expression;
+variable(arguments);
+
+example:
+let add = (a, b) => a+b;
+add(2,3);
+
+-------> Callback Function
+
+A function that is passed as an argument 
+to another function to run later.
+
+function function_name(param1,param2){
+  statements;
+  return function(param);
+}
+function_name(value,function);
+
+example:
+let greet = (name) => `welcome ${name}`;
+function callback(name , function){
+  return function(name);
+} 
+callback('gopi',greet);
+
+-------> Higher Order Function
+
+A function that takes another function as input 
+or returns a function as output.
+
+example:
+
+function normal(){
+  return (a , b) => a==b;
+}
+let vari = normal();
+console.log(vari);

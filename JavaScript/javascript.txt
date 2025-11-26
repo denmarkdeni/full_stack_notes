@@ -1,0 +1,97 @@
+    Javascript
+
+👉 Programming Language
+👉 Makes interactivity in web page
+
+Connection Methods 
+
+👉 Inline
+	
+    <h1 onclick="alert('This is Javascript')">Javascript</h1>
+
+👉 Internal 
+
+    <script>
+        alert('javascript');
+    </script>
+
+👉 External
+
+    Seperate js file 
+    alert('external Javascript');
+
+    in HTML
+    <script src="script.js"></script>
+
+👉 To run javascript file , we need node js
+
+node js - javascript runtime environment
+
+Varaiables
+
+👉 A variable is just a container for storing data
+👉 var , let , const  --> Constraints
+
+Scope 
+
+👉 global - variable accessible everywhere.
+👉 functional - variables declared inside a function 
+                are visible only inside it.
+👉 block - variables inside { } exist only in that block.
+
+function test() {
+    let a = 10; // function scope
+    if (true) {
+        const b = 20; // block scope
+        console.log(a, b); // works
+    }
+    console.log(a);  // works
+    // console.log(b); // error, b is block-scoped
+}
+
+Hoisting 
+
+👉 Varaiables and Function declaration are moved to the 
+top of the scope during compilation phase.
+
+Variable Constraints
+
+Let 
+    👉 block scoped
+    👉 can not redeclare but can reassign
+    👉 not hoisted
+const 
+    👉 block scoped
+    👉 can not redeclare and reassign
+    👉 not hoisted
+    example : const pi = 3.14;
+var
+    👉 functional scoped
+    👉 can redeclare and reassign
+    👉 hoisted
+
+Data Types
+
+👉 Primitive (basic types):
+
+    Number → 42, 3.14
+
+    String → "Hello"
+
+    Boolean → true, false
+
+    Undefined → variable declared but no value yet
+
+    Null → intentional "nothing"
+
+    Symbol → unique value (used rarely)
+
+    BigInt → very large numbers
+
+👉 Non-primitive (objects):
+
+	Array → [1, 2, 3]
+    Object → {name: "Denny", age: 25}
+    Function → function greet() { ... }
+
+to find the data type -> typeof

@@ -1,0 +1,38 @@
+What are Template Literals?
+
+👉 Template literals are strings enclosed by backticks (`), 
+not quotes (' or ").
+
+👉 They let you embed variables, expressions, 
+and even multi-line strings easily.
+
+Basic Example
+
+    let name = "Denny";
+    console.log(`Hello, ${name}!`);
+    Output: Hello, Denny!
+
+Expression Interpolation
+
+    let a = 5, b = 10;
+    console.log(`Sum of ${a} and ${b} is ${a + b}`);
+    Output: Sum of 5 and 10 is 15
+
+Multi-line Strings (no need for \n)
+
+    let poem = `Roses are red,
+    Violets are blue,
+    JavaScript is fun,
+    And so are you!`;
+
+    console.log(poem);
+
+Nesting & Function Calls
+
+    function greet(name) {
+    return `Hi ${name}, welcome!`;
+    }
+
+    console.log(`${greet("Buddy")}`); 
+
+

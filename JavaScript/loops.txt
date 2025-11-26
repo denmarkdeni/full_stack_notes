@@ -1,0 +1,72 @@
+What is Loop ?
+
+Repeating block of statements again and again
+
+when we use for and while loops?
+
+when we know the iteration or loop count , 
+we can use for loop , otherwise while loop.
+if we want atleast one loop , 
+we can use do while loop.
+
+Types :
+
+1. for loop 
+
+for ( initialisation ; condition ; Increment/Decrement){
+    statements
+}
+
+for(let i = 0; i < 10 ; i++){
+    console.log(i); 
+}
+
+2. for - in 
+
+const fruits = ['mango', 'orange', 'apple'];
+
+for(var in array){
+    statements
+}
+
+for (fruit in fruits){
+    console.log(fruit);
+}
+
+3. for - of
+
+for (var of fruits){
+    statements
+}
+
+for (fruit of fruits){
+    console.log(fruit);
+}
+
+4. while
+
+initialisation
+while (condition){
+    Increment/Decrement
+    statements
+}
+
+let seat = 10;
+while (seat > 0){
+    seat--;
+    console.log(`seat number ${seat}`);
+}
+
+5. Do- while
+
+initialisation
+do{
+    statements
+    Increment / Decrement
+} while(condition);
+
+let lottery = 10;
+do{
+    console.log(lottery);
+    lottery--;
+}while(lottery > 5);

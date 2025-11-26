@@ -1,0 +1,43 @@
+🎯 1. What is Recursion?
+
+Recursion is when a function calls itself to solve a problem.
+
+🎯 2. How Recursion Works
+
+Every recursive function has two parts:
+
+Base case → condition where the function stops 
+(to prevent infinite loop).
+
+Recursive case → function calls itself with a smaller problem.
+
+🎯 3. Example: Factorial (classic recursion problem)
+
+Factorial of n = n × (n-1) × (n-2) × ... × 1
+
+function factorial(n) {
+    if (n === 0) {     // Base case
+        return 1;
+    }
+    return n * factorial(n - 1); // Recursive case
+}
+
+console.log(factorial(5)); // 120
+
+How this works:
+
+    factorial(5) → 5 * factorial(4)
+    factorial(4) → 4 * factorial(3)
+    factorial(3) → 3 * factorial(2)
+    factorial(2) → 2 * factorial(1)
+    factorial(1) → 1 * factorial(0)
+    factorial(0) → returns 1 (base case stops recursion)
+
+Common Mistake: If you forget the base case, 
+recursion never ends → causes a “stack overflow error”.
+
+function sum(n) {
+   if (n === 1) return 1;
+   return n + sum(n - 1);
+}
+console.log(sum(3));

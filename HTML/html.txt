@@ -1,0 +1,379 @@
+🌐 What is HTML?
+
+👉 HTML stands for HyperText Markup Language.
+👉 Standard language for creating webpages.
+👉 HTML tells the browser what content to display and 
+    how to structure it.
+👉 It helps you create headings, paragraphs, images, 
+    links, tables, forms, etc.
+
+🌐 What is Hypertext?
+
+👉 Hypertext means text with links.
+👉 It allows you to jump from one page to another 
+or even inside the same page.
+👉 Without hypertext, the web would just be static documents.
+
+🌐 What is Markup?
+
+👉 Markup means special tags that tell the browser 
+how to display content or control the structure.
+👉 In HTML, we use tags inside angle brackets < >.
+👉 Example:
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+🌐 Difference Between HTML Tag and HTML Element
+
+👉 What is an HTML Tag?
+
+    A tag is just the instruction in angle brackets < >.
+    It tells the browser what type of content is coming.
+    Tags are like the building blocks of HTML.
+    Example:
+        <p> is an opening tag.
+        </p> is a closing tag.
+    
+👉 What is an HTML Element?
+
+    An element = Opening Tag + Content + Closing Tag.
+    It is the complete structure the browser understands.
+    Example:
+        <p>Hello World</p>
+    Here:
+        <p> = opening tag
+        Hello World = content
+        </p> = closing tag
+        Together → this is a paragraph element. ✅
+
+🌐 Difference Between Block and Inline Elements
+
+👉 Block Elements
+
+    Examples: <div>, <h1>, <p>
+    Take full width of the page (one element per line)
+    You can set height and width
+    Always start on a new line
+
+👉 Inline Elements
+
+    Examples: <span>, <a>
+    Take only the required content width
+    You can’t set height and width directly
+    Do not start on a new line
+
+🌐 Basic HTML page:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Webpage</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Welcome to my website.</p>
+    <a href="https://example.com">Click Me</a>
+</body>
+</html>
+
+|   Tag                     |       Meaning           |   Purpose                                        |
+| ------------------------- | ----------------------- | -------------------------------------------------|
+|  <!DOCTYPE html>          | Document Type           | Tells the browser this is an HTML5 document.     |
+|  <html> ... </html>       | HTML Root Element       | The starting & ending tag of the webpage.        |
+|  <head> ... </head>       | Head Section            | Contains meta-information about the page.        |
+|  <title> ... </title>     | Title                   | Defines the page title (appears in browser tab). |
+|  <body> ... </body>       | Body Section            | Holds all visible content of the webpage.        |
+|  <h1> ... </h1>           | Heading 1               | Main heading (largest size). Used for titles.    |
+|  <p> ... </p>             | Paragraph               | Defines a block of text (normal content).        |
+|  <a href="..."> ... </a>  | Anchor (Hyperlink)      | Creates a hypertext link.                        |
+ 
+
+👉 HTML = HyperText (links) + Markup (tags) + Language (rules).
+👉 It’s not a programming language (no logic, no calculations) 
+👉 It only structures content, and for design we use CSS, 
+   for functionality we use JS.
+
+-----------------------------> 📑 Types of Tags in HTML
+
+🌐 1. Based on Structure
+
+👉 Container Tags
+
+    These have opening and closing parts.
+    Content is written between the tags.
+    Example:
+        <p>This is a paragraph</p>
+        <h1>Heading</h1>
+        <div>Division</div>
+
+👉 Empty / Self-Closing Tags
+
+    These do not have a closing tag.
+    They perform action directly.
+    Example:
+        <br>  <!-- line break -->
+        <hr>  <!-- horizontal line -->
+        <img src="image.jpg" alt="My Image">
+        <input type="text">
+        <meta charset="UTF-8">
+
+🌐 2. Based on Meaning (Semantics)
+
+👉 Semantic Tags
+
+    Tags that describe the meaning of content to 
+    browser & search engines.
+    Very important for SEO + accessibility.
+    Example:
+        <header> , <nav> , <strong> , <h1>
+
+👉 Non-Semantic Tags
+
+    Tags that do not describe meaning, only used for styling/layout.
+    Example:
+        <div> , <span>
+
+🌐 3. Based on Usage
+
+👉 Text Formatting Tags
+
+    Used to organize and format textual content on a webpage.
+    They define headings, paragraphs, and different types of lists.
+    Example:
+        👉 <h1> to <h6> → Define headings.
+        👉 <p> → Defines a paragraph of text.
+        👉 <pre> → Displays preformatted text(preserves spaces and line breaks).
+        👉 <ol> → Creates an ordered (numbered) list.
+        👉 <ul> → Creates an unordered (bulleted) list.
+        👉 <dl> → Creates a description list.
+        👉 <li> → Defines each list item.
+
+👉 Table Tags
+
+    Used to display data in rows and columns.
+    Example:
+        👉 <table> → Main container for all table content.
+        👉 <tr> → Defines a table row.
+        👉 <th> → Defines a table header cell
+        👉 <td> → Defines a table data cell
+        👉 <caption> → Adds a title or caption for the table.
+        👉 <thead> → Groups header content (usually the top row).
+        👉 <tbody> → Groups the main data content.
+        👉 <tfoot> → Groups footer content.
+
+| Attribute     | Description              | Example                 |
+| --------------| ------------------------ | ------------------------|
+| border        | Adds border to the table | <table border="1">      |
+| cellpadding   | Space inside each cell   | <table cellpadding="5"> |
+| cellspacing   | Space between cells      | <table cellspacing="2"> |
+| colspan       | Merges columns           | <td colspan="2">        |
+| rowspan       | Merges rows              | <td rowspan="3">        |
+| align         | Aligns text inside table | <td align="center">     |
+
+
+👉 Formatting Tags
+
+    Change the appearance of text.
+    Examples:
+        👉 <b> → Makes text bold (only style, no meaning).
+        👉 <strong> → Makes text bold but also marks it as important (semantic).
+        👉 <i> → Makes text italic (only style, no meaning).
+        👉 <em> → Makes text italic with emphasis/importance (semantic).
+        👉 <u> → Underlines the text.
+        👉 <mark> → Highlights text with a yellow background (like a marker).
+        👉 <small> → Shows text in a smaller font size.
+        👉 <sup> → Displays text as superscript (e.g., 2²).
+        👉 <sub> → Displays text as subscript (e.g., H₂O).
+
+👉 Structural Tags
+
+    Define the structure/layout of the page.
+    Examples:
+        👉 <html> → Root element that contains the entire webpage.
+        👉 <head> → Contains page information (metadata, title, links, etc.).
+        👉 <body> → Contains visible page content (text, images, etc.).
+        👉 <div> → A block-level container used for grouping elements.
+        👉 <span> → An inline container used to style small parts of text.
+        👉 <section> → Defines a section or topic area within the page.
+        👉 <header> → Defines the top section or heading area of a page or section.
+        👉 <footer> → Defines the bottom section of a page or section.
+        👉 <nav> → Used for navigation links.
+        👉 <article> → Defines independent self-contained content (e.g., blog post).
+        👉 <aside> → Defines side content (like a sidebar or ad section).
+        👉 <main> → Defines the main central content of a webpage.
+
+👉 Interactive/Form Tags
+
+    Used for user input, forms, and interactions.
+    Examples:
+        👉 <form> → Creates a form to collect user data.
+        👉 <input> → Accepts user input (text, number, checkbox, etc.).
+        👉 <textarea> → Multi-line text input box.
+        👉 <button> → Clickable button.
+        👉 <select> → Drop-down list menu.
+        👉 <option> → Defines individual items in a drop-down list.
+        👉 <label> → Defines labels for form elements (improves accessibility).
+        👉 <fieldset> → Groups related form elements together.
+        👉 <legend> → Adds a title or caption to a fieldset group.
+        👉 <datalist> → Provides predefined options for an input field.
+        👉 <output> → Displays the result of a calculation or script.
+
+👉 Media Tags
+
+    Used to embed images, videos, and other media content into web pages.
+    Examples:
+        👉 <img> → Embeds an image.
+        👉 <video> → Embeds a video file.
+        👉 <audio> → Embeds an audio file.
+        👉 <source> → Specifies multiple media sources (for video/audio).
+        👉 <track> → Adds subtitles or captions to videos.
+        👉 <canvas> → Used to draw graphics using JavaScript.
+        👉 <iframe> → Embeds another webpage (like YouTube or Maps).
+
+    Common Attributes:
+    	controls → Shows play/pause buttons.
+        autoplay → Starts playing automatically (with muted usually).
+        muted    → Starts video/audio without sound.
+        loop     → Plays repeatedly.
+        poster   → Shows an image before the video plays.
+
+👉 Metadata/Head Tags
+
+    They describe the webpage but are not shown on screen.
+    They help browsers, search engines, and devices understand your page.
+    Examples:
+        👉 <title> → Sets the title of the webpage (appears on browser tab).
+        👉 <meta> → Provides metadata like description, keywords, author, etc.
+        👉 <link> → Connects external files (CSS, icons, etc.).
+        👉 <style> → Defines internal CSS styles.
+        👉 <script> → Links or embeds JavaScript code.
+        👉 <base> → Sets the base URL for all relative links in the page.
+
+🌐 4. Special Tags
+
+👉 Comment Tag
+
+    <!-- This is a comment -->
+
+👉 Doctype Declaration
+
+    <!DOCTYPE html>
+
+👉 Entity Tags
+
+    Used for special characters.
+        &nbsp; (non-breaking space)
+        &lt;  (< symbol)
+        &gt;  (> symbol)
+        &copy; (© symbol)
+
+🌐 HTML <input> Tag
+
+👉 The <input> tag is used to collect data from users inside a <form>.
+👉 It is an empty tag (no closing tag).
+👉 It uses the type attribute to define what kind of input it takes.
+
+✅ All Input Types
+
+|   Type           |   Purpose                                          
+| ---------------- | --------------------------------------------|
+|  text            | Single-line text field                      |
+|  password        | Password field (hidden characters)          | 
+|  email           | Validates email format                      |  
+|  number          | Numeric input with arrows                   |  
+|  tel             | Telephone number                            |  
+|  url             | Validates URL format                        | 
+|  search          | Search field                                | 
+|  date            | Date picker                                 | 
+|  time            | Time picker                                 | 
+|  datetime-local  | Date & Time picker (local)                  |
+|  month           | Select month & year                         |
+|  week            | Select week & year                          |
+|  radio           | Select one option from group                |
+|  checkbox        | Select multiple options                     |                 
+|  file            | Upload a file                               |
+|  hidden          | Hidden field                                |
+|  color           | Color picker                                |
+|  range           | Slider (numeric range)                      |
+|  button          | Simple button                               |
+|  submit          | Submits form data                           |
+|  reset           | Resets form fields                          |
+
+✅ Common <input> Attributes
+
+|   Attribute    |   Purpose                                        |   Example                                      |
+| -------------- | ------------------------------------------------ | ---------------------------------------------- |
+|  name          | Identifies input (used in backend form handling) |  <input type="text" name="username">           |
+|  id            | Unique identifier (used in JS/CSS)               |  <input type="text" id="user1">                |
+|  value         | Default value                                    |  <input type="text" value="Hello">             |
+|  placeholder   | Hint text inside box                             |  <input type="text" placeholder="Enter name">  |
+|  required      | Field must be filled                             |  <input type="email" required>                 |
+|  readonly      | Cannot be changed (but can be copied)            |  <input type="text" value="Fixed" readonly>    |
+|  disabled      | Cannot be used (greyed out)                      |  <input type="text" disabled>                  |
+|  maxlength     | Maximum characters allowed                       |  <input type="text" maxlength="10">            |
+|  min  /  max   | Min & max values for numbers, dates, range       |  <input type="number" min="1" max="100">       |
+|  step          | Interval for number/range/date                   |  <input type="number" step="5">                |
+|  checked       | Preselects checkbox/radio                        |  <input type="checkbox" checked>               |
+|  multiple      | Allows multiple files/emails                     |  <input type="file" multiple>                  |
+|  pattern       | Regex pattern validation                         |  <input type="text" pattern="[A-Za-z]{3,}">    |
+|  autofocus     | Automatically focuses when page loads            |  <input type="text" autofocus>                 |
+|  autocomplete  | On/Off for browser autocomplete                  |  <input type="text" autocomplete="off">        |
+|  size          | Width in characters                              |  <input type="text" size="30">                 |
+|  list          | Connects to  <datalist>  options                 |  <input type="text" list="cars">               |
+
+
+🌐 Relative vs Absolute Path in HTML
+
+👉 Path means the location of a file (like an image, video, or CSS file) 
+that your HTML page needs to access.
+
+Relative Path  
+   👉 Refers to the location of a file relative to the current HTML file’s folder.
+   👉 ../images/frontend/bg.jpeg
+Absolute Path 
+   👉 Refers to the complete URL or full path of a file 
+    from the internet or your domain.
+   👉 https://example.com/images/frontend/bg.jpeg
+
+
+🌐 Anchor Tag (<a>)
+
+👉 The anchor tag is used to create hyperlinks 
+— links that connect one page to another, 
+— or to different sections of the same page.
+Contact
+    <a href="URL">Link Text</a>
+
+👉 External Link → Opens another website
+
+    <a href="https://youtube.com">Visit YouTube</a>
+
+👉 Internal Link → Opens another page within the same website/project
+
+    <a href="about.html">About Us</a>
+
+👉 Bookmark Link → Jumps to a specific section within the same page
+
+    <a href="#contact">Go to Contact</a>
+
+    <!-- later in the page -->
+    <h2 id="contact">Contact Section</h2>
+
+👉 Email Link → Opens the user’s email app
+
+    <a href="mailto:info@example.com">Send Email</a>
+
+👉 Phone Link → Makes a phone call (on mobile)
+
+    <a href="tel:+919876543210">Call Us</a>
+
+👉 Download Link → Downloads a file directly
+
+    <a href="files/sample.pdf" download>Download PDF</a>
+
+
+anchor tag target attributes:
+	_self  	👉 Opens the link in the same tab (default)
+	_blank 	👉 Opens the link in a new tab (used for external links)
+	_parent	👉 Opens the link in the parent frame.
+	_top    👉 Opens the link in the full body of the window, removing any frames.

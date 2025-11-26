@@ -1,0 +1,93 @@
+Box Model
+    Margin - outer layer of the element
+    Border - layer between the margin and padding 
+            or outline
+    Padding - layer between the border and content 
+    Content - text or message content
+ 
+box model parts : top , bottom , left , right
+corners : top left,top right,bottom left,bottom right
+Margin :
+    we can't see this layer
+    margin: 20px;         
+        Applies all four sides
+    margin: 20px 50px;
+        20px to top , bottom, 50px to left , right
+    margin: 20px 40px 60px 80px;
+        20px top ,40px right ,60px bottom ,80px left
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+
+Border:
+    border : width style color ;
+    border-width - 1px 1cm 1in
+    border-style - solid , dashed , dotted , double 
+                    ,groove ,ridge , inset , outset
+                    , none (default)
+    border-color - red , rgb(255,0,0) , #ff0000
+
+    border-top
+    border-right
+    border-bottom
+    border-left
+
+    Border-radius: 
+corners : top left,top right,bottom left,bottom right
+    Border-radius: px , % 
+    border-radius: 50% 10%;
+        50% to top left , bottom right
+        10% to top right , bottom left
+    border-radius: 10% 20% 30% 50%;
+        10% to top left 
+        20% to top right
+        30% to bottom right
+        50% to bottom left
+    border-top-left-radius
+    border-top-right-radius
+    border-bottom-right-radius
+    border-bottom-left-radius
+
+Padding:
+    padding: 30px;
+    padding: 50px 100px; 
+    padding:10px 30px 50px 70px ;
+
+    padding-top
+    padding-bottom
+    padding-left
+    padding-right
+
+Content:
+-----------------------------------------------------
+
+Other Properties:
+
+visibility
+    visibility: hidden;   /* Hides but keeps space */
+    visibility: visible;  /* Default */
+
+overflow
+    Controls content outside the box.
+
+    overflow: visible;   /* Default */
+    overflow: hidden;    /* Clips content */
+    overflow: scroll;    /* Always shows scrollbar */
+    overflow: auto;      /* Shows scrollbar only if needed */
+
+box-sizing
+
+    Defines how width/height is calculated.
+
+    box-sizing: content-box;  /* Default: width = content only */
+    box-sizing: border-box;   /* Width includes padding + border */
+
+box-shadow
+
+    shadow style of the box
+    box-shadow: x-axis y-axis blur color
+    box-shadow: 25px -25px 5px green;
+        25px right . 25px top
+    box-shadow: -25px 25px 5px red;
+        25px left , 25px bottom

@@ -1,0 +1,195 @@
+What are Hooks in React?
+
+👉 Hooks are special functions that let you “hook into” React features 
+(like state, lifecycle, context, etc.) inside functional components.
+
+👉 Before Hooks (2018), only class components had state & lifecycle methods.
+
+👉 Now with Hooks, functional components = full power.
+
+👉 “Hooks allow functional components to have state, side effects, and lifecycle methods.”
+
+Rules of Hooks 
+
+👉 Only call Hooks at the top level
+
+👉 Not inside loops, conditions, or nested functions.
+
+👉 Only call Hooks inside React functional components (or custom Hooks)
+
+Commonly Used Built-in Hooks
+
+1. useState (for state management)
+
+👉 Lets you add state (variables that React watches 
+& re-renders when changed).
+
+👉 Example: Counter App
+
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0); // initial value = 0
+
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+2. useEffect (for side effects & lifecycle)
+
+👉 Used for side effects: 
+fetching data, timers, subscriptions, DOM manipulation.
+
+👉 Acts like componentDidMount, componentDidUpdate, 
+componentWillUnmount in class components.
+
+👉 Example:  useEffect(() => {},[])
+
+👉 Run on every render
+
+useEffect(() => {
+  console.log("Component rendered or updated");
+});
+
+👉 Run only on first mount :
+
+useEffect(() => {
+  console.log("Runs only once");
+}, []);
+
+👉 Run when a dependency changes:
+
+useEffect(() => {
+  console.log("Count changed:", count);
+}, [count]);
+
+3. useContext (for global state sharing)
+
+👉 Lets you use React Context API without prop drilling.
+
+const ThemeContext = React.createContext();
+
+function App() {
+  return (
+    <ThemeContext.Provider value="dark">
+      <Toolbar />
+    </ThemeContext.Provider>
+  );
+}
+
+function Toolbar() {
+  const theme = React.useContext(ThemeContext);
+  return <h1>Theme is {theme}</h1>;
+}
+
+4. useRef (for referencing DOM or persisting values)
+
+👉 Holds a mutable reference that doesn’t trigger re-renders.
+
+function InputFocus() {
+  const inputRef = React.useRef(null);
+
+  const focusInput = () => {
+    inputRef.current.focus(); // direct DOM manipulation
+  };
+
+  return (
+    <div>
+      <input ref={inputRef} type="text" />
+      <button onClick={focusInput}>Focus Input</button>
+    </div>
+  );
+}
+
+5. useReducer (for complex state logic)
+
+👉 Alternative to useState for more complex state (like Redux-lite).
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "increment": return { count: state.count + 1 };
+    case "decrement": return { count: state.count - 1 };
+    default: return state;
+  }
+}
+
+function Counter() {
+  const [state, dispatch] = React.useReducer(reducer, { count: 0 });
+
+  return (
+    <div>
+      <h1>{state.count}</h1>
+      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+    </div>
+  );
+}
+
+6. useMemo (for performance optimization)
+
+👉 Memoizes (caches) expensive calculations.
+
+const expensiveValue = useMemo(() => {
+  return heavyCalculation(num);
+}, [num]);
+
+7. useCallback (for memoizing functions)
+
+👉 Prevents functions from being re-created on every render.
+
+👉 Useful when passing functions as props.
+
+const handleClick = useCallback(() => {
+  console.log("Clicked");
+}, []);
+
+8. useLayoutEffect 🛠️
+
+👉 Similar to useEffect, but runs synchronously after DOM mutations.
+
+👉 Used when you need to measure DOM before browser paints.
+
+9. useImperativeHandle (Advanced)
+
+👉 Customizes the ref exposed to parent components.
+
+
+Custom Hooks
+
+👉 You can create your own hooks to reuse logic.
+
+👉 Naming convention: must start with use.
+
+Example:
+
+function useWindowWidth() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return width;
+}
+
+function App() {
+  const width = useWindowWidth();
+  return <h1>Window width: {width}</h1>;
+}
+
+
+Why Hooks are Important?
+
+👉 Simpler than class components.
+
+👉 Make code more clean, reusable, and readable.
+
+👉 Power up functional components.
+
+👉 Industry standard → every modern React app uses Hooks.

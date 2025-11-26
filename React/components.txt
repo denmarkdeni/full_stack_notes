@@ -1,0 +1,70 @@
+What are Components in React?
+
+👉 Components are reusable building blocks of a React app.
+
+👉 Each component is independent and 
+manages its own structure, logic, and style.
+
+Types of Components
+
+Functional Components (Modern & Recommended )
+
+👉 Simple JS functions that return JSX.
+
+👉 Can use React Hooks for state & lifecycle.
+
+Example:
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+Class Components (Older, Legacy )
+
+👉 ES6 classes that extends React.Component.
+
+👉 Use render() to return JSX.
+
+Example:
+
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
+}
+
+Rules of Components
+
+👉 Component names must start with Capital Letter
+
+✅ <Welcome />
+
+❌ <welcome /> (React will think it’s a normal HTML tag)
+
+👉 Must return JSX (or null).
+
+👉 Props are used to pass data into components.
+
+Example:
+
+function Header() {
+  return <h1>My React App</h1>;
+}
+
+function Footer() {
+  return <p>© 2025 My Website</p>;
+}
+
+function Main() {
+	return <p>Welcome to my first React app!</p>;
+}
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+  );
+}

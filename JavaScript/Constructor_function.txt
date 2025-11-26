@@ -1,0 +1,75 @@
+
+🪝 What is a Constructor Function?
+
+A constructor function is a special kind of function 
+used to create objects quickly.
+
+    Instead of writing objects one by one, 
+    we use constructor functions.
+
+    constructor function names start with Capital Letter.
+
+Example without constructor
+
+    // Creating multiple objects manually 
+    let student1 = { name: "Arun", age: 20 };
+    let student2 = { name: "Meera", age: 22 };
+
+Example with constructor
+
+    function Student(name, age) {
+        this.name = name;  
+        this.age = age;
+    }
+
+    // Creating objects using constructor
+    let s1 = new Student("Arun", 20);
+    let s2 = new Student("Meera", 22);
+
+    console.log(s1.name); // Arun
+    console.log(s2.age);  // 22
+
+🪝 The new Keyword – What it Does?
+
+When you call a function with new, 4 things happen:
+
+1️⃣ A new empty object {} is created
+2️⃣ this is set to that new object
+3️⃣ The function body runs → properties & methods are added to the object
+4️⃣ The new object is automatically returned
+
+Example
+
+    function Car(brand, model) {
+        this.brand = brand;
+        this.model = model;
+    }
+
+    let c1 = new Car("Toyota", "Innova");
+    let c2 = new Car("Tesla", "Model 3");
+
+    console.log(c1); // Car { brand: "Toyota", model: "Innova" }
+    console.log(c2); // Car { brand: "Tesla", model: "Model 3" }
+
+🪝 Adding Methods in Constructor
+
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayHello = function() {
+    return `Hello, my name is ${this.name}`;
+  };
+}
+
+let p1 = new Person("Denny", 23);
+console.log(p1.sayHello()); // Hello, my name is Denny
+
+👉 Constructor function = blueprint for creating objects
+
+👉 Use Capital letter for naming (e.g., Car, Student)
+
+👉 new keyword → creates and returns the object
+
+👉 this → refers to the newly created object
+
+

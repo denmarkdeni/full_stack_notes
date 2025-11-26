@@ -1,0 +1,74 @@
+Javascript Object
+
+data structure used to store collections 
+of key-value pairs.
+ 
+const person = {
+    name : 'hari',
+    age : 22 ,
+    indian : true ,
+    phone : null ,
+    hobbies : ['cricket','books' ],
+    school : { 
+        name : 'guru nanak',
+        duration : 20 
+    },
+    info : function () {
+        console.log(`${this.name}, is ${this.age} years old`);
+    }
+};
+
+console.log(person['name']); // bracket notation
+console.log(person.name1); // dot notation
+person.info();
+
+Modifying Object
+
+person.id = 234;           // adding new pair
+person.name = "kovintha";  // updating existing pair
+delete person.age ;
+
+for ( i in person){
+    console.log(person[i]);
+}
+
+console.log(Object.keys(person));
+console.log(Object.values(person));
+console.log(Object.entries(person));
+
+const coding = new Object();
+console.log(coding);
+
+Task:
+
+1. create an empty object person with constructor function ( new Object )
+2. add your name , age , id , voter_id (null)
+3. hobbies(array) , college(object) , info(function)
+4. update your id to 101
+5. delete your voter_id
+6. print your object's key value pair with Object.entries.
+7. call your info function
+
+const preson = new Object();
+person.name = "hari";
+person.age = 22;
+person.id = 101;
+person.voter_id = null;
+person.hobbies = ['cricket' , 'football' , 'books'];
+person.college = {name : "RSC" ,duration : 5 };
+person.info =
+const person = new Object();
+person.name = "hari";
+person.age = 22;
+person.id = 101;
+person.voter_id = null;
+person.hobbies = ['cricket' , 'football' , 'books'];
+person.college = {name : "RSC" ,duration : 5 };
+person.info = function () { 
+    console.log(`${this.name} , ${this.age}`)
+    }
+console.log(person);
+person.info();
+person.id = 102;
+delete person.voter_id;
+console.log(Object.entries(person)); function () { console.log(`${this.name} , ${this.age}`)}

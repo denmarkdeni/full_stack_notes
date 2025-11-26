@@ -1,0 +1,22 @@
+Background 
+    background 
+        we can apply many properties in background
+        linear , radial gradient
+    background-color
+        red , blue , green 
+    background-image 
+        url("bg.jpg");
+    background-repeat 
+        Options: repeat, repeat-x, repeat-y, no-repeat
+    background-size
+        auto(default), 
+        cover(sizing the element to cover the background),
+        contain(full image in background , may have spaces), 
+        or width height (100px , 50px)
+    background-position
+        left, right, center , left top, 50% 50%, 100px 200px
+    background-attachment
+        scroll ( background also scroll), 
+        fixed (background fixed when page scroll)
+    background-clip 
+        border-box, padding-box, content-box , text

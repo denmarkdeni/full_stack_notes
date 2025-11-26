@@ -1,0 +1,184 @@
+👉 Selectors target HTML elements to apply styles.
+
+👉 They define which elements CSS rules affect.
+
+👉 Types: element, class, ID, universal, grouping, descendant, child,
+
+          adjacent sibling, general sibling, attribute, 
+          
+          pseudo-class, pseudo-element.
+
+CSS Selectors
+│
+├── Basic Selectors
+│     ├─ Element
+│     ├─ Class
+│     ├─ ID
+│     └─ Universal
+│
+├── Grouping Selectors ( , ) 
+│
+├── Combinators
+│     ├─ Descendant ( )
+│     ├─ Child ( > )
+│     ├─ Adjacent Sibling ( + )
+│     └─ General Sibling ( ~ )
+│
+├── Attribute Selectors [attr], [attr="value"], etc.
+│
+├── Pseudo-Classes (:hover, :not, :first-child…)
+│
+└── Pseudo-Elements (::before, ::after, ::first-letter…)
+
+
+🏳️  Element Selector
+
+        👉 Targets HTML elements by tag name.
+
+            p { color: blue; }
+        
+        👉 Styles all <p> elements blue.
+
+🏳️  Class Selector
+
+        👉 Targets elements with a specific class (uses .class-name).
+
+        .highlight { background-color: yellow; }
+
+        <p class="highlight">This is highlighted.</p>
+        
+        👉 Applies yellow background to elements with class="highlight".
+
+🏳️  ID Selector
+
+        👉 Targets a single element with a specific ID (uses #id-name).
+
+        #header { font-size: 24px; }
+
+        <h1 id="header">Welcome</h1>
+
+        👉 Styles the element with id="header".
+
+
+🏳️  Universal Selector
+
+        👉 Targets all elements (uses *).
+
+        * { margin: 0; padding: 0; }
+
+        👉 Resets margin and padding for all elements.
+
+🏳️  Grouping Selector
+
+        👉 Targets multiple selectors with the same styles (uses comma).
+
+        h1, h2, h3 { font-family: Arial; }
+
+        <h1>Title</h1>
+        <h2>Subtitle</h2>
+        <h3>Subheading</h3>
+
+        👉 Applies Arial font to <h1>, <h2>, and <h3>.
+
+🏳️  Descendant Selector
+
+        👉 Targets elements inside another element (uses space).
+
+        #parent p { margin-left: 20px; }
+
+        <div id="parent">
+            <p>Indented paragraph.</p>
+            <div id='child'>
+                <p> hi </p>
+            </div>
+        </div>
+
+        👉 Indents <p> inside <div>.
+
+🏳️  Child Selector
+
+        👉 Targets direct children of an element (uses >).
+
+        ul > li { list-style: square; }
+
+        <ul>
+            <li>Direct child</li>
+        </ul>
+
+        👉 Applies square bullets to direct <li> children of <ul>.
+
+
+🏳️  Adjacent Sibling Selector
+
+        👉 Targets an element immediately following another (uses +).
+
+        h2 + p { color: green; }
+
+        <h2>Heading</h2>
+        <p>This is green.</p>
+
+        👉 Styles <p> immediately after <h2> green.
+
+🏳️  General Sibling Selector
+
+        👉 Targets elements that are siblings after a specified element (uses ~).
+        
+        h2 ~ p { font-style: italic; }
+        
+        <h2>Heading</h2>
+        <p>Italic paragraph.</p>
+        <p>Another italic paragraph.</p>
+
+        👉 Styles all <p> siblings after <h2> italic.
+
+🏳️  Attribute Selector
+
+        👉 Targets elements with specific attributes or values.
+
+        input[type="text"] { border: 1px solid black; }
+
+        <input type="text" placeholder="Enter text">
+
+        👉 Adds a border to <input> elements with type="text".
+
+🏳️  Pseudo-Class Selector
+
+        👉 Targets elements in a specific state (e.g., hover, focus).
+
+        a:hover { color: red; }
+
+        <a href="#">Hover me</a>
+
+        👉 Changes link color to red when hovered.
+
+    📌 Other common pseudo-classes:
+
+        :hover → when mouse is over
+
+        :focus → when element is active (e.g., input box clicked)
+
+        :active → when link/button is being clicked
+
+        :nth-child(2) → targets the 2nd child in a parent
+
+        :first-child, :last-child, :not()
+
+🏳️  Pseudo-Element Selector
+
+        👉 Targets specific parts of an element (e.g., first letter).
+
+        p::first-letter { font-size: 2em; }
+
+        <p>First letter is larger.</p>
+
+        👉 Makes the first letter of <p> twice as large.
+
+    📌 Other common pseudo-elements:
+
+        ::first-letter → first letter
+
+        ::first-line → first line of text
+
+        ::before → add content before element (using content: "")
+
+        ::after → add content after element

@@ -1,0 +1,28 @@
+🧩 What Is Web Storage?
+
+Web Storage allows you to store key-value pairs in a user's browser.
+
+There are two types:
+
+| Storage Type     | Lifetime                 | Available To     |
+| ---------------- | ------------------------ | ---------------- |
+|  localStorage    | Until manually cleared   | All tabs/windows |
+|  sessionStorage  | Until browser/tab closed | Same tab only    |
+
+🧩 Syntax (Same for Both)
+
+// Set item
+localStorage.setItem('name', 'Alice');
+
+// Get item
+const name = localStorage.getItem('name'); // "Alice"
+
+// Remove item
+localStorage.removeItem('name');
+
+// Clear all items
+localStorage.clear();
+
+sessionStorage.setItem('theme', 'dark');
+sessionStorage.getItem('theme');
+sessionStorage.removeItem('theme');

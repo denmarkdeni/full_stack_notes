@@ -1,0 +1,112 @@
+👉 Array 
+
+Collection of data 
+using [] square brackets
+index starting from 0 
+can store multiple data types 
+mutable Collection
+have many built-in methods to modify
+
+example: 
+
+const vegs = ['tomato' , 'potato' , 'carrot, 'onion'];
+
+also we can create array with constructor function:
+
+const fruits = new Array('apple','orange','grapes');
+
+for ( veg of vegs ){
+    console.log(veg);
+};
+
+👉 Indexing 
+
+console.log(vegs[3]);
+
+👉 Array Methods:
+
+1. length
+
+console.log(array.length);
+
+2. push , pop , shift , unshift
+
+push()      - add element in last 
+pop()       - delete element in last 
+unshift()   - add element in first  
+shift()     - delete element in first 
+
+3. indexOf , includes
+
+indexOf() - find index of particular data
+            it will give -1 when data not exist.
+includes() - checks a data is in the array 
+            if it there true , if not false.
+
+4. Slice , Splice
+
+slice - returns range of elements 
+            won't affect the original array
+            arguments : start_index , end_index
+Splice - used to modify the array ,  
+            returns the deleted elements ,
+            will affect the original array
+            arguments : start_index , delete_count , replace_elements
+            
+5. join , split
+
+join - joins the array into string by adding common character
+split - splits the string into array by common seperator
+
+const vehicles = ['bike', 'cycle' , 'auto' , 'car'];
+let string = "good morning students";
+
+console.log(vehicles.join(','));
+console.log(string.split(' '));
+
+6.forEach
+
+iterates over the array 
+
+doesn't return new array
+
+vehicles.forEach((vehicle) => console.log(vehicle));
+
+7. map , filter , reduce
+
+map - iterates all elements , returns array of changed elements
+    array.map(function)
+filter - iterates all elements , returns array of passed elements
+    array.filter(function)
+reduce - iterates all elements , returns the aggregated or single answer
+    array.reduce(function , initial_value)
+
+    function ( accumulator , current_element) 
+
+
+let nested = [[12, 23, 21],[54, 32, 12] , [32 ,53, 23]] ;
+console.log(nested[1][0]);
+
+for (i of nested){
+    for(j of i){
+        console.log(j);
+    }
+}
+console.log(nested.flat())
+
+console.log(numbers.indexOf(90));
+console.log(numbers.lastIndexOf(90));
+
+console.log(numbers.sort((a ,b)=> a - b))
+
+const names = ["arun" , "yoga" , "moni" , "mani" , "bavi"];
+console.log(names.sort());
+
+const arr = [30 , 60 , 90];
+
+arr[1] = 50;
+console.log(arr);
+
+let school = "HCS";
+school[0] = "T";
+console.log(school);

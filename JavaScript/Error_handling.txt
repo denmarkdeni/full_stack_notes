@@ -1,0 +1,64 @@
+🔹 Error Handling in JavaScript
+
+🪝 What is an Error?
+
+An error is something that breaks your program 
+when JS doesn’t understand or can’t execute code.
+
+Examples:
+
+    Syntax Error → let x = ;
+
+    Reference Error → using a variable that doesn’t exist.
+
+🪝 The try...catch Block
+
+Safely handle errors without breaking the program.
+
+    try {
+        let num = 10 / 0;   // not error but unusual
+        let result = x + 5; // ReferenceError: x is not defined
+        console.log(result);
+    } catch (error) {
+        console.log("Error caught:", error.message);
+    }
+
+✅ Instead of program crashing → it goes inside catch.
+
+🪝 finally Block
+
+Runs always, whether there’s an error or not.
+
+    try {
+        console.log("Trying code...");
+        throw new Error("Something went wrong!");
+    } catch (error) {
+        console.log("Caught:", error.message);
+    } finally {
+        console.log("This will always run ✅");
+    }
+
+🪝 Throwing Custom Errors
+
+You can make your own error using throw.
+
+    function divide(a, b) {
+        if (b === 0) {
+            throw new Error("Division by zero is not allowed!");
+        }
+        return a / b;
+    }
+
+    try {
+        console.log(divide(10, 0));
+    } catch (err) {
+        console.log("Error:", err.message);
+    }
+
+👉 try → put risky code here.
+
+👉 catch → handles errors safely.
+
+👉 finally → runs no matter what.
+
+👉 throw → make your own error.

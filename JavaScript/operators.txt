@@ -1,0 +1,72 @@
+Operators
+
+1. Arithmetic Operators ( Used for math )
+
+    let a = 10, b = 3;
+    console.log(a + b);  // 13
+    console.log(a - b);  // 7
+    console.log(a * b);  // 30
+    console.log(a / b);  // 3.333...
+    console.log(a % b);  // 1  (remainder)
+    console.log(a ** b); // 1000 (power)
+
+2. Assignment Operators ( Used to assign values )
+
+    let x = 5;
+    x += 2; // x = x + 2 → 7
+    x -= 1; // x = x - 1 → 6
+    x *= 3; // x = x * 3 → 18
+    x /= 2; // x = x / 2 → 9 
+
+3. Comparison Operators ( Used to compare values )
+    → result always true or false.
+
+    console.log(5 == "5");   // true (checks value only)
+    console.log(5 === "5");  // false (checks value + type) strictly
+    console.log(10 != 8);    // true
+    console.log(10 !== "10");// true
+    console.log(7 > 3);      // true
+    console.log(7 <= 7);     // true
+
+4. Logical Operators ( Used for conditions )
+
+    console.log(true && false); // false (AND)
+    console.log(true || false); // true  (OR)
+    console.log(!true);         // false (NOT)
+
+5. Bitwise Operators ( binary form of integers. )
+
+    &   → AND → both bits must be 1
+    |   → OR → at least one bit must be 1 
+    ^   → XOR → exactly one bit is 1
+    ~   → NOT → flips 0 to 1 and 1 to 0
+    <<  → Left Shift
+    >>  → Right Shift (keeps sign)
+    >>> → Unsigned Right Shift (fills with zero)
+
+    let a = 5;   // 0101
+    let b = 3;   // 0011    
+
+    console.log(a & b);   // 1  → 0001
+    console.log(a | b);   // 7  → 0111
+    console.log(a ^ b);   // 6  → 0110
+    console.log(~a);      // -6 → Inverts 0101 to 1010 (2's complement)
+    console.log(a << 1);  // 10 → 1010
+    console.log(a >> 1);  // 2  → 0010
+    console.log(a >>> 1); // 2  → same as >> for positive numbers
+
+
+6. Increment & Decrement
+
+    let y = 5;
+    console.log(++y); // 6 (pre-increment)
+    console.log(y++); // 6 (prints first, then increases to 7)
+    console.log(--y); // 6 (pre-decrement)
+    console.log(y--); // 6 (prints first, then decreases to 5 )
+
+7. Ternary Operator (shortcut if-else)
+
+    let age = 18;
+    let result = (age >= 18) ? "Adult" : "Minor";
+    console.log(result); // "Adult"
+

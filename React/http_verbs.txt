@@ -1,0 +1,19 @@
+CRUD - Create , Read , Update , Delete
+
+HTTP verbs / methods - GET , POST , PUT , PATCH , DELETE
+
+
+TABLE : Employees
+
+"id" | "name"    |    "age"   |     "email"      |   "salary"
+ 1 | ravi    |    22    | ravi@gmail.com |   22000  
+ 2 | ravi    |    22    | ravi@gmail.com |   22000  
+ 3 | ravi    |    22    | ravi@gmail.com |   22000  
+ 
+{data : [
+	{"id":1,"name":ravi,"age":22,"email":ravi@gmail.com,"salary":22000},
+	{"id":1,"name":ravi,"age":22,"email":ravi@gmail.com,"salary":22000},
+	{"id":1,"name":ravi,"age":22,"email":ravi@gmail.com,"salary":22000},
+] }
+
+

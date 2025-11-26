@@ -1,0 +1,27 @@
+-----> Colors
+
+--> Color names 
+    red , green , yellow , tomato
+    { color:red }
+
+--> RGB 
+    rgb(red , green , blue)
+    range 0 - 255
+    { color : rgb(255,255,255)}
+    { color : rgb(0,0,0)}
+    { color : rgb(0,0,255)}
+    { color : rgb(100,100,100)}
+
+--> RGBA 
+    rgb(red , green , blue , alpha)
+    alpha range (0-1)
+    { color : rgb(255,255,255,0.5)}
+
+--> HEX (Hexa Decimal)
+    (0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f) 
+    #ffffff
+    #000
+    #ff0000
+    #0000ff
+    #333
+    #ffff00

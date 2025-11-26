@@ -1,0 +1,48 @@
+Destructuring 
+
+Assigns the collection values to single variable.
+unpacking the values from the array
+extracting properties from object
+
+Array Destructuring:
+
+const cars = ["audi" , "mahi" , "bmw"];
+let car1 = cars[0];
+
+let [car1, car2 , car3] = cars;
+let [car1 , , car2] = cars;
+let [car1] = cars;
+
+Object Destructuring:
+
+const job = {
+    role : "developer",
+    salary : "5 LPA",
+    experience : 5 
+}
+let { role } = job;
+console.log(role);
+
+Rest operator ( ... )
+
+rest operator stores rest of the values from array.
+it will happen when the operator used as a variable.
+Example:
+
+const fruits = ['apple' , 'orange' , 'mango'];
+const [f1 , ...others] = fruits;
+
+Spread operator ( ... )
+
+spread operator distribute or spread the values from array
+it will happen when the operator used as a value.
+Example:
+const foods = ['carrot', 'dates' , ...fruits ];
+
+
+👉 Rest (...) → collects items into one.
+
+👉 Spread (...) → spreads items out.
+
+👉 Destructuring → unpacks values from arrays/objects into variables.
+

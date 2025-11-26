@@ -1,0 +1,74 @@
+Conditional Statements in JavaScript
+
+👉 Conditional statements let the program decide what to do 
+based on conditions (true/false).
+
+🧩 if Statement
+
+Checks a condition, runs the block if true.
+
+    let age = 28;
+
+    if (age >= 18) {
+    console.log("You are an adult.");
+    }
+
+🧩 if…else
+
+Runs one block if true, another if false.
+
+    let age = 16;
+
+    if (age >= 18) {
+    console.log("Adult");
+    } else {
+    console.log("Minor");
+    }
+
+🧩 if…else if…else
+
+For multiple conditions.
+
+    let marks = 75;
+
+    if (marks >= 90) {
+    console.log("Grade A");
+    } else if (marks >= 75) {
+    console.log("Grade B");
+    } else {
+    console.log("Grade C");
+    }
+
+🧩 nested if
+
+if statement inside another if statement.
+
+    let marks = 85;
+
+    if (marks >= 50) {
+        if (marks >= 90) {
+            console.log("Excellent!");
+        } else {
+            console.log("Good Job!");
+        }
+    } else {
+        console.log("Failed.");
+    }
+
+
+🧩 switch Statement
+
+For checking one value against multiple cases.
+
+    let day = "Monday"; 
+
+    switch (day) {
+    case "Monday":
+        console.log("Start of the week!");
+        break;
+    case "Friday":
+        console.log("Weekend is coming!");
+        break;
+    default:
+        console.log("Just another day.");
+    }

@@ -1,0 +1,116 @@
+🎯 Positioning in CSS
+
+👉 The position property tells the browser 
+how an element should be placed in the document.
+
+Along with position, we often use:
+
+👉 top
+👉 right
+👉 bottom
+👉 left
+👉 z-index
+    The z-index property controls the stacking order of elements 
+    (which element appears on top when they overlap).
+
+    Works only on positioned elements
+
+        👉 That means the element must have position:
+         relative, absolute, fixed, or sticky.
+
+        👉 If position: static (default), z-index won’t work.
+
+    Higher value = on top
+
+        👉 z-index: 10 will be above z-index: 5.
+
+    Default value is auto (0)
+
+🧩 Five Types :
+
+1. Static (default)
+
+👉 Elements are positioned naturally in the flow.
+(top to bottom, left to right)
+
+div {
+  position: static; /* default */
+}
+
+👉 Ignores top, left, right, bottom.
+
+2. Relative
+
+👉 Element stays in normal flow, 
+but you can shift it relative to itself.
+
+.box {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+👉 Moves 20px down, 10px right from its original place.
+
+👉 Still takes up original space in the layout.
+
+3. Absolute
+
+👉 Element is positioned relative to the nearest positioned ancestor.
+(not static)
+
+.box {
+  position: absolute;
+  top: 10px;
+  left: 20px; 
+}
+
+👉 Removed from normal flow (other elements ignore it).
+
+👉 If no parent is positioned, 
+it uses the <html> (body) as reference. 
+
+Difference Between Relative and Absolute:
+  Relative : 
+    position from itselt
+    have space in parent
+  Absolute:
+    position from positioned parent
+    have no space in parent
+
+4. Fixed
+
+👉 Element is fixed relative to the viewport (screen).
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+👉 Stays in place when scrolling.
+
+👉 Useful for navbars, floating buttons, etc.
+
+5. Sticky
+
+👉 Hybrid of relative + fixed.
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+👉 Acts like relative until you scroll.
+
+👉 Once it reaches top: 0, it sticks like fixed.
+
+⚡ Visual Recap:
+
+| Position   | Reference                 | Stays in Flow?  | Example Use         |
+| ---------- | ------------------------- | --------------  | ------------------- |
+| `static`   | Normal flow               | ✅              | Default behavior    |
+| `relative` | Itself                    | ✅              | Nudge slightly      |
+| `absolute` | Nearest positioned parent | ❌              | Tooltips, modals    |
+| `fixed`    | Viewport                  | ❌              | Sticky navbars      |
+| `sticky`   | Scroll position           | ✅ until stuck  | Headers, table rows |
+

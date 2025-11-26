@@ -1,0 +1,46 @@
+🕒 Timing Functions
+
+🔹 1. setTimeout()
+
+👉 Runs a function once after a delay (in milliseconds).
+
+Syntax:
+    setTimeout(function, delay);
+ 
+Example:
+    console.log("Start");
+    setTimeout(() => {
+        console.log("This runs after 3 seconds ⏳");
+    }, 3000);
+    console.log("End");
+
+🔹 2. setInterval()
+
+👉 Runs a function repeatedly at a fixed time interval.
+
+Syntax:
+    setInterval(function, interval);
+
+Example:
+    let count = 1;
+    let timer = setInterval(() => {
+        console.log("Count:", count);
+        count++;
+        if (count > 5) {
+            clearInterval(timer); // stops interval
+        }
+    }, 1000);
+
+🔹 3. Stopping Timers
+
+clearTimeout(id) → cancels a setTimeout
+
+clearInterval(id) → cancels a setInterval
+
+👉 setTimeout() → runs once after delay
+
+👉 setInterval() → runs repeatedly after delay
+
+👉 clearTimeout() & clearInterval() → stop timers
+
+👉 Both are asynchronous (they don’t block main code)

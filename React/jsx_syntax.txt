@@ -1,0 +1,82 @@
+🧩 What is JSX?
+
+👉 JSX (JavaScript XML) is a syntax extension for JavaScript.
+
+👉 It looks like HTML inside JavaScript, 
+but under the hood it compiles to React.createElement(...).
+
+👉 It makes writing UI code more readable, intuitive, and structured.
+
+Example:
+
+    const element = <h1>Hello, React!</h1>;
+
+Without JSX 
+
+    const element = React.createElement("h1", null, "Hello, React!");
+
+🧩 JSX Syntax & Rules
+
+👉 One Root Element 
+
+JSX must return a single root tag.
+
+✅ Correct:
+
+return (
+  <div>
+    <h1>Hello</h1>
+    <p>Welcome!</p>
+  </div>
+);
+
+❌ Wrong:
+
+return (
+  <h1>Hello</h1>
+  <p>Welcome!</p>
+);
+
+👉 Use className Instead of class 
+
+Because class is a reserved word in JavaScript.
+
+    <div className="container">React Div</div>
+
+👉 Attributes are in CamelCase 
+
+Example: onClick, tabIndex, htmlFor 
+
+    <button onClick={handleClick}>Click Me</button>
+
+👉 Expressions Inside { } 
+
+You can embed JavaScript expressions inside curly braces.
+
+    const name = "Denny";
+    return <h1>Hello, {name}!</h1>;
+
+👉 JSX Must Be Closed 
+
+All tags must be properly closed (like in XML).
+✅ <img src={"logo.png"} />
+❌ <img src="logo.png"> 
+
+👉 Conditional Rendering (Using ? : or &&)
+
+{isLoggedIn ? <p>Welcome Back!</p> : <p>Please Login</p>}
+{items.length > 0 && <p>You have {items.length} items</p>}
+
+👉 Styling in JSX 
+
+Inline styles use double curly braces:
+
+<p style={{ color: "blue", fontSize: "20px" }}>Styled Text</p>
+
+👉 Comments in JSX 
+
+{/* This is a JSX comment */}
+
+
+“JSX looks like HTML, but it’s actually JavaScript — 
+ everything inside JSX must follow JavaScript rules.”

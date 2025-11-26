@@ -1,0 +1,36 @@
+Control statements / Jumping statements
+ 
+Controls the loops and function.
+
+break , continue , return
+
+1. break
+
+    Terminates the loop
+
+for (let i = 0 ; i < 10 ; i++){
+    if (i ==5){
+        break;
+    }
+    console.log(i);
+}
+
+Continue
+
+    skips the current loop or iteration
+
+for (let i = 0 ; i < 10 ; i++){
+    if (i ==5){
+        continue;
+    }
+    console.log(i);
+}
+
+return
+
+stops the function and brings the value 
+
+function name(parameters){
+    statements
+    return 0;
+}

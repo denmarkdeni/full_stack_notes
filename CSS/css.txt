@@ -1,0 +1,57 @@
+✅ What is CSS?
+
+    👉 CSS → Cascading Style Sheets
+
+    👉 It is used to style HTML elements (colors, fonts, layout, spacing, animations).
+
+    👉 It separates content (HTML) from presentation (design).
+
+✅ Why use CSS?
+
+    👉 Without CSS → websites look plain (just text + images).
+
+    👉 With CSS → you can design professional layouts.
+
+    Advantages:
+
+        👉 Reusable (one CSS file can style many pages).
+
+        👉 Easier maintenance.
+
+        👉 Responsive design possible.
+
+✅ Types of CSS
+
+    👉 Inline CSS (inside HTML tag, with style attribute)
+
+        <p style="color: red; font-size: 20px;">Hello CSS</p>
+
+    👉 Internal CSS (inside <style> tag in HTML <head>)
+
+        <style>
+            p { color: blue; font-size: 18px; }
+        </style>
+
+    👉 External CSS (separate .css file linked to HTML)
+
+        <head>
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+✅ CSS Syntax
+
+    selector { property: value; }  👉 Rule
+
+    property: value;  👉 Declaration
+
+    Example:
+
+    p { color: green; font-size: 16px; }
+
+    👉 This will make all paragraphs green with 16px font size.
+
+✅ CSS Comments
+
+    /* This is a comment */
+    
+    👉 Comments are ignored by the browser, useful for notes.

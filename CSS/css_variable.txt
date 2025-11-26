@@ -1,0 +1,31 @@
+What Are CSS Variables?
+
+🧩 CSS Variables allow you to store values in a reusable way.
+   (like colors, font sizes, spacing)
+
+🧩 They're defined using the "--" prefix 
+and accessed with the var() function.   
+
+Define a variable:
+
+🧩 :root {
+        --main-color: #3498db;
+        --main-padding: 16px;
+    }
+
+🧩 :root is a pseudo-class that targets the top-level element (html)
+   , making variables global.
+
+Use a variable:
+
+🧩 .button {
+        background-color: var(--main-color);
+        padding: var(--main-padding);
+    }
+
+Why Use CSS Variables?
+
+🧩 Make your CSS more DRY (Don’t Repeat Yourself)
+🧩 Easy to update a theme or layout
+🧩 Support dynamic styling in JavaScript
+

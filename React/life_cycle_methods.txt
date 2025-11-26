@@ -1,0 +1,71 @@
+React lifecycle methods
+
+mounting, updating, unmounting
+
+👉 Class Components – Lifecycle Methods
+
+import React, { Component } from 'react';
+
+class MyComponent extends Component {
+  // Called once after the component is inserted into the DOM
+  componentDidMount() {
+    console.log('Component mounted');
+    // Good for: API calls, subscriptions, DOM manipulation
+  }
+
+  // Called after every update (prop or state change)
+  componentDidUpdate(prevProps, prevState) {
+    console.log('Component updated');
+    // Good for: reacting to prop/state changes
+  }
+
+  // Called before the component is removed from the DOM
+  componentWillUnmount() {
+    console.log('Component will unmount');
+    // Good for: cleanup (like removing event listeners or canceling API calls)
+  }
+
+  render() {
+    return <div>Hello</div>;
+  }
+}
+
+👉 Functional Components – React Hooks
+
+In modern React (especially with functional components), 
+you use Hooks instead of lifecycle methods.
+
+componentDidMount:
+
+useEffect(() => {
+  console.log('Mounted');
+}, []); // empty dependency array = run only once (on mount)
+
+componentDidUpdate:
+
+useEffect(() => {
+  console.log('Updated');
+}, [someState]); // runs when `someState` changes
+
+
+componentWillUnmount
+
+useEffect(() => {
+  const interval = setInterval(() => console.log('tick'), 1000);
+  return () => {
+    clearInterval(interval); // cleanup
+    console.log('Unmounted');
+  };
+}, []);
+
+
+👉 Prefer functional components with hooks in modern React.
+
+👉 Only use class components and lifecycle methods 
+if working in legacy codebases or libraries that require them.
+
+| Lifecycle Phase | Class Component          | Functional Component (Hook)                   |
+| --------------- | ------------------------ | --------------------------------------------- |
+| On Mount        | `componentDidMount()`    | `useEffect(() => {...}, [])`                  |
+| On Update       | `componentDidUpdate()`   | `useEffect(() => {...}, [dep])`               |
+| On Unmount      | `componentWillUnmount()` | `useEffect(() => { return () => {...} }, [])` |

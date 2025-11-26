@@ -1,0 +1,52 @@
+🔹 What is a CSS Transition?
+
+A CSS transition allows property changes in CSS values 
+to occur smoothly over a specified duration.
+
+🔹 Transition Properties
+
+Here are the 4 main components (types) of CSS transitions:
+
+transition-property
+    Specifies the CSS property to which the transition is applied 
+    (e.g., `background-color`, `width`). 
+    Use `all` to apply to all changeable properties.
+
+transition-duration
+    Defines how long the transition takes to complete 
+    (e.g., `0.5s`, `1s`). 
+
+transition-timing-function
+    Describes how the intermediate values 
+    of the transition are calculated 
+    (e.g., `ease`, `linear`).
+
+transition-delay 
+    Sets a delay before the transition starts (e.g., `0.2s`).      
+
+Use transition to animate CSS property changes smoothly.
+
+Main properties:
+
+    transition-property
+
+    transition-duration
+
+    transition-timing-function
+
+    transition-delay
+
+using shorthand: transition: all 0.5s ease-in-out 0s;
+
+🔹 What is transform in CSS?
+
+transform is a CSS property that lets you visually manipulate an element:
+move it, rotate it, resize it, or skew it — even all at once.
+
+
+| Function      | Purpose              | Example                       |
+| ------------- | -------------------- | ----------------------------- |
+| `scale()`     | Resize (zoom in/out) | `scale(1.2)`                  |
+| `rotate()`    | Rotate element       | `rotate(45deg)`               |
+| `translate()` | Move element         | `translate(50px, 20px)`       |
+| `skew()`      | Slant element        | `skew(20deg)`                 |

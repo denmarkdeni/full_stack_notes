@@ -1,0 +1,245 @@
+🎯 CSS Display Property
+
+👉 It controls how an element is displayed in the layout.
+
+✅ 1. block
+
+👉 Takes full width of the parent.
+
+👉 Always starts on a new line.
+
+👉 Height/widt apply normally.
+
+div {
+  display: block;
+}
+
+🔎 Examples: <div>, <p>, <h1>–<h6>
+
+✅ 2. inline
+
+👉 Takes only as much width as its content.
+
+👉 Does not start on a new line.
+
+👉 Cannot set width/height
+
+span {
+  display: inline;
+}
+
+🔎 Examples: <span>, <a>, <strong>
+
+✅ 3. inline-block
+
+👉 Behaves like inline (sits next to other elements).
+
+👉 But allows width/height like block.
+
+button {
+  display: inline-block;
+}
+
+✅ 4. none 
+
+👉 Element is not displayed at all 
+(removed from layout).
+
+👉 Different from visibility: hidden 
+(which hides but keeps space).
+
+.hidden {
+  display: none;
+}
+
+✅ 5. flex
+
+👉 Turns container into a flex container.
+
+👉 Children (flex items) follow flexbox rules 
+(row/column, justify, align).
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+👉 Flexbox (display: flex;) 
+is a one-dimensional layout system in CSS.
+👉 It works along a main axis 
+(row or column) and helps to align items easily.
+
+👉 Flex Container → the parent (with display: flex)
+
+👉 Flex Items → the children (all direct child elements of the container)
+
+<div class="container">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+
+👉 Here .container is the flex container and 
+the three <div>s are flex items.
+
+2️⃣ Main Axis vs Cross Axis
+
+👉 Main Axis = depends on flex-direction.
+
+👉 row → main axis is horizontal.
+
+👉 column → main axis is vertical.
+
+👉 Cross Axis = perpendicular to the main axis.
+
+3️⃣ Flex Properties on Container
+  
+flex-direction
+
+👉 row (default) → items left to right
+
+👉 row-reverse → items right to left
+
+👉 column → top to bottom
+
+👉 column-reverse → bottom to top
+
+justify-content (aligns items on main axis)
+
+👉 flex-start (default) → items packed at start
+
+👉 flex-end → items packed at end
+
+👉 center → items in middle
+
+👉 space-between → equal space between items
+
+👉 space-around → equal space around items
+
+👉 space-evenly → perfect equal spacing
+
+align-items (aligns items on cross axis)
+
+👉 stretch (default) → items stretch to fill container
+
+👉 flex-start → align to start of cross axis
+
+👉 flex-end → align to end of cross axis
+
+👉 center → align in middle of cross axis
+
+👉 baseline → align text baselines
+
+flex-wrap
+
+👉 nowrap (default) → items stay in one line (may overflow)
+
+👉 wrap → items wrap to new line
+
+👉 wrap-reverse → wrap in reverse order
+
+4️⃣ Flex Properties on Items
+
+👉 flex-grow → how much an item should grow compared to others
+
+👉 flex-shrink → how much an item should shrink
+
+👉 flex-basis → initial size of the item
+
+👉 flex → shorthand (grow shrink basis)
+
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+✅ 6. grid
+
+👉 Turns container into a grid container.
+
+👉 Children follow grid layout (rows, columns, areas).
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+| Property                           | Purpose                     |
+| ---------------------------------- | --------------------------- |
+| `display: grid;`                   | Makes grid container        |
+| `grid-template-rows`               | Defines row sizes           |
+| `grid-template-columns`            | Defines column sizes        |
+| `grid-template-areas`              | Defines named layout areas  |
+| `grid-column`, `grid-row`          | Places individual items     |
+| `gap`, `row-gap`, `column-gap`     | Space between items         |
+| `auto-fit`, `auto-fill`            | Responsive layouts          |
+| `align-items`, `justify-items`     | Item alignment in cells     |
+| `align-content`, `justify-content` | Grid alignment in container |
+| `grid-auto-flow`                   | Direction rule              |
+
+
+grid-template-areas
+
+👉 Lets you name areas in the grid and 
+lay them out visually like a table.
+
+.container {
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+grid-column, grid-row
+
+👉 Controls where individual items appear on the grid.
+
+.item {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+auto-fit, auto-fill
+
+👉 creates responsive grids with dynamic columns.
+
+.container {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+👉 auto-fit: fills the row with as many columns as will fit, 
+and collapses empty tracks.
+
+👉 auto-fill: fills the row with as many columns as will fit, 
+but keeps the space for empty columns.
+
+align-items, justify-items
+
+👉 Controls how items align inside their grid cells.
+
+align-items = vertical alignment
+justify-items = horizontal alignment
+
+align-content, justify-content
+
+👉 Aligns the entire grid inside the container.
+
+align-content = vertical alignment of the whole grid
+justify-content = horizontal alignment
+
+grid-auto-flow
+
+👉 Controls the automatic placement direction of items.
+
+row (default): fills rows first
+column: fills columns first
+
+🧩 Recap:
+
+| Display        | Behavior                      | length? | Examples               |
+| ---------------| ----------------------------- | --------| ---------------------- |
+|   block        | Full width, new line          | ✅      | `<div>`, `<p>`, `<h1>` |
+|   inline       | Same line, only content width | ❌      | `<span>`, `<a>`        |
+|   inline-block | Same line + block features    | ✅      | `<button>`             |
+|   none         | Removed from layout           | N/A     | Menus, modals          |
+|   flex         | Flexible layout               | ✅      | Navbars, forms         |
+|   grid         | Row/column layout             | ✅      | Complex layouts        |

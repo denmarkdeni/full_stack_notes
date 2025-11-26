@@ -1,0 +1,18 @@
+Animations ( smooth effects )
+
+@keyframes animation_name{
+    0% {transform: translate(0,10px)}
+    50% {transform: translate(0,30px)}
+    100% {transform: translate(0,10px)}
+}
+.box{
+    animation: animation_name duration timing_function 
+                delay iteration_count direction 
+}
+
+| Feature    | Transition                         | Animation                           |
+| ---------- | -----------------------------------| ----------------------------------- |
+| Trigger    | Needs a state change (hover, click)| Can start automatically             |
+| Steps      | Only start → end                   | Multiple stages (0%, 50%, 100%)     |
+| Loops      | No looping (unless retriggered)    | Can loop infinitely                 |
+| Complexity | Simple (good for hover effects)    | Complex (motion, bouncing, loaders) |

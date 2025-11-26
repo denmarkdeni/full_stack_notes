@@ -1,0 +1,22 @@
+>> Font
+    font-size 
+        px → fixed size (e.g., 16px)
+        em → relative to parent font size (1em = 100%)
+        rem → relative to root (HTML) font size
+        % → relative percentage
+    font-weight     
+        normal, bold, bolder, lighter OR numbers: 100–900
+    font-style
+        normal, italic, oblique
+    font-family
+        Arial, Helvetica, sans-serif 
+
+>> Text
+
+    color
+    text-align      left right center justify
+    text-decoration  underline , overline , line-through
+    text-transform  uppercase , lowercase , capitalize
+    text-shadow     x-axis , y-axis , blur-radius  , color
+    letter-spacing , word-spacing , line-height
+

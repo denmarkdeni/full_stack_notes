@@ -1,0 +1,45 @@
+🧩 What is a Set?
+
+A Set is a collection of unique values — no duplicates allowed.
+It can store any type of value
+
+const numbers = new Set([1, 2, 3, 3, 4]);
+console.log(numbers); // {1, 2, 3, 4}
+
+🧩 Set Methods
+
+add(value)	    Add a value	
+delete(value)	Remove a value	
+has(value)	    Check if a value exists	
+clear()	        Remove all values	
+size	        Returns total count
+
+🧩 What is a Map?
+
+A Map stores key–value pairs, like an object —
+but with more powerful features:
+
+    Keys can be any type (object, number, function, etc.)
+
+    Maintains insertion order
+
+set(key, value)	  Add or update a pair	
+get(key)	        Get value by key	
+has(key)	        Check if key exists	
+delete(key)     	Remove by key	
+clear()	          Remove all entries	
+size	            Count of pairs
+
+
+for (let [key, value] of map) {
+  console.log(`${key}: ${value}`);
+}
+
+| Feature    | Set                | Map                          |
+| ---------- | ------------------ | ---------------------------- |
+| Stores     | Unique values      | Key-value pairs              |
+| Key        | Not used           | Any type                     |
+| Duplicates | Not allowed        | Allowed for different keys   |
+| Access     | By value           | By key                       |
+| Example    | `new Set([1,2,3])` | `new Map([["a",1],["b",2]])` |
+

@@ -1,0 +1,112 @@
+🧩 React Setup with Vite
+
+Prerequisites:
+
+👉 Node.js installed (version 16 or later recommended)
+
+👉 npm or yarn
+
+1. Create a new React project
+
+👉 npm create vite@latest my-react-app --template react
+
+2. Navigate into your project folder
+
+👉 cd my-react-app
+
+3. Install dependencies
+
+👉 npm install
+
+4. Start the development server
+
+👉 npm run dev
+
+Open your browser and go to http://localhost:5173
+
+
+🧩 Project Structure (Vite + React)
+
+my-app/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+├── .gitignore
+├── eslint.config.js (optional)
+├── index.html
+├── package.json
+├── package-lock.json (or pnpm-lock.yaml / yarn.lock)
+├── vite.config.js
+
+1. node_modules/
+
+👉 Contains all dependencies (libraries & packages) installed from npm.
+👉 Example: react, react-dom, Vite, ESLint, etc.
+
+2. public/
+
+👉 Used for static files (images, fonts, icons, etc.) that don’t change.
+👉 Anything here is copied directly to the build folder.
+👉 Example: favicon.ico, logos, manifest.json.
+👉 Accessed directly → localhost:port/logo.png.
+
+3. src/
+
+👉 This is the main working folder where we write our React code.
+
+    1.assets/ → Store images, icons, and local assets.
+    👉 Example: logo.svg, background.jpg.
+
+    2.App.jsx → Main App component (root of all components).
+    👉 Usually where we combine multiple components.
+    👉 Example: Navbar, Footer, Pages, etc.
+
+    3.App.css → Styles for the App component.
+
+    4.index.css → Global styles for the whole app (body, fonts, colors, resets).
+    
+    5.main.jsx → Entry point for React.
+    👉 Imports React, ReactDOM, and the App component.
+    👉 Mounts <App /> to the #root div in index.html.
+
+4. index.html
+
+👉 The single HTML file in React apps.
+👉 Has an empty <div id="root"></div> where React injects everything.
+👉 Scripts from main.jsx load the app here.
+
+5. package.json
+
+👉 Lists project details & dependencies.
+👉 used to manage versions, install/remove packages, and run scripts.
+
+6. package-lock.json 
+
+👉 Auto-generated file that locks exact versions of dependencies.
+👉 Ensures project behaves the same on all computers.
+
+7. .gitignore
+
+👉 Tells Git which files/folders to ignore (like node_modules).
+
+8. vite.config.js
+
+👉 Config file for Vite.
+👉 Customize build, alias paths (@/components), plugins, etc.
+👉 Example: enabling React plugin, setting base URL.
+
+9. eslint.config.js
+
+👉 Defines coding rules (linting).
+👉 Helps maintain consistent coding style & catch errors early.
+
+“Think of React-Vite like a restaurant:
+src/ = Kitchen (where dishes are prepared = our code)
+public/ = Store room (raw ingredients = assets)
+index.html = Dining table (where food is served = root div)
+package.json = Menu & supplier list (dependencies).”

@@ -1,0 +1,10 @@
+----> Specificity
+
+    Priority level of css style rules.
+    inline -> internal -> external
+    id  -> class -> tag name 
+    h1{
+        background-color: rgb(0,255,0);
+        background-color: #aaaaaa;
+        } 
+    --> last declaration will be overrided

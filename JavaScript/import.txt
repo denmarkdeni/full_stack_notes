@@ -1,0 +1,65 @@
+🧩 Why Use import and export?
+
+They let you split your JavaScript code into separate files (modules) 
+and share functionality between them.
+
+✅ Better organization
+✅ Code reuse
+✅ Easier maintenance
+
+🧩 Example: Two Files
+
+👉 math.js — Export something
+
+// Named export
+export const add = (a, b) => a + b;
+
+// Another named export
+export const multiply = (a, b) => a * b;
+
+👉 main.js — Import from another file
+
+// Import named exports
+import { add, multiply } from './math.js';
+
+console.log(add(2, 3));       // 5
+console.log(multiply(2, 3));  // 6
+
+🧩 Types of Exports
+
+👉 Named Exports
+
+You can export multiple things
+Must use the same name when importing
+
+// In utils.js
+export const greet = () => console.log("Hi!");
+export const farewell = () => console.log("Bye!");
+
+// In app.js
+import { greet, farewell } from './utils.js';
+
+👉 Default Export
+
+One default export per file
+Can import with any name
+
+// In message.js
+export default function showMessage(msg) {
+  console.log(msg);
+}
+
+// In app.js
+import display from './message.js';  // name can be anything
+display("Hello!");
+
+👉 We Can Combine Both
+
+// file.js
+export const version = "1.0";
+export default function greet() {
+  console.log("Hello");
+}
+
+// main.js
+import greet, { version } from './file.js';

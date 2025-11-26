@@ -1,0 +1,55 @@
+What is Type Coercion?
+
+👉 Type coercion converts one data type into another when needed.
+
+Implicit coercion → Happens automatically.
+
+Explicit coercion → Done manually by the developer.
+
+🧩 Implicit Type Coercion
+
+JavaScript tries to "help" by converting values automatically.
+
+👍 Example – String + Number
+
+console.log(5 + "5"); // "55"
+
+Number 5 is converted to string → "5" + "5".
+
+👍 Example – Boolean + Number
+
+console.log(true + 1); // 2
+
+true becomes 1.
+
+👍 Example – Equality (==)
+
+console.log(0 == false); // true
+console.log("5" == 5);   // true
+
+JavaScript coerces values before comparing.
+
+🧩 Explicit Type Coercion
+
+manually converting data types.
+
+👍 To String
+
+let num = 100;
+console.log(String(num));  // "100"
+console.log(num.toString()); // "100" 
+
+👍 To Number
+
+console.log(Number("123")); // 123
+console.log(+"123");        // 123 (using unary +)
+
+👍 To Boolean
+
+console.log(Boolean(1)); // true
+console.log(Boolean(0)); // false
+console.log(Boolean("")); // false
+console.log(Boolean("hi")); // true
+
+NaN - Not a Number
+console.log(2 * 'a');
