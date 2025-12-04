@@ -1,0 +1,105 @@
+1. A man buys 20 articles for $100 
+and sells 15 articles for the same amount. 
+What is his profit percentage on the whole transaction?
+a) 20%
+b) 25%
+c) 33.33%
+d) 50%
+
+2. A shopkeeper sells an article at 10% profit. 
+Had he sold it for $20 more, he would have gained 15%. 
+What is the cost price of the article?
+a) $300
+b) $400
+c) $500
+d) $600
+
+3. By selling 45 kg of rice, a trader gains 
+the selling price of 9 kg of rice. 
+What is his profit percentage?
+a) 15%
+b) 20%
+c) 25%
+d) 30%
+
+4. A man sells two watches for $240 each. 
+On one, he gains 20%, and on the other, 
+he loses 20%. What is his overall profit or loss percentage?
+a) 4% loss
+b) 4% profit
+c) No profit no loss
+d) 5% loss
+
+5. A dishonest shopkeeper professes to sell goods 
+at cost price but uses a weight of 900 grams for a kilogram. 
+What is his profit percentage?
+a) 10%
+b) 11.11%
+c) 12.5%
+d) 15%
+
+6. The marked price of an article is $200. 
+After allowing a discount of 20%, 
+the shopkeeper still makes a profit of 20%. 
+What is the cost price?
+a) $120
+b) $133.33
+c) $150
+d) $160
+
+7. If two successive discounts of 20% and 25% are 
+given on an article, what is the equivalent 
+single discount percentage?
+a) 40%
+b) 45%
+c) 50%
+d) 55%
+
+8. A man bought a horse for $70 and sold it for $80. 
+He then bought it back for $90 and sold it for $100. 
+What is his total profit?
+a) $10
+b) $20
+c) $30
+d) $40
+
+Answers:
+
+1. c) 33.33%
+
+2. b) $400
+
+Explanation: Let CP = x. SP at 10% profit = 1.1x.
+If sold for $20 more, SP = 1.1x + 20, profit 15% so 1.15x.
+Equation: 1.1x + 20 = 1.15x → 20 = 0.05x → x = 20 / 0.05 = $400.
+
+3. c) 25%
+Explanation: Let SP per kg = s, CP per kg = c.
+SP for 45 kg = 45s, profit = 45s - 45c = 9s (gains SP of 9 kg).
+45s - 45c = 9s → 36s = 45c → s/c = 45/36 = 5/4 = 1.25.
+Profit % = (s - c)/c 100 = 0.25100 = 25%.
+
+4. a) 4% loss
+Explanation: Let CP1 = x, then SP1 = 1.2x (20% profit).
+CP2 = y, SP2 = 0.8y (20% loss). But both SP = $240, so 1.2x = 240 → x = 200.
+0.8y = 240 → y = 300.
+Total CP = 200 + 300 = 500, total SP = 480. Loss = 20, % = (20/500)*100 = 4% loss.
+
+5. b) 11.11%
+Explanation: He uses 900g but charges for 1000g. For every 1000g charged, he gives 900g, so cost is for 900g but sells as 1000g at CP.
+Let CP per kg = c. He buys 900g for 0.9c, sells as 1kg for c (at "CP").
+Profit = c - 0.9c = 0.1c, % = (0.1c / 0.9c)*100 = (1/9)*100 ≈ 11.11%.
+
+6. b) $133.33
+Explanation: MP = $200, discount 20%, SP = 200 * 0.8 = $160.
+Profit 20%, so SP = 1.2 * CP → 160 = 1.2 CP → CP = 160 / 1.2 ≈ $133.33.
+
+7. a) 40%
+Explanation: Let original price = 100. After 20% discount: 100 * 0.8 = 80.
+Then 25% on 80: 80 * 0.75 = 60.
+Total discount = 100 - 60 = 40, so 40%. (Formula: 1 - (1-0.2)(1-0.25) = 1 - 0.8*0.75 = 1 - 0.6 = 0.4 = 40%).
+
+8. b) $20
+Explanation: First sale: Profit = $80 - $70 = $10.
+Second buy and sale: Profit = $100 - $90 = $10.
+Total profit = $10 + $10 = $20. (The buy back is a separate transaction; net effect is like two independent profits).

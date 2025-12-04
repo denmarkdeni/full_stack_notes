@@ -17,7 +17,7 @@ const person = {
         console.log(`${this.name}, is ${this.age} years old`);
     }
 };
-
+ 
 console.log(person['name']); // bracket notation
 console.log(person.name1); // dot notation
 person.info();
@@ -49,14 +49,6 @@ Task:
 6. print your object's key value pair with Object.entries.
 7. call your info function
 
-const preson = new Object();
-person.name = "hari";
-person.age = 22;
-person.id = 101;
-person.voter_id = null;
-person.hobbies = ['cricket' , 'football' , 'books'];
-person.college = {name : "RSC" ,duration : 5 };
-person.info =
 const person = new Object();
 person.name = "hari";
 person.age = 22;

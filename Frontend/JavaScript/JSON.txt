@@ -14,7 +14,7 @@ while a JavaScript object is an actual object.
 
 {
   "name": "Alice",
-  "age": 25,
+  "age": 25, 
   "isStudent": true
 }
 Keys and strings must be in double quotes
@@ -25,7 +25,7 @@ No functions, comments, or undefined values
 {
   name: "Alice",
   age: 25,
-  isStudent: true
+  isStudent: true 
 }
 
 🧩 Converting JSON and JavaScript Object
@@ -59,6 +59,7 @@ console.log(person.name); // Output: Alice
 | null                      | Single quotes in keys |
 
 🧩 Fetching Data from an API
+Application Programming Interface
 
 fetch('https://api.example.com/user')
   .then(response => response.json())

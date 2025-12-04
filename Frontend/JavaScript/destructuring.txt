@@ -4,7 +4,7 @@ Assigns the collection values to single variable.
 unpacking the values from the array
 extracting properties from object
 
-Array Destructuring:
+🪝 Array Destructuring:
 
 const cars = ["audi" , "mahi" , "bmw"];
 let car1 = cars[0];
@@ -13,7 +13,7 @@ let [car1, car2 , car3] = cars;
 let [car1 , , car2] = cars;
 let [car1] = cars;
 
-Object Destructuring:
+🪝 Object Destructuring:
 
 const job = {
     role : "developer",
@@ -23,16 +23,34 @@ const job = {
 let { role } = job;
 console.log(role);
 
-Rest operator ( ... )
+🪝 Renaming & Default Values in Object Destructuring
+
+const product = {
+  id: 101,
+  price: 299
+};
+
+const { price: cost, rating = 5 } = product;
+
+console.log(cost);   // 299
+console.log(rating); // 5
+
+🪝 Destructuring Inside Functions
+
+function displayProduct({ id, price }) {
+  console.log(`Product ID is ${id} , Price is ${price}`);
+}
+
+🪝 Rest operator ( ... )
 
 rest operator stores rest of the values from array.
 it will happen when the operator used as a variable.
 Example:
-
+ 
 const fruits = ['apple' , 'orange' , 'mango'];
 const [f1 , ...others] = fruits;
 
-Spread operator ( ... )
+🪝 Spread operator ( ... )
 
 spread operator distribute or spread the values from array
 it will happen when the operator used as a value.

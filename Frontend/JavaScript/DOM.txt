@@ -26,7 +26,7 @@ Document(node)
  └── html
       ├── body
       │    ├── h1 → "Hello World"
-      │    └── p/  → "Welcome to JavaScript DOM"
+      │    └── p  → "Welcome to JavaScript DOM"
       |── head
 
 👉 Now with JavaScript, you can:

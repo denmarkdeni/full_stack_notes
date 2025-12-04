@@ -64,7 +64,9 @@ Example (procedure):
   END //
   DELIMITER ;
 
-6️⃣ Window Functions (Analytical Functions) 💯 (very important for analytics)
+  Call get_students_by_class(3);
+
+6️⃣ Window Functions (Analytical Functions) 
 
 Add powerful reporting tools:
 
@@ -77,7 +79,8 @@ Add powerful reporting tools:
 Example:
 
   SELECT name, class_id,
-       RANK() OVER (PARTITION BY class_id ORDER BY student_id) AS rank_in_class
+       RANK() OVER (PARTITION BY class_id ORDER BY student_id) 
+       AS rank_in_class
   FROM students;
 
 7️⃣ Advanced Filtering
@@ -86,8 +89,21 @@ CASE WHEN for conditional logic.
 
 Complex WHERE with nested conditions.
 
+SELECT name , price ,  
+CASE 
+  WHEN price > 100 THEN "top price" 
+  ELSE "cheap" 
+END as status
+FROM Products;
+
 8️⃣ Data Import/Export
 
 Loading data from CSV/Excel (LOAD DATA INFILE).
 
 Exporting results for reporting.
+
+Triggers
+
+Kind of stored procedure that will automatically 
+execute the queries where particular actions like
+INSERT , UPDATE ,DELETE.

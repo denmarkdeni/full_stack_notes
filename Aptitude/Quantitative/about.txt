@@ -1,0 +1,59 @@
+🟦 Number System
+
+Divisibility rules
+
+HCF / LCM
+
+Remainders
+
+Factors and multiples
+
+🟦 Percentages
+
+Increase / decrease
+
+Successive percentage change
+
+🟦 Profit & Loss
+
+Cost price / selling price
+
+Discount problems
+
+🟦 Simple & Compound Interest
+
+Basic interest calculations
+
+Difference between SI & CI
+
+🟦 Ratio & Proportion
+
+Basic ratios
+
+Partnership problems
+
+🟦 Averages
+
+Weighted averages
+
+Missing term problems
+
+🟦 Time, Distance & Speed
+
+Relative speed
+
+Trains
+
+Boats & streams (sometimes)
+
+🟦 Time & Work
+
+Work rate problems
+
+Pipes & cisterns
+
+🟦 Permutation & Combination
+
+Arrangements
+
+Simple probability

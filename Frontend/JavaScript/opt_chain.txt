@@ -3,15 +3,13 @@ Optional Chaining ( ?. )
 used for Accessing the nested properties in the object
 without getting error.
 
-const job = {
+const profile = {
     person : {
         name : "kavi",
         age:22
     },
-    role : "developer",
-    salary : "5 LPA",
-    experience : 5 
+    role : "developer"
 }
 
-console.log(job.life?.name);
+console.log(profile.life?.name);
 

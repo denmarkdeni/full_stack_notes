@@ -1,0 +1,194 @@
+🧩 Tricks in percentage %
+
+    ex: 256
+	100% 256   		50%  128
+	10%  25.6  		25%  64
+	1% 	 2.56  		5%   12.8
+
+    spliting
+    interchange
+    fractional
+
+🧩 Questions
+
+If 20% of a number is 45, what is 75% of the same number? 
+
+    A) 168.75
+    B) 160
+    C) 169
+    D) 175
+
+A product costs RS 800 after a 20% discount. 
+What was the original price before the discount?
+
+    A) RS 960
+    B) RS 1000
+    C) RS 900
+    D) RS 640
+
+In an election, candidate A got 65% of the votes. 
+If total votes were 12,000, how many votes did candidate B get?
+
+    A) 4,200
+    B) 4,800
+    C) 7,800
+    D) 3,600
+
+If a number is increased by 25%, it becomes 150. 
+What was the original number?
+
+    A) 120
+    B) 125
+    C) 130
+    D) 140
+
+A shirt is marked at $60 and sold at a 15% profit. 
+What is the cost price of the shirt?
+
+    A) $50
+    B) $52.17
+    C) $55
+    D) $51
+
+After a 10% increase followed by a 10% decrease, 
+what is the net percentage change in the original amount?
+
+    A) No change
+    B) 1% increase
+    C) 1% decrease
+    D) 2% decrease
+
+40% of the students in a class are girls. 
+If there are 24 boys, how many students are there in total?
+
+    A) 36
+    B) 40
+    C) 42
+    D) 48
+
+A mixture contains milk and water in the ratio 4:1. 
+What percentage of the mixture is water?
+
+    A) 20%
+    B) 25%
+    C) 30%
+    D) 40%
+
+If 15% of x equals 30% of y, then x : y is:
+
+    A) 2 : 1
+    B) 1 : 2
+    C) 3 : 2
+    D) 2 : 3
+
+A student scored 72 marks out of 90. 
+What percentage did he score? 
+Later the maximum marks were increased to 100. 
+What would be his percentage if marks remain the same?
+
+    A) 80% and 72%
+    B) 80% and 75%
+    C) 75% and 72%
+    D) 80% and 70%
+
+🧩 Answers with Explanations:
+
+    A) 168.75
+
+20% = 45 → 100% = 45 × 5 = 225 → 75% = 225 × 0.75 = 168.75
+
+    B) $1000
+
+After 20% discount, price = 80% of original.
+80% of original = 800 → Original = 800 ÷ 0.8 = 1000
+
+    A) 4,200
+
+A got 65% → B got 35% → 35% of 12,000 = 0.35 × 12000 = 4200
+
+    A) 120
+
+125% of original = 150 → Original = 150 ÷ 1.25 = 120
+
+    B) $52.17
+
+Selling price = Cost price × 1.15
+60 = CP × 1.15 → CP = 60 ÷ 1.15 ≈ 52.17
+
+    C) 1% decrease
+
+Let original = 100
+After 10% increase → 110
+After 10% decrease → 110 × 0.9 = 99
+Net decrease = 1%
+
+    B) 40
+
+Boys = 60% of total, girls = 40%
+60% = 24 → Total = 24 ÷ 0.6 = 40
+
+    A) 20%
+
+Ratio 4:1 → Total parts = 5 → Water = 1/5 = 20%
+
+    A) 2 : 1
+
+0.15x = 0.30y → x/y = 30/15 = 2/1 → 2:1
+
+    A) 80% and 72%
+
+First: 72/90 × 100 = 80%
+Second: 72/100 × 100 = 72%
+
+
+
+
+.....................................................................
+
+1.If 15% of a number is 63, then what is 85% 
+of the same number?
+A) 357  B) 360  C) 365  D) 375
+₹600
+2.A product is sold for ₹600 after giving 
+a 25% discount on the marked price. 
+What is the marked price?
+A) ₹750  B) ₹800  C) ₹825  D) ₹900
+
+3.A product is sold for ₹600 after giving a 
+25% discount on the marked price. 
+What is the marked price?
+A) ₹750  B) ₹800  C) ₹825  D) ₹900
+
+4.In a class, 36 students passed in Maths 
+(which is 80% of total students). 
+If 20% of the students 
+who failed in Maths passed in English, 
+how many failed in Maths?
+A) 8  B) 9  C) 10  D) 12
+
+5.A man spends 75% of his income. 
+After a 20% hike in salary, 
+he can save ₹11,200. What is his new salary?
+A) ₹44,800  B) ₹48,000  C) ₹56,000  D) ₹60,000
+
+1.Answer & Trick: A) 357
+15% = 63 → 5% = 21 → 1% = 21 ÷ 5 = 4.2 → 100% = 420 → 85% = 420 × 0.85 = 357
+
+2.Answer & Trick: B) ₹800
+After 25% discount → 75% of MP = 600
+So 75% = 600 → divide by 3 → 25% = 200 → 100% = 800
+
+3.Answer & Trick: A) 400
+Work backwards:
+Final = 408 → after 15% decrease means it was 408 ÷ 0.85
+408 ÷ 0.85 = 480 (after increase)
+480 was after 20% increase → original = 480 ÷ 1.2 = 400
+
+4.Answer & Trick: B) 9
+80% passed → 20% failed
+80% = 36 → 20% = 9 students failed in Maths
+
+5.Answer & Trick: A) ₹44,800
+Now he spends only 75% of new salary and saves 25%.
+Savings = 25% of new salary = 11,200
+25% = 11,200 → 100% = 11,200 × 4 = ₹44,800

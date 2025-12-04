@@ -1,0 +1,37 @@
+🟩 Coding–Decoding
+
+Letter/number patterns
+
+Word-pattern transformation
+
+🟩 Blood Relations
+
+Family tree
+
+Direction-based relation
+
+🟩 Directions
+
+North–south–east–west turns
+
+Tracking movement
+
+🟩 Syllogisms
+
+Statements & conclusions
+
+Venn diagrams
+
+🟩 Puzzles
+
+Seating arrangement
+
+Linear arrangement
+
+Circular arrangement
+
+🟩 Analytical Reasoning
+
+Pattern identification
+
+Odd one out

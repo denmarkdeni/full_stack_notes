@@ -1,6 +1,19 @@
 Database
 	👉 A database is an organized collection of data 
 	that can be easily accessed, managed, and updated.
+	👉 MySQL supports ACID.
+
+		Atomicity	- Transaction = one complete unit
+		Consistency	- Database must follow rules always
+		Isolation	- Transactions don’t disturb each other
+		Durability	- Saved data is permanent
+
+		🌟 Simple Memory Trick
+
+		All or nothing
+		Correct rules
+		Independent operations
+		Data never lost
 
 Why we need databases:
 	👉 To store large amounts of data safely.
@@ -28,8 +41,12 @@ Purpose:
 	👉 Query (retrieve) data.
 	👉 Control access and permissions.
 
+Normalization is a process of organizing data in a database.
 
-
-
+	👉 There is no duplicate data
+	👉 Data is stored logically
+	👉 Updates become easy and accurate
+	👉 Storage is efficient
+	
 
 
