@@ -44,3 +44,5 @@ clearInterval(id) → cancels a setInterval
 👉 clearTimeout() & clearInterval() → stop timers
 
 👉 Both are asynchronous (they don’t block main code)
+
+

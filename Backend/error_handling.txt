@@ -1,0 +1,108 @@
+1. What is Error Handling?
+
+    🧩 Error handling is the process of detecting runtime errors and preventing the program from crashing.
+
+    🧩 Python errors occur during execution, not while writing the code.
+
+2. Common Types of Errors
+
+    NameError
+
+        🧩 Occurs when a variable is not defined.
+
+        print(x)
+
+    TypeError
+
+        🧩 Occurs when incompatible data types are used together.
+
+        print(5 + "a")
+
+    ValueError
+
+        🧩 Occurs when correct type but invalid value is given.
+
+        int("a")
+
+    IndexError
+
+        🧩 Occurs when accessing invalid list index.
+
+        lst = [1, 2]
+        print(lst[5])
+
+    KeyError
+
+        🧩 Occurs when dictionary key is not found.
+
+        d = {"a": 1}
+        print(d["b"])
+    
+    ZeroDivisionError
+
+        🧩 Occurs when dividing by zero.
+
+        10 / 0
+
+3. try – except Block
+
+    🧩 Used to catch and handle runtime errors.
+
+    try:
+        x = int("a")
+    except ValueError:
+        print("Invalid conversion")
+
+4. Multiple except Blocks
+
+    🧩 Used to handle different errors differently.
+
+    try:
+        a = "BHK"
+        print(int("a"))
+    except NameError:
+        print("Name error")
+    except ValueError:
+        print("Value error")
+    except TypeError:
+        print("Type error")
+
+5. else Block
+
+    🧩 Runs only when no error occurs.
+
+    try:
+        x = int("10")
+    except ValueError:
+        print("Error")
+    else:
+        print("No problem")
+
+6. finally Block
+
+    🧩 Runs always, whether error occurs or not.
+
+    try:
+        x = 10 / 2
+    finally:
+        print("I will always run")
+
+7. raise Keyword
+
+    🧩 Used to manually create errors.
+
+    age = -1
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+
+8. simple definition
+
+    🧩 try: block that may cause error
+
+    🧩 except: handles the error
+
+    🧩 else: executes when no error
+
+    🧩 finally: executes always
+
+    🧩 raise: manually throws error

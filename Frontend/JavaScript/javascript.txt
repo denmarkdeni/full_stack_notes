@@ -31,7 +31,7 @@ Varaiables
 
 👉 A variable is just a container for storing data
 👉 var , let , const  --> Constraints
-
+ 
 Scope 
 
 👉 global - variable accessible everywhere.
@@ -51,7 +51,7 @@ function test() {
 
 Hoisting 
 
-👉 Varaiables and Function declaration are moved to the 
+👉 Variables and Function declaration are moved to the 
 top of the scope during compilation phase.
 
 Variable Constraints
@@ -84,6 +84,8 @@ Data Types
 
     Null → intentional "nothing"
 
+    NaN  → Not a Number
+
     Symbol → unique value (used rarely)
 
     BigInt → very large numbers
@@ -95,3 +97,6 @@ Data Types
     Function → function greet() { ... }
 
 to find the data type -> typeof
+
+
+ 

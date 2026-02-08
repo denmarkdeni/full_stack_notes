@@ -1,0 +1,42 @@
+Loop Statements
+
+print('loading...')
+print('loading...')
+print('loading...')
+print('loading...')
+
+for loop , while loop 
+
+for i in range(4):
+    print('loading)
+
+for variable in iterative:  // iterative 'python' (1,2,3,4,5)
+    statements
+
+range(5)  -- 0 , 1 ,2 ,3 , 4
+
+when we don't know loop count , iterations count , 
+we can use while loop
+count = 0 
+while condition:
+    statements
+    count increment / decrement 
+
+for i in range(10): (0,1,2,3,4,5,6,7,8,9)
+    for j in range(11):(0,1,2,3,4,5,6,7,8,9,10)
+        print(i,j)
+
+i = 0
+j = 0
+(0,0)
+i = 0
+j = 10
+(0,10)
+i = 1
+j = 0
+(1,0)
+(1,10)
+(9,0)
+(9,10)
+
+

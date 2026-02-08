@@ -22,7 +22,7 @@ Syntax:
     body {
         background-color: lightblue;
     }
-  }
+  } 
 
 Common Media Features: 
 

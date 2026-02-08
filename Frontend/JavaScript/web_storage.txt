@@ -25,4 +25,4 @@ localStorage.clear();
 
 sessionStorage.setItem('theme', 'dark');
 sessionStorage.getItem('theme');
-sessionStorage.removeItem('theme');
+sessionStorage.removeItem('theme');	

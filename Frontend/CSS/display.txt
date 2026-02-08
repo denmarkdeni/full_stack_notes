@@ -32,7 +32,7 @@ span {
 
 ✅ 3. inline-block
 
-👉 Behaves like inline (sits next to other elements).
+👉 Behaves like inline.
 
 👉 But allows width/height like block.
 
@@ -42,8 +42,7 @@ button {
 
 ✅ 4. none 
 
-👉 Element is not displayed at all 
-(removed from layout).
+👉 Element is not displayed at all.
 
 👉 Different from visibility: hidden 
 (which hides but keeps space).
@@ -52,10 +51,10 @@ button {
   display: none;
 }
 
-✅ 5. flex
+✅ 5. flex 
 
 👉 Turns container into a flex container.
-
+👉 is a one-dimensional layout system in CSS.
 👉 Children (flex items) follow flexbox rules 
 (row/column, justify, align).
 
@@ -66,7 +65,7 @@ button {
 }
 
 👉 Flexbox (display: flex;) 
-is a one-dimensional layout system in CSS.
+
 👉 It works along a main axis 
 (row or column) and helps to align items easily.
 
@@ -105,7 +104,7 @@ flex-direction
 
 👉 column-reverse → bottom to top
 
-justify-content (aligns items on main axis)
+justify-content (aligns main axis)
 
 👉 flex-start (default) → items packed at start
 
@@ -119,7 +118,7 @@ justify-content (aligns items on main axis)
 
 👉 space-evenly → perfect equal spacing
 
-align-items (aligns items on cross axis)
+align-items (aligns cross axis)
 
 👉 stretch (default) → items stretch to fill container
 
@@ -127,9 +126,7 @@ align-items (aligns items on cross axis)
 
 👉 flex-end → align to end of cross axis
 
-👉 center → align in middle of cross axis
-
-👉 baseline → align text baselines
+👉 center → align in middle of cross axis 
 
 flex-wrap
 
@@ -155,7 +152,7 @@ flex-wrap
 ✅ 6. grid
 
 👉 Turns container into a grid container.
-
+ 
 👉 Children follow grid layout (rows, columns, areas).
 
 .container {

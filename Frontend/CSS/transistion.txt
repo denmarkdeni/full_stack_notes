@@ -38,7 +38,7 @@ Main properties:
 
 using shorthand: transition: all 0.5s ease-in-out 0s;
 
-🔹 What is transform in CSS?
+🔹 What is transform in CSS? 
 
 transform is a CSS property that lets you visually manipulate an element:
 move it, rotate it, resize it, or skew it — even all at once.

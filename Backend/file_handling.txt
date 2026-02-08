@@ -1,0 +1,96 @@
+1. What is File Handling?
+
+    File handling is used to store data permanently in files and read data later.
+
+    Without files → data is lost when program stops.
+
+2. Types of Files
+
+    a) Text Files : .txt, .csv, .log
+
+    b) Binary Files : .jpg, .png, .pdf, .mp3
+
+3. Basic File Operations
+
+    Open a file
+
+    Read / Write / Append
+
+    Close the file
+
+4. File Modes
+
+    Mode	Meaning
+    r	    Read only
+    w	    Write (overwrite)
+    a	    Append
+    x	    Create new file
+    rb	    Read binary
+    wb	    Write binary
+ 
+5. open() Function
+
+    open(filename, mode)
+
+    file = open("data.txt", "r")
+
+6. read()  Function
+
+    read() – Reads full content
+
+    f = open("data.txt", "r")
+    print(f.read())
+    f.close()
+
+    readline() – Reads one line
+
+    print(f.readline())
+
+    readlines() – Reads all lines as list
+
+    lines = f.readlines()
+
+7.write() Function
+
+    f = open("data.txt", "w")
+    f.write("Hello Python")
+    f.close()
+
+8. Appending to a File
+
+    f = open("data.txt", "a")
+    f.write("\nNew Line")
+    f.close()
+
+9. with Statement
+
+    Automatically closes the file.
+
+    with open("data.txt", "r") as f:
+        print(f.read())
+
+10. Checking File Existence
+
+    import os
+
+    os.path.exists("data.txt")
+
+11. Common Errors in File Handling
+
+    FileNotFoundError
+
+    PermissionError
+
+    IOError
+
+12. Simple Definition
+
+    File: Permanent storage for data
+
+    open(): Opens a file
+
+    read(): Reads file content
+
+    write(): Writes data to file
+
+    close(): Closes file

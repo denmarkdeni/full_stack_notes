@@ -1,0 +1,55 @@
+1. How many seconds does Puja take to cover a distance of 500 m, if she runs at a speed of 30 km/hr?
+
+a) 60 sec
+b) 82 sec
+c) 95 sec
+d) 100 sec
+
+ 2. A cyclist covers a distance of 800 meter in 4 minutes 20 seconds. What is the speed in km/hr of the cyclist?
+
+a) 6.2 km/h
+b) 8.4 km/hr
+c) 11.05 km/hr
+d) 16.07 km/hr
+
+3. A man walking at the rate of 6 km/hr crosses a bridge in 15 minutes. The length of the bridge is ______.
+
+a. 1000 m
+b. 1250 m
+c. 1500 m
+d. 1800 m
+
+4. Two girls move in opposite directions, one from A to B and other from B to A. The girl from A reaches the destination in 16 hrs and girl from B reaches her destination in 25 hrs, after having met. If former's speed is 25 km/hr, what will be the speed of latter?
+
+a) 10 km/hr
+b) 12 km/hr
+c) 16 km/hr
+d) 20 km/hr
+
+5. Two buses start at the same time, one from P to Q and the other from Q to P. If both buses reach after 4 hours and 16 hours at Q and P respectively after they cross each other, what would be the ratio of speeds of the bus starting from P and that of the one starting from point Q?
+
+a. 2 : 1
+b. 1 : 2
+c. 2 : 2
+d. 1 : 4
+
+6. Two towns P & Q are 275 km apart. A motorcycle rider starts from P towards Q at 8 a.m. at the speed of 25 km/hr. Another rider starts from Q towards P at 9 a.m. at the speed of 20 km/hr. Find at what time they will cross each other?
+
+a. 2.45 p.m.
+b. 2.30 p.m.
+c. 1.35 p.m.
+d. 1.15 p.m.
+
+7. An aeroplane flying 800 km covers the first 200 km at the rate of 200 km/hr, the second 200 km at 400 km/hr, the third 200 km at 600 km / hr & last 200 km at the rate of 800 km/hr. Determine the average speed of the aeroplane.
+
+a. 250 km/hr
+b. 548 km/hr
+c. 480 km/hr
+d. 384 km/hr
+
+8. Jennifer travels first 4 hours of her journey at a speed of 80 miles/hr and the remaining distance in 6 hours at a speed of 30 miles/hr. What is her average speed in miles/hr?
+
+a. 50 miles / hr
+b. 60 miles / hr
+c. 75 miles / hr
+d. 92 miles / hr

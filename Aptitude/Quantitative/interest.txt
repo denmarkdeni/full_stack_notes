@@ -1,0 +1,33 @@
+🧩 Simple Interest
+
+1.A sum of money at simple interest amounts to ₹1,500 in 3 years and ₹1,600 in 4 years. Find the principal amount. 
+(a) ₹1,200 (b) ₹1,300 (c) ₹1,100 (d) ₹1,400
+
+2.The simple interest on a certain sum of money for 3 years at 5% per annum is ₹900. What will be the simple interest on the same sum for 6 years at 10% per annum? 
+(a) ₹3,600 (b) ₹1,800 (c) ₹3,000 (d) ₹2,400
+
+3.A sum of ₹800 amounts to ₹920 in 3 years at simple interest. find the rate of interest. 
+(a) 5% (b) 10% (c) 15% (d) 20%
+
+4.Simple interest on a certain sum is 16% of the principal after 2 years. Find the rate per annum. 
+(a) 6% (b) 8% (c) 10% (d) 12%
+
+5.A person borrows ₹5,000 at 6% simple interest for 3 years. How much does he need to pay back after 3 years? 
+(a) ₹5,900 (b) ₹5,800 (c) ₹5,950 (d) ₹6,000
+
+6.If ₹4,000 yields a simple interest of ₹600 in 3 years, what is the rate per annum? 
+(a) 3% (b) 5% (c) 7% (d) 4%
+
+7.A loan of ₹12,000 is to be returned after 3 years. What should be the annual interest rate so that ₹4,000 is paid as interest? 
+(a) 10% (b) 11.11% (c) 12% (d) 9%
+
+🧩 Compound Interest
+
+1.If the simple interest on a sum of money for 2 years at 4% per annum is ₹200, find the compound interest on the same sum for 2 years at 4% per annum (compounded annually). 
+(a) ₹208 (b) ₹216 (c) ₹200 (d) ₹212
+
+2.The compound interest on ₹8,000 at 5% per annum for 2 years (compounded annually) is: 
+(a) ₹820 (b) ₹810 (c) ₹800 (d) ₹830
+
+3.The compound interest on a sum of ₹6,250 for 2 years at 4% per annum (compounded annually) is: 
+(a) ₹510 (b) ₹500 (c) ₹520 (d) ₹505

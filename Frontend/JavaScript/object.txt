@@ -29,7 +29,7 @@ person.name = "kovintha";  // updating existing pair
 delete person.age ;
 
 for ( i in person){
-    console.log(person[i]);
+    console.log(person[i]); 
 }
 
 console.log(Object.keys(person));
@@ -46,8 +46,9 @@ Task:
 3. hobbies(array) , college(object) , info(function)
 4. update your id to 101
 5. delete your voter_id
-6. print your object's key value pair with Object.entries.
-7. call your info function
+6. call your info function
+
+
 
 const person = new Object();
 person.name = "hari";
@@ -57,7 +58,7 @@ person.voter_id = null;
 person.hobbies = ['cricket' , 'football' , 'books'];
 person.college = {name : "RSC" ,duration : 5 };
 person.info = function () { 
-    console.log(`${this.name} , ${this.age}`)
+    console.log(`${person.name} , ${person.age}`)
     }
 console.log(person);
 person.info();

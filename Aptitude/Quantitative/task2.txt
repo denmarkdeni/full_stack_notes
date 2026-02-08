@@ -1,0 +1,15 @@
+1. If 12% of a number is 48, what is 35% of that number?
+2. A product's price after a 30% discount is ₹560. What was the original price?
+3. After a 5% increase followed by a 5% decrease, what is the net percentage change?
+4. Marked price of a book is ₹250. After 10% discount, the shopkeeper makes 20% profit. What is the cost price?		
+5. Successive discounts of 15% and 20% are given. What is the equivalent single discount? 
+6. A sum becomes ₹6,480 in 3 years at 8% simple interest. What is the principal?	
+7. The simple interest on a certain sum at 12% p.a. for 2 years is ₹720. What is the sum? 
+8. A man invested ₹4,000 at 5% p.a. compound interest for 2 years. What is the amount?
+9. A person covers 420 meters in 1 minute 45 seconds. What is his speed in km/hr?
+10. A train of length 200m crosses a pole in 10 seconds. What is its speed?
+11. A cyclist travels 18 km/hr. How long will he take to cover 45 km?
+12. A plane flies 600 km at 300 km/hr and 600 km at 400 km/hr. Find average speed.
+13. A and B together can do a work in 10 days. A alone can do it in 15 days. In how many days can B alone complete the work?
+14. A, B, and C together can complete a work in 6 days. A alone can do it in 10 days and B alone in 15 days. In how many days can C alone complete the work?
+15. A can do a work in 16 days and B in 24 days. They work together for 4 days, then A leaves. In how many more days will B finish the remaining work?

@@ -58,7 +58,7 @@ Operators
 
 6. Increment & Decrement
 
-    let y = 5;
+    let y = 5; 
     console.log(++y); // 6 (pre-increment)
     console.log(y++); // 6 (prints first, then increases to 7)
     console.log(--y); // 6 (pre-decrement)

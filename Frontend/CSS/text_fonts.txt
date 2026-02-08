@@ -7,7 +7,7 @@
     font-weight     
         normal, bold, bolder, lighter OR numbers: 100–900
     font-style
-        normal, italic, oblique
+        normal, italic
     font-family
         Arial, Helvetica, sans-serif 
 

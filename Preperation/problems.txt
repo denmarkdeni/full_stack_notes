@@ -51,6 +51,8 @@ Odd or Even
 1. if number is divisble by 2 , that is even
 2. else odd 
 
+palindrome
+
 267 % 10 / 267 // 10  => 26 % 10 / 26 // 10 => 2 % 10 
 
 0 (x 10 + digit) = 7 => 76 => 762 
@@ -69,5 +71,58 @@ O(log n)
 O(n)
 O(n2)
 
+String word = "malayalam";
+for(int i = 1;)
+
+word[::-1]
+
+for i in word:
+    result = i + result
 
 
+prime 
+
+12 - 1 , 2 ,3 , 4 ,6 , 12
+
+num 
+
+2 , n-1
+
+
+armstrong
+ 
+345  = 3 ^ 3 + 4 ^ 3  + 5 ^ 3 = 27 + 64 + 125 = 216 
+
+153 = 1 + 125 + 27 = 153
+
+
+loop , condition num > 0
+
+digit count ? 
+
+remainder by 10
+
+
+variable digit_count
+number
+store the number into temp var
+count = 0
+
+while condition -> check number greater than 0
+
+    number divide by 10
+    increase count by 1
+
+create var sum
+store number from temp
+while condition -> check number greater than 0
+
+    find last_digit 
+    sum the last_digit ^ digit_count
+    divide the number by 10
+
+check temp and sum are same 
+if same 
+    armstrong
+else 
+    not armstrong

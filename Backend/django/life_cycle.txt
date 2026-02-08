@@ -1,0 +1,80 @@
+Django Request–Response Lifecycle
+
+1. User Makes a Request
+
+    http://127.0.0.1:8000/students/
+
+    This is an HTTP request sent by the browser.
+
+2. URL Dispatcher (urls.py)
+
+    Django checks URL patterns from top to bottom.
+ 
+    urlpatterns = [
+        path("students/", views.student_list),
+    ]
+ 
+    If matched → go to the view
+
+    If not → 404 error
+
+3. View Function (Decision Maker)
+
+    The view is where logic happens.
+
+    def student_list(request):
+        students = Student.objects.all()
+        return render(request, "students.html", {
+            "students": students
+        })
+
+    The view:
+
+        Receives the request 
+        Talks to the database (models) 
+        Prepares data 
+        Returns a response
+
+4. Model Interaction (Data Layer)
+
+    Student.objects.all()
+
+    What happens:
+
+        Django ORM talks to database 
+        Fetches rows 
+        Converts rows into Python objects
+
+5. Template Rendering (Presentation Layer)
+
+    The view sends data to template:
+
+        return render(request, "students.html", context)
+
+    Template:
+
+        {% for s in students %}
+        <p>{{ s.name }}</p>
+        {% endfor %}
+
+    Templates Only display data.
+
+6. Response Goes Back to Browser
+
+Django converts the rendered HTML into an HTTP response and sends it back.
+
+    Browser:
+
+        Receives HTML 
+        Renders page 
+        User sees content 
+
+
+🧩 Full Flow
+
+Browser → URL → View → Model → View → Template → Response → Browser
+
+URLs route
+Views decide
+Models store
+Templates show

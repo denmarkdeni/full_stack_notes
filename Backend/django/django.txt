@@ -1,0 +1,67 @@
+Django is a Python Web Framework
+
+Features:
+    👉 Ridiculously fast.
+    👉 Fully loaded.
+    👉 Reassuringly secure.
+    👉 Exceedingly scalable.
+    👉 Incredibly versatile.
+
+MVT Architecture
+
+Models - Views - Templates
+
+👉 Model - database python classes
+
+👉 Views - Logic layer (request and response)
+
+👉 Templates - Presentation Layer
+
+ORM - Object Relational Mapping
+
+👉 Helps Python to communicate with the DB
+
+Migration 
+
+python manage.py makemigrations
+    👉 saves model changes
+python manage.py migrate
+    👉 migrates the changes to DB
+
+Project vs App
+
+Project - main center , Configuration 
+App - Particular Feature
+
+Installation
+    
+Needed packages
+👉 Python
+👉 pip
+👉 Django
+
+python --version
+pip --version
+
+Virtual Environment
+
+👉 python -m venv env_folder_name
+
+👉 env_folder_name/Scripts/activate
+
+👉 pip install django
+
+👉 django-admin startproject project_name
+
+👉 cd project_name  // cd .. 
+
+👉 python manage.py startapp app_name
+
+👉 python manage.py runserver
+
+127.0.0.1:8000
+ 
+1.Register your app in Installed Apps in Project's Settings
+2.Create a path in urlpatterns 
+3.Create a function in views.py
+4.Templates

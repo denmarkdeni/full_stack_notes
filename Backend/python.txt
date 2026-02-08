@@ -1,0 +1,66 @@
+
+--> Topics 
+1. What is Python 
+    i  . Programming Language
+    ii . High Level
+    iii. Object Oriented
+    iv . Dynamic Typing 
+    v  . General Purpose 
+    vi . Cross Platform
+
+2. Variables 
+    i  . contains alphabets , numbers , underscore
+    ii . can not start with numbers
+    iii. good practice 
+        --> firstName(camel case),first_name(snake case)
+
+3. Data Types
+    i  . numeric
+        1. int     #5
+        2. float   #5.0
+        3. complex #5+4j
+    ii . text
+        1. string  # "sequence of characters"
+    iii. boolean
+        1. bool    #  True , False
+    iv . None 
+        1. none 
+
+4. Type Casting
+    converting one data type to another
+    1. explicit -- big data type ---> small
+    2. implicit -- small data type --> big
+
+5. Operators
+    1. arithmetic -- + , - , * , / , // , % , **
+    2. assignment -- += , -= , *= , /= , %= , = 
+    3. comparison -- == , >= , <= , > , < , != 
+    4. logical    -- and , or , not
+    5. bitwise    -- & , | , ~ , ^ , << , >>
+    6. membership -- in , not in
+    7. identity   -- is , is not 
+
+6. Data collection Types
+    sequence types
+        1. List
+        2. tuple
+    set type 
+        3. set
+    mapping type
+        4. dictionary 
+    
+    Indexing , Slicing.
+    
+7. conditional statements
+    1.if
+    2.if..else
+    3.if..elif..else
+    4.nested if
+
+8. Loop statements
+    1.for 
+    2.while
+    3.nested loop
+
+
+ 

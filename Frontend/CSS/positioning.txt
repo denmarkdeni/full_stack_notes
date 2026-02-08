@@ -3,20 +3,16 @@
 👉 The position property tells the browser 
 how an element should be placed in the document.
 
-Along with position, we often use:
-
 👉 top
 👉 right
 👉 bottom
 👉 left
 👉 z-index
     The z-index property controls the stacking order of elements 
-    (which element appears on top when they overlap).
 
     Works only on positioned elements
 
-        👉 That means the element must have position:
-         relative, absolute, fixed, or sticky.
+        👉 relative, absolute, fixed, or sticky.
 
         👉 If position: static (default), z-index won’t work.
 
@@ -31,7 +27,6 @@ Along with position, we often use:
 1. Static (default)
 
 👉 Elements are positioned naturally in the flow.
-(top to bottom, left to right)
 
 div {
   position: static; /* default */
@@ -57,7 +52,6 @@ but you can shift it relative to itself.
 3. Absolute
 
 👉 Element is positioned relative to the nearest positioned ancestor.
-(not static)
 
 .box {
   position: absolute;
@@ -81,28 +75,26 @@ Difference Between Relative and Absolute:
 4. Fixed
 
 👉 Element is fixed relative to the viewport (screen).
+👉 Stays in place when scrolling.
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
 }
-👉 Stays in place when scrolling.
 
 👉 Useful for navbars, floating buttons, etc.
 
 5. Sticky
 
 👉 Hybrid of relative + fixed.
+👉 Acts like relative until you scroll.
+👉 Once it reaches top: 0, it sticks like fixed.
 
 .header {
   position: sticky;
   top: 0;
-}
-
-👉 Acts like relative until you scroll.
-
-👉 Once it reaches top: 0, it sticks like fixed.
+} 
 
 ⚡ Visual Recap:
 

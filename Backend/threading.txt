@@ -1,0 +1,30 @@
+1. What is threading?
+
+    Threading means running multiple tasks at the same time inside one program.
+
+2. Why use threading?
+
+    Use threads when tasks are I/O-bound, not CPU-bound.
+
+    Like File read/write,Network requests,Waiting for user input, Database calls.
+
+3. GIL (Global Interpreter Lock)
+
+    Allows only one thread to execute Python bytecode at a time.
+
+    Threads do NOT run in parallel on multiple cores but interleave execution.
+
+    While one thread waits (I/O), another runs.
+
+4. Creating a thread
+
+    import threading
+
+    def task():
+        print("Task running")
+
+    t = threading.Thread(target=task)
+
+    t.start()   # starts thread
+    t.join()    # wait for thread to finish
+

@@ -1,0 +1,60 @@
+
+1. The price of an item is increased by 20% and then decreased by 10%. Find the net percentage change.
+
+2. If 35% of a number is 210, find 60% of the same number.
+
+3. The population of a town increases by 10% in the first year and 20% in the second year. Find the total percentage increase.
+
+4. A shopkeeper sells an article at 15% profit. If he had sold it for ₹90 more, his profit would have been 25%. Find the cost price.
+
+5. A trader buys 20 items for ₹800 and sells 16 items for ₹800. Find his profit or loss percentage.
+
+6. An article is marked 40% above cost price and sold at a discount of 25%. Find the profit percentage.
+
+7. The simple interest on a sum for 4 years at 8% per annum is ₹640. Find the principal.
+
+8. At what rate of simple interest will ₹2,000 amount to ₹2,600 in 5 years?
+
+9. A sum amounts to ₹1,800 in 3 years and ₹2,100 in 5 years at simple interest. Find the principal.
+
+10. Find the compound interest on ₹4,000 at 10% per annum for 2 years.
+
+11. The difference between CI and SI on a sum for 2 years at 5% is ₹50. Find the principal.
+
+12. Find the amount on ₹2,500 at 8% per annum compound interest for 2 years.
+
+13. A can do a work in 12 days and B in 18 days. In how many days can they do the work together?
+
+14. A can do a work in 10 days and B in 15 days. They work together for 4 days. How much work is left?
+
+15. A and B together can do a work in 8 days. A alone can do it in 12 days. In how many days can B alone do it?
+
+16. A train travels at 72 km/hr. How much distance will it cover in 25 seconds?
+
+17. A person walks at 5 km/hr and runs at 10 km/hr. Find the average speed if he walks for 2 hours and runs for 1 hour.
+
+18. Two cities are 300 km apart. A car starts from city A at 60 km/hr and another from city B at 40 km/hr. When will they meet?
+
+19. A boat travels 24 km downstream in 3 hours and the same distance upstream in 4 hours. Find speed of the stream.
+
+20. The speed of a boat in still water is 12 km/hr and the stream speed is 3 km/hr. Find the time taken to go 30 km upstream.
+
+21. Find the area of a rectangle whose length is 14 cm and breadth is 8 cm.
+
+22. Find the volume of a cylinder with radius 7 cm and height 10 cm. (π = 22/7)
+
+23. The ratio of boys to girls in a class is 5 : 3. If there are 40 boys, find the number of girls.
+
+24. Divide ₹720 in the ratio 2 : 3 : 4.
+
+25. A mixture contains milk and water in the ratio 3 : 1. How much water must be added to 20 liters of the mixture to make the ratio 1 : 1?
+
+26. The average of 5 numbers is 18. If one number is removed, the average becomes 16. Find the removed number.
+
+27. The average age of 4 boys is 20 years. If one boy’s age is 24 years, find the average age of the remaining boys.
+
+28. A is the brother of B. B is the mother of C. What is A to C?
+
+29. How many ways can 4 people be arranged in a row?
+
+30. How many ways can a committee of 2 be formed from 5 people?

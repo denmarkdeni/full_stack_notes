@@ -1,0 +1,55 @@
+🚩 Questions (Percentage ,Profit and Loss)
+
+1. If 12% of a number is 48, what is 35% of that number?
+2. A product's price after a 30% discount is ₹560. What was the original price?
+3. In a survey, 45% of people prefer tea over coffee. If 900 people were surveyed, how many prefer coffee?
+4. A number decreased by 15% becomes 85. What was the original number?
+5. The ratio of boys to girls in a class is 3:2. What percentage of the class are boys if there are 25 students?
+6. After a 12% increase in salary, an employee now earns ₹12,600. What was his previous salary?
+7. If 40% of x is equal to 60% of y, what is the ratio of x to y?
+8. A student scored 84 out of 120 in an exam. What percentage did she score? If the total marks are scaled to 150, what would her percentage be with the same score?
+9. A mixture has alcohol and water in the ratio 5:3. What percentage of the mixture is water?
+10. If 25% of a number is subtracted from it, the result is 75% of the number. What is the number? 
+11. After a 5% increase followed by a 5% decrease, what is the net percentage change?
+12. 18% of students in a school play cricket. If 72 students play cricket, how many students are there in total?
+13. If the price of an item rises by 20% and then falls by 20%, what is the net percentage change?
+14. A shopkeeper buys 30 items for ₹900 and sells 25 of them for the same amount. What is his profit percentage?
+15. An article is sold at a 12% profit. If sold for ₹24 more, the profit would be 18%. What is the cost price?
+16. By selling 12 liters of milk, a vendor gains the selling price of 2 liters. What is his profit percentage?
+17. A trader sells two items for 150 each. On one, he gains 25%; on the other, he loses 25%. What is his overall percentage change?
+18. A shopkeeper uses a faulty scale, selling 800g as 1kg at cost price. What is his profit percentage?
+19. Marked price of a book is ₹250. After 10% discount, the shopkeeper makes 20% profit. What is the cost price?		
+20. Successive discounts of 15% and 20% are given. What is the equivalent single discount?
+21. A trader buys a cycle for ₹800 and sells it for ₹960. He then buys it back for ₹1,000 and sells it for ₹1,120. What is his total profit?
+22. A shopkeeper marks an item 30% above cost price, gives 20% discount, and earns ₹90 profit. What is the cost price?
+23. A person buys two shirts for ₹2,000 total. Sells one at 10% loss and the other at 20% profit, with overall 5% gain. What is the cost price of the cheaper shirt?
+24. A vendor sells rice using 900g as 1kg and adds 10% profit on cost. What is his overall profit percentage?
+25. An item is sold at ₹450. If sold for ₹150 more, it would be 10% profit. What is the cost price?
+
+🚩 Questions (Simple ,Compound Interest, Time and Distance)
+
+1. A sum becomes ₹6,480 in 3 years at 8% simple interest. What is the principal?	
+2. The simple interest on a certain sum at 12% p.a. for 2 years is ₹720. What is the sum?
+3. A sum doubles itself in 6 years at simple interest. What is the rate?
+4. A man invested ₹4,000 at 5% p.a. compound interest for 2 years. What is the amount?
+5. The difference between CI and SI on a sum for 2 years at 10% is ₹40. What is the principal?
+6. A person covers 420 meters in 1 minute 45 seconds. What is his speed in km/hr?
+7. A train of length 200m crosses a pole in 10 seconds. What is its speed?
+8. A car increases its speed from 60 km/hr to 80 km/hr. How much time will it save in covering 240 km?
+9. Two trains start from the same point in opposite directions at 40 km/hr and 60 km/hr. How far apart will they be in 2.5 hours?
+10. A sum of ₹5,000 amounts to ₹5,800 in 4 years at simple interest. Find the rate.
+11. If ₹8,000 amounts to ₹9,680 in 2 years at compound interest, what is the rate?
+12. A cyclist travels 18 km/hr. How long will he take to cover 45 km?
+13. Two buses travel towards each other from 300 km apart at 50 km/hr and 70 km/hr. When will they meet?
+14. A sum becomes ₹10,648 in 2 years at 8% compound interest. Find the principal.
+15. A man reduces his walking speed by 25% and takes 20 minutes more to cover the same distance. Find the original time.
+16. A man borrowed ₹12,000 at 10% simple interest for X years. If he paid ₹4,800 interest, find X.
+17. A boat travels 20 km downstream in 2 hours and 20 km upstream in 4 hours. Find speed of stream.
+18. CI on a certain sum for 2 years at 4% is ₹816. Find the principal.
+19. A train reduces its speed by 20% and reaches the destination 30 minutes late. What is the original time?
+20. A man walks 5 km/hr and returns at 4 km/hr. If total time is 36 minutes, find distance.
+21. A car covers first 60 km at 40 km/hr and next 60 km at 60 km/hr. What is average speed?
+22. SI on a sum for 5 years at 6% is ₹3,000. What is the principal?
+23. A plane flies 600 km at 300 km/hr and 600 km at 400 km/hr. Find average speed.
+24. If a sum becomes 1.21 times itself in 2 years at compound interest, find the rate.
+25. A thief runs at 7 km/hr and a policeman at 9 km/hr. If the policeman starts 200m behind, in how many minutes will he catch the thief?

@@ -15,7 +15,7 @@ Used for coding, testing, running scripts, and managing files.
 Basic Commands
 
 dir   - Lists files and folders in the current directory
-cd    - Changes the current directory
+cd      - Changes the current directory
 mkdir - Creates a new folder (directory)
 cls   - Clears the terminal screen
 

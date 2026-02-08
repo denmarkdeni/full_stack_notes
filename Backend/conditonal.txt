@@ -1,0 +1,30 @@
+
+Conditional Statements
+
+1. if 
+2. if...else
+3. if...elif...else
+4. nested if
+
+if condition :
+    Statements    
+--> execution happen when condition is true
+--> won't happen when condition is false
+
+if condition:
+    statements --> when if is true 
+else:
+    statements --> when if is false
+
+if condition:
+    statements --> when if is true 
+elif condition:
+    statements --> when elif is true 
+else:
+    statements --> when if and elif are false
+
+nested if 
+
+if condition:
+    if condition:
+        statements  --> when both if are true 

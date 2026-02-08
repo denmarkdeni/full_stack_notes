@@ -1,0 +1,33 @@
+1.create a repository
+
+2.copy the https url 
+
+open command prompt 
+
+3. git --version
+
+4. open the project folder
+
+5. git init
+
+6. git config --global user.name your_name
+ 
+7. git config --global user.email your_email
+
+8. git remote add origin git_url 
+
+9. git add .
+
+10. git commit -m "messge"
+
+11. git branch -M main
+
+12. git push origin main
+
+13. open vercel 
+
+14. add new -> project
+
+15. connect github 
+
+16. create project .

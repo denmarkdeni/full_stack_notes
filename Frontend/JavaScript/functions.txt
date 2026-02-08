@@ -20,7 +20,7 @@ parameters:
 arguments:
     values for the variables when call the function
 
-function greet(name, profession){
+function (name, profession){
     console.log(`welcome mr/mrs.${name}`);
 }
 greet("kumar", "Developer");
@@ -28,7 +28,7 @@ greet("kumar", "Developer");
 Functions types
 Regular       -- normal function
 Anonymous     -- without name
-Arrow         -- single line 
+Arrow         -- single line  
 Callback      -- callbacks another function
 Higher Order  -- returns another function
 
@@ -54,7 +54,7 @@ let variable = function (parameters){
 }
 variable(arguments)
 example:
-let add = function(a,b){
+let add = function(a,b){ 
   return a-b;
 }
 add(3,4);
@@ -98,3 +98,6 @@ function normal(){
 }
 let vari = normal();
 console.log(vari);
+
+
+ 

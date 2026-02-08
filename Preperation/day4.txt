@@ -20,7 +20,7 @@ CSS is used to style your HTML
 
 JavaScript makes the webpage interactive and dynamic.
 It allows users to click buttons, move sliders, show alerts, 
-or load data instantly without refreshing the page.
+or load data.
 
 Simple Explanation:
 

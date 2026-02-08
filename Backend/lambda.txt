@@ -1,0 +1,19 @@
+
+def add(a,b):
+    return a+b
+
+add(5,4)  
+
+lambda function 
+
+bmi = lambda h , w :  w / h ** 2  
+print(bmi(1.7,90))
+
+map , filter
+
+map(function , iterable)
+filter(function , iterable)
+
+salary = [10000 , 15000 , 30000]
+
+print(map(lambda s : s+ s* 10/100, salary))

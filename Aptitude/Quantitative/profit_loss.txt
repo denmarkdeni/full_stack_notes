@@ -1,5 +1,5 @@
 1. A man buys 20 articles for $100 
-and sells 15 articles for the same amount. 
+and sells 15 articles for the same amount.	 
 What is his profit percentage on the whole transaction?
 a) 20%
 b) 25%
@@ -103,3 +103,39 @@ Total discount = 100 - 60 = 40, so 40%. (Formula: 1 - (1-0.2)(1-0.25) = 1 - 0.8*
 Explanation: First sale: Profit = $80 - $70 = $10.
 Second buy and sale: Profit = $100 - $90 = $10.
 Total profit = $10 + $10 = $20. (The buy back is a separate transaction; net effect is like two independent profits).
+
+-----------------------------------------------------------------------
+
+Q1️⃣
+A shopkeeper marks an item 40% above the cost price. He offers a discount of 25% on the marked price and still earns a profit of ₹120.
+What is the cost price of the item?
+
+Q2️⃣
+A man buys two watches for ₹1500. He sells one at a 20% loss and the other at 25% profit. Overall, he gains 10%.
+What is the cost price of each watch?
+
+Q3️⃣
+A trader uses a false weight, giving only 950g but selling it as 1kg. He also makes a 5% profit on cost price.
+What is his actual profit percentage?
+
+Q4️⃣
+A shopkeeper bought a product and sold it at a 20% loss. If he had sold it for ₹300 more, he would have made a 10% profit.
+What is the cost price of the product?
+
+Q5️⃣
+A person sells an article at ₹720 and gets a profit of 25%. If he sells it for ₹x, he will have a loss of 10%.
+Find the value of ₹x.
+
+Quick answer recap
+
+	1.₹2,400
+
+	2.₹500 and ₹1,000
+
+	3.200/19% ≈ 10.526% actual profit
+
+	4.₹1,000
+
+	5.₹518.40
+
+

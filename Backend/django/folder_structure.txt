@@ -1,0 +1,106 @@
+Django Folder Structure  
+
+    project name: mysite
+    App name: core
+
+1. Project Root Folder
+
+    mysite/
+    │
+    ├── manage.py
+    ├── mysite/
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   ├── asgi.py
+    │   └── wsgi.py
+
+2. manage.py
+
+    👉 Entry point of the Django project
+
+    Used for:
+
+        👉 Run server
+
+        👉 Migrations
+
+        👉 Create apps
+
+        👉 Create superuser
+
+3. Project Folder (mysite/)
+
+    👉 holds configuration.
+
+    🧩 settings.py
+
+        Controls:
+
+            Installed apps 
+            Database 
+            Templates 
+            Static & media files 
+            Security settings
+
+    🧩 urls.py
+
+        The traffic controller. 
+        Maps URLs to views 
+        First file Django checks after request   
+
+        ex: 
+            path("login/", views.login_view)
+
+    🧩 wsgi.py
+
+        Used for Deployment (traditional servers)  
+
+    🧩 asgi.py
+
+        Used for Async features, WebSockets.
+
+    🧩 __init__.py
+
+        Marks folder as a Python package. 
+
+4. App Folder Structure
+
+    core/
+    │
+    ├── admin.py
+    ├── apps.py
+    ├── models.py
+    ├── tests.py
+    ├── views.py
+    ├── migrations/
+    │   └── __init__.py
+
+    👉 Apps contain actual business logic.
+
+    🧩 models.py - Defines Database tables ,Fields & relationships.
+
+    🧩 views.py - Contains Request handling logic ,Business rules.
+
+    🧩 admin.py - Controls Admin panel behavior.    
+
+    🧩 apps.py - App configuration file.   
+
+    🧩 migrations/ - Tracks database history. 
+
+    🧩 tests.py - Used for Writing automated tests.
+
+    🧩 Templates Folder - Used for - HTML rendering.
+
+    🧩 Static Folder - Used for CSS ,JavaScript ,Images.
+
+    🧩 Media Folder - Used for User-uploaded files.
+
+
+--> Simple 
+
+    Project folder  = configuration
+    App folder      = logic
+    Templates       = UI
+    Static          = assets
+    Models          = data

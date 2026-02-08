@@ -17,11 +17,11 @@ const fruits = new Array('apple','orange','grapes');
 
 for ( veg of vegs ){
     console.log(veg);
-};
+}; 
 
 👉 Indexing 
 
-console.log(vegs[3]);
+console.log(vegs[3]);   
 
 👉 Array Methods:
 
@@ -64,13 +64,13 @@ let string = "good morning students";
 console.log(vehicles.join(','));
 console.log(string.split(' '));
 
-6.forEach
+6.forEach 
 
 iterates over the array 
 
 doesn't return new array
 
-vehicles.forEach((vehicle) => console.log(vehicle));
+vehicles.forEach((vehicle) => console.log(vehicle)); 
 
 7. map , filter , reduce
 
@@ -110,3 +110,20 @@ console.log(arr);
 let school = "HCS";
 school[0] = "T";
 console.log(school);
+
+
+
+Tasks: 
+
+const salary = [12000 , 23000 , 34000 , 80000 , 45000];
+
+1. print new salary with 10% bonus with map method
+
+const currency = ["usd 150" , "inr 140", "yen 100" ,
+                    "usd 200" , "inr 100", "yen 50" ];
+
+2. print only inr currency with filter method
+
+3 . print maximum salary with reduce method
+
+

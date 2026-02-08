@@ -57,7 +57,7 @@ how to display content or control the structure.
 
 👉 Inline Elements
 
-    Examples: <span>, <a>
+    Examples: <span>, <a>	
     Take only the required content width
     You can’t set height and width directly
     Do not start on a new line
@@ -121,7 +121,7 @@ how to display content or control the structure.
 
 👉 Semantic Tags
 
-    Tags that describe the meaning of content to 
+    Tags that describe the meaning to 
     browser & search engines.
     Very important for SEO + accessibility.
     Example:
@@ -129,7 +129,7 @@ how to display content or control the structure.
 
 👉 Non-Semantic Tags
 
-    Tags that do not describe meaning, only used for styling/layout.
+    Tags that do not describe meaning.
     Example:
         <div> , <span>
 
@@ -215,8 +215,6 @@ how to display content or control the structure.
         👉 <label> → Defines labels for form elements (improves accessibility).
         👉 <fieldset> → Groups related form elements together.
         👉 <legend> → Adds a title or caption to a fieldset group.
-        👉 <datalist> → Provides predefined options for an input field.
-        👉 <output> → Displays the result of a calculation or script.
 
 👉 Media Tags
 
@@ -228,7 +226,7 @@ how to display content or control the structure.
         👉 <source> → Specifies multiple media sources (for video/audio).
         👉 <track> → Adds subtitles or captions to videos.
         👉 <canvas> → Used to draw graphics using JavaScript.
-        👉 <iframe> → Embeds another webpage (like YouTube or Maps).
+        👉 <iframe> → Embeds another webpage (like YouTube or Maps).        
 
     Common Attributes:
     	controls → Shows play/pause buttons.
@@ -247,7 +245,6 @@ how to display content or control the structure.
         👉 <link> → Connects external files (CSS, icons, etc.).
         👉 <style> → Defines internal CSS styles.
         👉 <script> → Links or embeds JavaScript code.
-        👉 <base> → Sets the base URL for all relative links in the page.
 
 🌐 4. Special Tags
 
@@ -317,9 +314,7 @@ how to display content or control the structure.
 |  multiple      | Allows multiple files/emails                     |  <input type="file" multiple>                  |
 |  pattern       | Regex pattern validation                         |  <input type="text" pattern="[A-Za-z]{3,}">    |
 |  autofocus     | Automatically focuses when page loads            |  <input type="text" autofocus>                 |
-|  autocomplete  | On/Off for browser autocomplete                  |  <input type="text" autocomplete="off">        |
-|  size          | Width in characters                              |  <input type="text" size="30">                 |
-|  list          | Connects to  <datalist>  options                 |  <input type="text" list="cars">               |
+|  autocomplete  | On/Off for browser autocomplete                  |  <input type="text" list="cars">               |
 
 
 🌐 Relative vs Absolute Path in HTML
@@ -377,3 +372,4 @@ anchor tag target attributes:
 	_blank 	👉 Opens the link in a new tab (used for external links)
 	_parent	👉 Opens the link in the parent frame.
 	_top    👉 Opens the link in the full body of the window, removing any frames.
+

@@ -318,7 +318,7 @@ let newPara = document.createElement("p");
 
 newPara.textContent = "This is a new paragraph!";
 
-🔹 3. Append to DOM
+🔹 3. Insert to DOM
 
 append ,prepend, replace , remove
 

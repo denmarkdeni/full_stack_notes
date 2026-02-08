@@ -30,8 +30,8 @@ Border:
 
     border-top
     border-right
-    border-bottom
-    border-left
+    borde
+    bordr-bottomer-left
 
     Border-radius: 
 corners : top left,top right,bottom left,bottom right

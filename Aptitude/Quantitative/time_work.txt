@@ -1,0 +1,21 @@
+🧩 TIME & WORK
+
+1.A can do a work in 12 days and B can do the same work in 18 days. In how many days will they finish the work together?
+
+2.A can complete a work in 20 days. B is 25% more efficient than A. In how many days can B alone complete the work?
+
+3.A and B together can do a work in 10 days. A alone can do it in 15 days. In how many days can B alone complete the work?
+
+4.A, B, and C together can complete a work in 6 days. A alone can do it in 10 days and B alone in 15 days. In how many days can C alone complete the work?
+
+5.A can do a piece of work in 24 days. He works for 6 days and then B finishes the remaining work in 9 days. In how many days can B alone do the whole work?
+
+6.A can do a work in 16 days and B in 24 days. They work together for 4 days, then A leaves. In how many more days will B finish the remaining work?
+
+7.A is twice as efficient as B. Together they can complete a work in 18 days. In how many days can A alone complete the work?
+
+8.A and B can do a work in 12 days, B and C in 15 days, and A and C in 20 days. In how many days can A, B, and C together complete the work?
+
+9.A can do a work in 30 days and B in 40 days. They work on alternate days starting with A. In how many days will the work be completed?
+
+10.12 men can complete a work in 20 days. How many days will 15 men take to complete the same work, assuming equal efficiency?.

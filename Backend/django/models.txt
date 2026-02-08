@@ -1,0 +1,66 @@
+1. What is a Model?
+
+    A model represents one table in the database.
+
+    👉 One model → one table
+
+    👉 One attribute → one column
+
+    👉 One object → one row
+
+    Django models are written as Python classes.
+
+2. Basic Model Structure
+
+    from django.db import models
+
+    class Student(models.Model):
+        name = models.CharField(max_length=100)
+        age = models.IntegerField()
+
+    👉 Student → table name (pluralized internally)
+
+    👉 models.Model → tells Django this is a database model
+
+    👉 name → field name (column name)
+
+3. Common Field Types
+
+    models.CharField()      # text (short)
+    models.TextField()      # long text
+    models.IntegerField()   # numbers
+    models.FloatField()     # decimal numbers
+    models.BooleanField()   # True / False
+    models.DateField()      # date
+    models.DateTimeField()  # date + time
+    models.EmailField()     # email validation
+    models.FileField()      # file upload
+    models.ImageField()     # image upload
+
+    max_length  # Defines DB limit
+
+        👉 models.CharField(max_length=50)
+
+    default     # Used when value is not provided        
+
+        👉 status = models.BooleanField(default=True)
+
+    null=True   # database allows NULL
+
+    blank=True  # form allows empty input
+
+        👉 email = models.EmailField(null=True, blank=True)
+
+    __str__()   # Controls how object appears, Admin panel, Shell, Debugging
+
+        👉 def __str__(self):
+                return self.name
+
+4. After Creating or Changing Models
+
+    Always run:
+
+    python manage.py makemigrations
+    python manage.py migrate
+
+    No migration = no database change.
