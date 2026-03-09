@@ -1,0 +1,30 @@
+Django QuerySet API   
+
+	all():              Grabs every object.
+	filter(kwargs):     Filters matches.
+	get(kwargs):        Gets one exact match.
+	create(kwargs):     Creates/saves new object.
+	update(kwargs):     Updates matches.
+	delete():           Deletes matches.
+	count():            Counts objects.
+	exists():           Checks existence.
+	order_by(*fields):  Sorts by fields ascending/descending.
+	exclude(kwargs):    Excludes matches.
+
+Search Option:
+
+    students = Students.objects.all()
+    students = Students.objects.filter(is_registered = True)
+    students = Students.objects.filter(roll_no__gte= 50)
+    students = Students.objects.filter(roll_no__lt= 50)
+    students = Students.objects.filter(roll_no__range=[20, 30])
+    students = Students.objects.all().order_by("-roll_no")
+    
+	keyword = request.GET.get('key')
+    students = Students.objects.filter(name=keyword)
+    students = Students.objects.filter(name__icontains=keyword) 
+    students = Students.objects.filter(
+        Q(name__icontains = keyword) | Q(roll_no__icontains = keyword)
+    ) 
+    
+    answer = Students.objects.filter(id = 2).exists()

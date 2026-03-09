@@ -2,7 +2,7 @@
 
 A Promise in JavaScript is an object that represents 
 the result of an asynchronous operation.
-It can be in one of 3 states:
+It can be in one of 3 states: 
 
 Pending → still working
 

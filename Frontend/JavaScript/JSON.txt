@@ -59,7 +59,7 @@ console.log(person.name); // Output: Alice
 | null                      | Single quotes in keys |
 
 🧩 Fetching Data from an API
-Application Programming Interface
+Application Programming Interface 
 
 fetch('https://api.example.com/user')
   .then(response => response.json())

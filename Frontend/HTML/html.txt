@@ -144,8 +144,8 @@ how to display content or control the structure.
         👉 <p> → Defines a paragraph of text.
         👉 <pre> → Displays preformatted text(preserves spaces and line breaks).
         👉 <ol> → Creates an ordered (numbered) list.
-        👉 <ul> → Creates an unordered (bulleted) list.
-        👉 <dl> → Creates a description list.
+        👉 <ul> → unordered (bulleted) list.
+        👉 <dl> → description list.
         👉 <li> → Defines each list item.
 
 👉 Table Tags
@@ -337,7 +337,7 @@ Absolute Path
 — links that connect one page to another, 
 — or to different sections of the same page.
 Contact
-    <a href="URL">Link Text</a>
+    <a 	href="URL">Link Text</a>
 
 👉 External Link → Opens another website
 

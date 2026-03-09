@@ -1,0 +1,94 @@
+JavaScript 
+
+Theory (15 Questions)
+
+1. What is the difference between let, const, and var in terms of scope and hoisting?
+
+2. What will be the output and why?
+
+    console.log(a);
+    var a = 10;
+
+3. Explain type coercion in JavaScript with one example.
+
+4. What is a template literal and why is it useful?
+
+5. What is the difference between == and ===?
+
+6. When would you use a switch statement instead of if-else?
+
+7. What is the purpose of the break statement inside loops?
+
+8. Difference between function declaration and function expression.
+
+9. What is a higher-order function?
+
+10. What is the difference between slice() and splice()?
+
+11. What problem does optional chaining (?.) solve?
+
+12. Difference between map() and filter().
+
+13. What is JSON and where is it commonly used?
+
+14. Explain event bubbling in the DOM.
+
+15. Difference between localStorage and sessionStorage.
+
+Practical (4 Questions)  
+
+✅ Q1 — Array Transformation
+
+Write a function that:
+
+Takes an array of numbers
+
+Returns a new array containing squares of even numbers only
+
+Example:
+
+input: [1,2,3,4,5]
+output: [4,16]
+
+Constraint: Use filter() and map().
+
+✅ Q2 — Object Destructuring
+ 
+Given:
+
+const user = {
+  name: "Deni",
+  age: 22,
+  address: {
+    city: "Chennai"
+  }
+};
+
+Write code to extract: name, city using destructuring.
+
+✅ Q3 — DOM Manipulation
+ 
+HTML:
+
+<button id="btn">Click Me</button>
+<p id="text"></p>
+
+Task:
+
+When button is clicked
+
+Change paragraph text to "Button Clicked!"
+
+Add class "active" to paragraph
+
+✅ Q4 — Promise & Async
+ 
+Create an async function that:
+
+Returns a promise
+
+Resolves after 2 seconds
+
+Prints "Data loaded"
+
+Must use: Promise, async/await, setTimeout

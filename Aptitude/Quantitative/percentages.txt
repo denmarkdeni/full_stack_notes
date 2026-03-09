@@ -18,7 +18,7 @@ If 20% of a number is 45, what is 75% of the same number?
     C) 169
     D) 175
 
-A product costs RS 80	0 after a 20% discount. 
+A product costs RS 800 after a 20% discount. 
 What was the original price before the discount?
 
     A) RS 960

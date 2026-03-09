@@ -19,3 +19,25 @@
 9.A can do a work in 30 days and B in 40 days. They work on alternate days starting with A. In how many days will the work be completed?
 
 10.12 men can complete a work in 20 days. How many days will 15 men take to complete the same work, assuming equal efficiency?.
+
+Answers:
+
+1. 7.2 days
+
+2. 16 days
+
+3. 30 days
+
+4. C cannot do the work (0 work contribution)
+
+5. 36 days
+
+6. 9 days
+
+7. 27 days
+
+8. 10 days
+
+9. 34 days
+
+10. 16 days

@@ -1,0 +1,43 @@
+ 1. If a : b = 2 : 3 and b : c = 5 : 7, then find a : b : c.
+
+a. 12 : 15 : 9
+b. 10 : 15 : 21
+c. 14 : 12 : 21
+d. 2 : 15 : 7
+
+2. If A : B : C = 3 : 4 : 7, then what is the ratio of (A / B) : (B / C) : (C / A)?
+
+a. 63 : 48 : 196
+b. 66 : 49 : 190
+c. 56 : 40 : 186
+d. 46 : 38 : 160
+
+3. If Suresh distributes his pens in the ratio of 1/2 : 1/4 : 1/5 : 1/7 between his four friends A, B, C and D, then find the total number of pens Suresh should have?
+
+a. 153
+b. 150
+c. 100
+d. 125	
+
+4. If Rs 1050 is divided into three parts, proportional to (1 / 3) : (3 / 4) : ( 4 / 6), then what is the first part?
+
+a. 500
+b. 300
+c. 200
+d. 100
+
+ 5. In a mixture of 13 litres, the ratio of milk and water is 3 : 2. If 3 liters of this mixture is replaced by 3 liters of milk, then what will be the ratio of milk and water in the newly formed mixture?
+
+a. 10 : 3
+b. 8 : 5
+c. 9 : 4
+d. 1 : 1
+
+6. A mixture contains alcohol and water in the ratio of 7 : 5. If 8 liters of water is added to the mixture, then the ratio becomes 7 : 9. Find the quantity of alcohol in the given mixture?
+
+a. 15 liters
+b. 14 liters
+c. 19 liters
+d. 21 liters
+
+

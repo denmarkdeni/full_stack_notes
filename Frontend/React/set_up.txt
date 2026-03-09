@@ -104,7 +104,7 @@ my-app/
 
 👉 Defines coding rules (linting).
 👉 Helps maintain consistent coding style & catch errors early.
-
+	
 “Think of React-Vite like a restaurant:
 src/ = Kitchen (where dishes are prepared = our code)
 public/ = Store room (raw ingredients = assets)

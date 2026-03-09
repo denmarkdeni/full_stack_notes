@@ -31,3 +31,25 @@
 
 3.The compound interest on a sum of ₹6,250 for 2 years at 4% per annum (compounded annually) is: 
 (a) ₹510 (b) ₹500 (c) ₹520 (d) ₹505
+
+------------------------------------------------------------------------------
+
+1. A sum of ₹8,000 is invested at 6% per annum simple interest for 4 years. Find the interest earned.
+
+2. The simple interest on a certain sum for 3 years at 5% per annum is ₹750. Find the principal.
+
+3. At what rate percent per annum will ₹2,000 earn ₹480 in 4 years (simple interest)?
+
+4. In how many years will ₹1,500 amount to ₹1,860 at 6% simple interest?
+
+5. A person invests ₹12,000 at 8% simple interest. How much total amount will he receive after 2.5 years?
+
+6. Find the compound interest on ₹5,000 for 2 years at 10% per annum.
+
+7. What will be the amount on ₹10,000 after 3 years at 8% compound interest per annum?
+
+8. The difference between compound interest and simple interest on a sum for 2 years at 10% per annum is ₹40. Find the principal.
+
+9. A sum becomes ₹7,280 in 2 years at 20% compound interest per annum. Find the principal.
+
+10. At what rate percent per annum will ₹4,000 amount to ₹4,840 in 2 years, compounded annually?

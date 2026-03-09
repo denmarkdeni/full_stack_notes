@@ -1,0 +1,25 @@
+JAVASCRIPT QUIZ
+
+1. What does break do inside a loop? What about continue?
+2. What is a callback function? Why is it used?
+3. Explain what a higher-order function is with one example.
+4. What is the difference between slice() and splice()?
+5. How do map(), filter(), and reduce() differ in purpose?
+6. What is optional chaining (?.), and why is it useful? 	
+7. What is the difference between JSON.stringify() and JSON.parse()?
+8. Why do we use async/await over plain Promises?
+9. Problem – Remove Duplicates & Convert 
+	
+	const numbers = [1,2,3,2,4,5,1,6];
+	
+	* Remove duplicates 
+	* Sort in descending order
+	* Print result
+	
+10. Problem 5 – JSON & Destructuring
+
+	'{"name":"John","age":25,"address":{"city":"Delhi","pin":110001}}'
+	
+	* Parse the JSON
+	* Use object destructuring to extract name and city
+	* Print: "John lives in Delhi" with template literals

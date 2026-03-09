@@ -1,0 +1,204 @@
+1. What is Django REST Framework?
+
+DRF is a toolkit to build APIs using Django.
+
+REST - Representational State Transfer
+
+CORS - Cross Origin Resource Sharing
+
+API:
+
+    Sends data, not HTML
+
+    Usually in JSON format
+
+2.Install & Setup
+
+pip install djangorestframework django-cors-headers
+
+Add to settings.py:
+
+INSTALLED_APPS = [ 'rest_framework' ]
+
+3.API View (Function Based)
+
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
+@api_view(['GET'])
+def hello_api(request):
+    return Response({"message": "Hello API"})
+
+Response instead of HttpResponse
+
+Data is returned as JSON automatically
+
+4. URLs for API
+
+path("api/hello/", hello_api)
+
+5. Serializers  
+
+Serializers convert:
+
+    Model → JSON
+
+    JSON → Model
+
+from rest_framework import serializers
+from .models import Student
+
+class StudentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Student
+        fields = '__all__'
+
+6.GET API (Read Data)
+
+@api_view(['GET'])
+def student_list(request):
+    students = Student.objects.all()
+    serializer = StudentSerializer(students, many=True)
+    return Response(serializer.data)
+
+Queryset → Serializer → JSON
+
+7.POST API (Create Data)
+
+@api_view(['POST'])
+def student_create(request):
+    serializer = StudentSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data)
+    return Response(serializer.errors)
+
+8.request.data vs request.POST
+
+request.POST → form data only
+
+request.data → JSON, form, multipart																																															
+
+APIs use request.data.
+
+9.Status Codes
+
+from rest_framework import status
+
+return Response(data, status=status.HTTP_201_CREATED)
+
+Common:
+
+    200 OK
+
+    201 Created
+
+    400 Bad Request
+
+    404 Not Found
+
+    401 Unauthorized
+
+10.Class-Based API Views
+
+from rest_framework.views import APIView
+
+class StudentAPI(APIView):
+    def get(self, request):
+        students = Student.objects.all()
+        serializer = StudentSerializer(students, many=True)
+        return Response(serializer.data)
+
+11.ViewSets & Routers
+
+from rest_framework.viewsets import ModelViewSet
+
+class StudentViewSet(ModelViewSet):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+
+Router:
+
+router.register("students", StudentViewSet)
+
+This gives: GET , POST, PUT , DELETE Automatically.
+
+12.Authentication
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}
+
+13.Permissions
+
+    IsAuthenticated
+
+    IsAdminUser
+
+    AllowAny
+
+14.API Testing Tools
+
+    Browser (GET only)
+
+    Postman
+
+    curl
+
+15.Common Mistakes  
+
+    Returning QuerySets directly
+
+    Skipping serializers
+
+    Ignoring status codes
+
+    Mixing templates with APIs
+
+    Using request.POST in APIs
+
+These are conceptual errors, not syntax errors.
+
+16.Core Mental Model
+
+    Django → HTML → humans
+
+    DRF → JSON → machines
+    
+17. to allow requests from other origins
+
+pip install django-cors-headers
+
+INSTALLED_APPS = [ 
+    'corsheaders',
+]
+    
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware', 
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:5500",
+    "http://127.0.0.1:5173",
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+
+JWT TOKEN ( Authentication )
+
+pip install djangorestframework-simplejwt
+
+from datetime import timedelta
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    )
+}
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
+}

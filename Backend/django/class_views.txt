@@ -1,0 +1,71 @@
+from django.views.generic import TemplateView
+
+class HomeView(TemplateView):
+    template_name = 'home.html'
+
+..............................................................
+
+from django.views.generic import ListView
+
+class BookListView(ListView):
+    model = Book
+    template_name = 'books/list.html'   
+    context_object_name = 'books'       
+    paginate_by = 10
+
+    def get_queryset(self):
+        return Book.objects.filter(available=True)
+
+..............................................................
+
+from django.views.generic import DetailView
+
+class BookDetailView(DetailView):
+    model = Book
+    template_name = 'books/detail.html'   
+    context_object_name = 'book'
+
+..............................................................
+
+from django.views.generic.edit import CreateView
+from django.urls import reverse_lazy
+
+class BookCreateView(CreateView):
+    model = Book
+    fields = ['title', 'author', 'price']
+    template_name = 'books/form.html'
+    success_url = reverse_lazy('book-list')
+
+..............................................................
+
+from django.views.generic.edit import UpdateView
+
+class BookUpdateView(UpdateView):
+    model = Book
+    fields = ['title', 'author', 'price']
+    template_name = 'books/form.html'
+    success_url = reverse_lazy('book-list')
+
+..............................................................
+
+from django.views.generic.edit import DeleteView
+
+class BookDeleteView(DeleteView):
+    model = Book
+    template_name = 'books/confirm_delete.html'
+    success_url = reverse_lazy('book-list')
+	
+..............................................................
+
+# urls.py
+from django.urls import path
+from .views import BookListView, BookDetailView, BookCreateView, BookUpdateView, BookDeleteView
+
+urlpatterns = [
+    path('books/',              BookListView.as_view(),   name='book-list'),
+    path('books/<int:pk>/',     BookDetailView.as_view(), name='book-detail'),
+    path('books/create/',       BookCreateView.as_view(), name='book-create'),
+    path('books/<int:pk>/edit/', BookUpdateView.as_view(), name='book-update'),
+    path('books/<int:pk>/delete/', BookDeleteView.as_view(), name='book-delete'),
+]
+

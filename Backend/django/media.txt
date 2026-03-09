@@ -1,0 +1,24 @@
+
+1. ImageField , FileField in models
+
+2. pip install pillow
+
+3. add enctype="multipart/form-data" in form tag
+
+4. use request.FILES when access the image or file.
+
+5. settings.py
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+6. project.urls.py
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns += static(
+        settings.MEDIA_URL , 
+        document_root = settings.MEDIA_ROOT
+    )

@@ -1,0 +1,34 @@
+pip uninstall django
+
+pip install django==4.2
+
+pip install pymysql
+
+pip install cryptography
+
+project_folder/ __init__.py
+
+    import pymysql
+    pymysql.install_as_MySQLdb()
+
+create a db in mysql
+
+create database db_name;
+
+configure database in settings:
+
+DATABASES = { 
+    'default':{
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'green',
+        'USER': 'deni',
+        'PASSWORD':'deni2002',
+        'HOST': 'localhost',
+        'PORT':'3306'
+    }
+}
+
+python manage.py makemigrations
+
+python manage.py migrate
+

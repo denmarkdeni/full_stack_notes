@@ -12,7 +12,7 @@
 
 👉 HTML Page
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
   <body>
     <h1>Hello World</h1>
@@ -226,7 +226,7 @@ Document(node)
 
   innerText → When you want text as user sees.
 
-  textContent → When you need all raw text quickly.
+  textContent → When you need all raw text quickly
 
 --------------------------------------------------------------------->
 
@@ -460,7 +460,7 @@ document.getElementById("input").addEventListener("keydown", function(event) {
 
     Event delegation is a technique 
     where you attach a single event listener 
-    to a common ancestor (often a parent element) 
+    to a common parent
     instead of multiple child elements. 
     You then use the event.target to determine 
     which child was actually clicked.

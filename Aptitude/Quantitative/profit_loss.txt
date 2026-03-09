@@ -3,7 +3,7 @@ and sells 15 articles for the same amount.
 What is his profit percentage on the whole transaction?
 a) 20%
 b) 25%
-c) 33.33%
+c) 33.33%	
 d) 50%
 
 2. A shopkeeper sells an article at 10% profit. 
@@ -138,4 +138,46 @@ Quick answer recap
 
 	5.₹518.40
 
+-------------------------------------------------------------------------------------
 
+1. A number is increased by 20% and then decreased by 20%. What is the net percentage change in the number?
+
+2. The price of a product is increased by 25%. By what percentage must it be reduced to bring it back to the original price?
+
+3. A shopkeeper marks an item 40% above cost price and allows a discount of 20%. What is his profit percentage?
+
+4. A trader sells an article at a loss of 12%. If he had sold it for ₹90 more, he would have gained 8%. Find the cost price.
+
+5. The population of a town increases by 10% in the first year and decreases by 10% in the second year. What is the overall percentage change?
+
+6. A man buys an article for ₹800 and sells it at a profit of 15%. Find the selling price.
+
+7. After giving two successive discounts of 10% and 20%, the marked price of an article becomes ₹720. Find the original marked price.
+
+8. A vendor mixes 30 kg of rice costing ₹40/kg with 20 kg of rice costing ₹50/kg. At what price per kg should he sell the mixture to gain 20%?
+
+9. A shopkeeper gives a discount of 10% on the marked price and still makes a profit of 8%. If the marked price is ₹540, find the cost price.
+
+10. The cost price of 12 articles is equal to the selling price of 10 articles. Find the profit percentage.
+
+Answers :
+
+1. –4% (4% decrease)
+
+2. 20%
+
+3. 12% profit
+
+4. ₹450
+
+5. –1% (1% decrease)
+
+6. ₹920
+
+7. ₹1000
+
+8. ₹52.8 per kg
+
+9. ₹450
+
+10. 20% profit

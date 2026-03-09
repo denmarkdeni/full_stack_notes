@@ -1,0 +1,13 @@
+from django.contrib import messages
+
+messages.success(request , "message")
+messages.warning(request , "message")
+messages.info(request , "message")
+messages.error(request , "message")
+
+
+in template( html )
+
+{% for message in messages %}
+    <p> {{ message }} </p>
+{% endfor %}
