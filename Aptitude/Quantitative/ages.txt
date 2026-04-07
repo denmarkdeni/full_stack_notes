@@ -1,0 +1,41 @@
+1. The present age of a father is three times the age of his son. After 10 years, the father’s age will be twice the son’s age. Find their present ages.		
+
+2. The ratio of the present ages of A and B is 4 : 5. Five years ago the ratio was 3 : 4. Find their present ages.
+
+3. The present age of a mother is four times the age of her daughter. After 8 years, the mother will be three times as old as the daughter. Find their present ages.
+
+4. The sum of the present ages of a father and son is 50 years. Five years ago, the father was four times as old as the son. Find their present ages.
+
+5. The present age of A is twice the age of B. Ten years ago, A was three times as old as B. Find their present ages.
+
+6. The average age of a family of four people is 25 years. After 5 years, what will be the average age of the family?
+
+7. The present age of a man is 40 years and the present age of his son is 10 years. After how many years will the father be twice as old as his son?
+
+8. The sum of the ages of A and B is 40 years. The difference between their ages is 8 years. Find their present ages.
+
+9. The ratio of the present ages of two brothers is 3 : 5. After 6 years, the ratio becomes 4 : 6. Find their present ages.
+
+10. The present age of a father is 45 years. His son is 15 years old. After how many years will the father's age be three times the son's age?
+
+Answers : 
+
+1. Father = 30 years, Son = 10 years
+
+2. A = 20 years, B = 25 years
+
+3. Mother = 64 years, Daughter = 16 years
+
+4. Father = 37 years, Son = 13 years
+
+5. A = 40 years, B = 20 years
+
+6. 30 years
+
+7. 20 years
+
+8. A = 24 years, B = 16 years
+
+9. No valid solution (ratio condition inconsistent)
+
+10. 0 year

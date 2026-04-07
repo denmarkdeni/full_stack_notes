@@ -97,7 +97,7 @@ function InputFocus() {
     inputRef.current.focus(); // direct DOM manipulation
   };
 
-  return (
+  return (	
     <div>
       <input ref={inputRef} type="text" />
       <button onClick={focusInput}>Focus Input</button>
@@ -105,9 +105,9 @@ function InputFocus() {
   );
 }
 
-5. useReducer (for complex state logic)
+5. useReducer
 
-👉 Alternative to useState for more complex state (like Redux-lite).
+👉 Alternative to useState for more complex state.
 
 function reducer(state, action) {
   switch (action.type) {
@@ -128,6 +128,10 @@ function Counter() {
     </div>
   );
 }
+	
+👉 useReducer = controlled state machine
+👉 dispatch = command sender
+👉 reducer = decision engine
 
 6. useMemo (for performance optimization)
 
@@ -158,7 +162,7 @@ const handleClick = useCallback(() => {
 👉 Customizes the ref exposed to parent components.
 
 
-Custom Hooks
+Custom Hooks	
 
 👉 You can create your own hooks to reuse logic.
 

@@ -6,7 +6,7 @@
 6. A sum becomes ₹6,480 in 3 years at 8% simple interest. What is the principal?	
 7. The simple interest on a certain sum at 12% p.a. for 2 years is ₹720. What is the sum? 
 8. A man invested ₹4,000 at 5% p.a. compound interest for 2 years. What is the amount?
-9. A person covers 420 meters in 1 minute 45 seconds. What is his speed in km/hr?
+9. A person covers 525 meters in 1 minute 45 seconds. What is his speed in km/hr?
 10. A train of length 200m crosses a pole in 10 seconds. What is its speed?
 11. A cyclist travels 18 km/hr. How long will he take to cover 45 km?
 12. A plane flies 600 km at 300 km/hr and 600 km at 400 km/hr. Find average speed.

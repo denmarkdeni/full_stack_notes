@@ -10,7 +10,7 @@ d. 2 : 15 : 7
 a. 63 : 48 : 196
 b. 66 : 49 : 190
 c. 56 : 40 : 186
-d. 46 : 38 : 160
+d. 46 : 38 : 160	
 
 3. If Suresh distributes his pens in the ratio of 1/2 : 1/4 : 1/5 : 1/7 between his four friends A, B, C and D, then find the total number of pens Suresh should have?
 
@@ -26,7 +26,7 @@ b. 300
 c. 200
 d. 100
 
- 5. In a mixture of 13 litres, the ratio of milk and water is 3 : 2. If 3 liters of this mixture is replaced by 3 liters of milk, then what will be the ratio of milk and water in the newly formed mixture?
+5. In a mixture of 13 litres, the ratio of milk and water is 3 : 2. If 3 liters of this mixture is replaced by 3 liters of milk, then what will be the ratio of milk and water in the newly formed mixture?
 
 a. 10 : 3
 b. 8 : 5

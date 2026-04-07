@@ -1,0 +1,18 @@
+Q1. A is the father of B. B is the sister of C. C is the mother of D. How is A related to D?
+
+Q2. Pointing to a photograph, a man says, "She is the daughter of the only son of my grandfather." How is the woman in the photograph related to the man?
+
+Q3. Ravi introduces Meena as the wife of the only son of his father's father. How is Meena related to Ravi?
+
+Q4. P is the brother of Q. R is the mother of P. S is the father of R. T is the wife of S. How is T related to Q?
+
+Answers : 
+
+1. grandfather
+
+2. sister
+
+3. wife
+
+4. Grandmother
+

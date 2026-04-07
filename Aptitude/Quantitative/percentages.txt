@@ -151,7 +151,7 @@ A) 357  B) 360  C) 365  D) 375
 ₹600
 2.A product is sold for ₹600 after giving 
 a 25% discount on the marked price. 
-What is the marked price?
+What is the marked price?	
 A) ₹750  B) ₹800  C) ₹825  D) ₹900
 
 3.A product is sold for ₹600 after giving a 
