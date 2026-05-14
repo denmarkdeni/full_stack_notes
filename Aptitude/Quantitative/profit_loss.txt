@@ -55,13 +55,6 @@ b) 45%
 c) 50%
 d) 55%
 
-8. A man bought a horse for $70 and sold it for $80. 
-He then bought it back for $90 and sold it for $100. 
-What is his total profit?
-a) $10
-b) $20
-c) $30
-d) $40
 
 Answers:
 
@@ -98,11 +91,6 @@ Profit 20%, so SP = 1.2 * CP → 160 = 1.2 CP → CP = 160 / 1.2 ≈ $133.33.
 Explanation: Let original price = 100. After 20% discount: 100 * 0.8 = 80.
 Then 25% on 80: 80 * 0.75 = 60.
 Total discount = 100 - 60 = 40, so 40%. (Formula: 1 - (1-0.2)(1-0.25) = 1 - 0.8*0.75 = 1 - 0.6 = 0.4 = 40%).
-
-8. b) $20
-Explanation: First sale: Profit = $80 - $70 = $10.
-Second buy and sale: Profit = $100 - $90 = $10.
-Total profit = $10 + $10 = $20. (The buy back is a separate transaction; net effect is like two independent profits).
 
 -----------------------------------------------------------------------
 

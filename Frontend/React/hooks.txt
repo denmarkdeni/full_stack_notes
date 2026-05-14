@@ -91,7 +91,7 @@ function Toolbar() {
 👉 Holds a mutable reference that doesn’t trigger re-renders.
 
 function InputFocus() {
-  const inputRef = React.useRef(null);
+  const inputRef = useRef(null);
 
   const focusInput = () => {
     inputRef.current.focus(); // direct DOM manipulation

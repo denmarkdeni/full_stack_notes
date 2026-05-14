@@ -4,11 +4,11 @@ Prerequisites:
 
 👉 Node.js installed (version 16 or later recommended)
 
-👉 npm or yarn
+👉 npm or yarn / check with npm -v
 
 1. Create a new React project
 
-👉 npm create vite@latest my-react-app --template react
+👉 npm create vite@latest my-react-app 
 
 2. Navigate into your project folder
 

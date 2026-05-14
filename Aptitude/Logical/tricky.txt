@@ -1,0 +1,51 @@
+ 1. The 3-Litre and 5-Litre Jugs
+
+* Question: You have a 3-litre jug, a 5-litre jug, and an unlimited supply of water. How do you measure out exactly 4 litres?
+* Solution: Fill the 5L jug completely. Pour it into the 3L jug until full, leaving 2L in the 5L jug. Empty the 3L jug. Pour the 2L from the 5L jug into the 3L jug. Fill the 5L jug completely again. Pour water from the 5L jug into the 3L jug until the 3L jug is full (it needs exactly 1L). The 5L jug now contains exactly 4 litres.
+
+ 2. The Burning Ropes
+
+* Question: You have two ropes. Each takes exactly 60 minutes to burn from end to end. They burn at irregular rates, so half a rope does not equal 30 minutes. How do you measure exactly 45 minutes?
+* Solution: Light Rope A at both ends and Rope B at one end simultaneously. Rope A will burn out in exactly 30 minutes. At that exact moment, light the other end of Rope B (which has 30 minutes of burn time left). Rope B will now burn out in 15 minutes. Total time elapsed is 45 minutes.
+
+ 3. The 8 Identical Balls
+
+* Question: You have 8 balls that look identical. One is slightly heavier than the other 7. How can you find the heavier ball using a balance scale only twice?
+* Solution: Place 3 balls on each side of the scale. If they balance, weigh the remaining 2 balls against each other to find the heavy one. If they do not balance, take the 3 balls from the heavier side, place 1 on each side of the scale, and leave 1 out. If they balance, the leftover ball is the heavy one; if they do not, the scale reveals the heavy one.
+
+ 4. The 3 Light Switches
+
+* Question: You are in a room with three light switches. They control three light bulbs in an adjacent room. You cannot see into the other room. You can only enter the room with the bulbs once. How do you determine which switch controls which bulb?
+* Solution: Turn the first switch ON and leave it for 10 minutes. Turn it OFF and turn the second switch ON. Enter the room. The bulb that is ON connects to the second switch. Touch the other two bulbs. The hot bulb connects to the first switch. The cold, unlit bulb connects to the third switch.
+
+ 5. The Crossed Bridges
+
+* Question: Four people need to cross a rickety bridge at night. They have one flashlight. The bridge can hold a maximum of two people at a time. Anyone crossing must use the flashlight. Person A takes 1 minute to cross, Person B takes 2 minutes, Person C takes 5 minutes, and Person D takes 10 minutes. When two people cross, they move at the slower person's pace. How do they all cross in 17 minutes?
+* Solution: A and B cross first (2 mins). A returns with the flashlight (1 min). C and D cross together (10 mins). B returns with the flashlight (2 mins). A and B cross together again (2 mins). Total time: $2 + 1 + 10 + 2 + 2 = 17$ minutes.
+
+ 6. The Fox, the Chicken, and the Grain
+
+* Question: A farmer must transport a fox, a chicken, and a sack of grain across a river. His boat can only hold himself and one of the three. If left unsupervised, the fox will eat the chicken, or the chicken will eat the grain. How does he get everything across safely?
+* Solution: Take the chicken across, leave it, and return alone. Take the fox across, and bring the chicken back with him. Take the grain across, leaving it with the fox. Return alone, and finally take the chicken across a second time.
+
+ 7. The Mislabeled Boxes
+
+* Question: You have three boxes containing fruit. One contains only apples, one contains only oranges, and one contains both apples and oranges. Every single box is labeled incorrectly. You can pick only one fruit from one box without looking inside. How can you label all the boxes correctly?
+* Solution: Pick a fruit from the box labeled "Apples and Oranges". Because all labels are wrong, this box must contain strictly one type of fruit. If you pull out an apple, this box is "Apples". The box labeled "Oranges" cannot be oranges (wrong label) and cannot be apples (found), so it must be "Apples and Oranges". The final box labeled "Apples" must be "Oranges".
+
+ 8. The Two Hourglasses
+
+* Question: You need to cook an egg for exactly 9 minutes. You only have a 4-minute hourglass and a 7-minute hourglass. How do you measure exactly 9 minutes?
+* Solution: Start both hourglasses. When the 4-minute hourglass runs out (4 mins elapsed), flip it immediately. When the 7-minute hourglass runs out (7 mins elapsed), the 4-minute hourglass has 1 minute left. Flip the 7-minute hourglass immediately to catch that 1 minute. When the 4-minute hourglass runs out again (8 mins elapsed), the 7-minute hourglass has captured exactly 1 minute of sand. Flip it back over immediately to run that 1 minute out. Total time is 9 minutes.
+
+ 9. The Lily Pad Pond
+
+* Question: A patch of lily pads doubles in size every single day. If the patch takes 48 days to completely cover the entire pond, how many days does it take to cover exactly half of the pond?
+* Solution: 47 days. Since the patch doubles in size every day, it would be half the size of the pond exactly one day before it covers the entire pond.
+
+ 10. The 100 Bottles of Wine
+
+* Question: A king has 100 bottles of wine. One bottle is poisoned and will kill anyone who drinks it within 24 hours. The king has 7 prisoners available to test the wine. He needs to find the poisoned bottle in exactly 24 hours. How can he do it?
+* Solution: Label each bottle in binary code from 1 to 100 (which requires 7 digits, as $2^7 = 128$). Each prisoner represents one binary digit position. A prisoner drinks from a bottle only if the binary digit in their assigned position is a "1". After 24 hours, the combination of prisoners who die will reveal the binary code of the poisoned bottle.
+
+

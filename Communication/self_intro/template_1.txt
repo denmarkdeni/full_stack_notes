@@ -1,0 +1,7 @@
+Good morning / afternoon. My name is [Your Name], and I recently graduated with a [B.E. / B.Tech / MCA] in [Computer Science / IT] from [College Name].
+
+During my academic journey, I built a strong foundation in [Java / Python / SQL] and worked on projects like [brief project], where I solved [problem it addressed]. I also completed a internship at [Company / Lab], which gave me hands-on exposure to real-world development workflows.
+
+I am passionate about writing clean, efficient code and continuously learning new technologies. I am particularly excited about this role at [Company Name] because of its reputation for strong engineering mentorship and challenging product work.
+
+I am confident that my technical foundation, enthusiasm to learn, and collaborative mindset make me a great fit for your team.

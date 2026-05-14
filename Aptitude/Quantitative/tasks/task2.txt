@@ -10,6 +10,6 @@
 10. A train of length 200m crosses a pole in 10 seconds. What is its speed?
 11. A cyclist travels 18 km/hr. How long will he take to cover 45 km?
 12. A plane flies 600 km at 300 km/hr and 600 km at 400 km/hr. Find average speed.
-13. A and B together can do a work in 10 days. A alone can do it in 15 days. In how many days can B alone complete the work?
+13. A and B together can do a work in 10 days. A alone can do it in 15 days. In how many days can B alone complete the work?	
 14. A, B, and C together can complete a work in 6 days. A alone can do it in 10 days and B alone in 15 days. In how many days can C alone complete the work?
 15. A can do a work in 16 days and B in 24 days. They work together for 4 days, then A leaves. In how many more days will B finish the remaining work?

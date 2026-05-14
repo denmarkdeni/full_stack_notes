@@ -35,3 +35,37 @@ Circular arrangement
 Pattern identification
 
 Odd one out
+
+def work():
+	print("debug the error")
+	print("write program")
+	print("review the project")
+work()
+
+def work(work1 , work2):
+	print(work1)
+	print(work2) 
+work("solve the math" , "find the problem")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

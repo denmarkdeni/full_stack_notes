@@ -24,7 +24,7 @@ class MyComponent extends Component {
     console.log('Component will unmount');
     // Good for: cleanup (like removing event listeners or canceling API calls)
   }
-
+	
   render() {
     return <div>Hello</div>;
   }
