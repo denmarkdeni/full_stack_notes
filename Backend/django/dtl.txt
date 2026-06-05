@@ -1,0 +1,137 @@
+🚩 Django Template Language (DTL)
+
+    Used to display data from backend in HTML
+    Keeps logic separate from UI
+    Works with views → context → template
+
+    👉 in views.py 
+        return render(request, "index.html", {"name": "Denny"})
+
+    👉 in template ( html )
+        <h1>{{ name }}</h1>
+
+🚩 Variables
+
+    Use {{ }}
+    {{ name }}
+    {{ age }}
+    {{ student.name }}
+
+    👉 If variable not found → shows empty (no error)
+
+🚩 Filters
+
+    Modify data using |
+
+    {{ name|upper }}
+    {{ name|lower|title }}
+    {{ bio|truncatewords:5 }}
+    {{ price|floatformat:2 }}
+
+    👉 Date & Time Filters
+
+    {{ my_date|date:"d-m-Y" }}          → 05-06-2026
+    {{ my_date|date:"M d, Y" }}         → Jun 05, 2026
+    {{ my_date|date:"l" }}              → Friday
+    {{ my_date|date:"H:i" }}            → 14:30
+    {{ my_date|date:"h:i A" }}          → 02:30 PM
+    {{ my_date|date:"d M Y, h:i A" }}   → 05 Jun 2026, 02:30 PM
+
+    👉 Important format characters 
+
+    Y → full year (2026)
+    y → short year (26)
+    m → month number (06)
+    M → month name (Jun)
+    d → day (05)
+    H → 24hr
+    h → 12hr
+    i → minutes
+    A → AM/PM
+
+
+🚩 If Condition
+
+    {% if age > 18 %}
+        Adult
+    {% else %}
+        Minor
+    {% endif %}
+
+    👉 Multiple conditions:
+
+    {% if marks > 90 %}
+        Excellent
+    {% elif marks > 50 %}
+        Pass
+    {% else %}
+        Fail
+    {% endif %}
+
+🚩 For Loop
+
+    {% for student in students %}
+        <p>{{ student.name }}</p>
+    {% endfor %}
+
+    👉 to access index number:
+
+    {{ forloop.counter }}
+
+    👉 Empty case:
+
+    {% empty %}
+        No data
+
+🚩 Template Inheritance
+
+    👉 Base template:
+
+    <!-- base.html -->
+    <html>
+        <body>
+            {% block content %}{% endblock %}
+        </body>
+    </html>
+
+    👉 Child template:
+
+    {% extends 'base.html' %}
+
+    {% block content %}
+        <h1>Home Page</h1>
+    {% endblock %}
+
+🚩 Static Files
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+🚩 URL Tag
+
+    <a href="{% url 'home' %}">Home</a>
+
+    👉 With parameter:
+
+    <a href="{% url 'profile' user.id %}">
+
+🚩 CSRF Token (Forms)
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="name">
+    </form>
+
+🚩 Comments
+
+    {# This is comment #}
+
+🚩 Include
+
+    {% include 'navbar.html' %}
+
+🚩 Safe HTML
+
+    {{ content|safe }}
+
