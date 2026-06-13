@@ -3,172 +3,172 @@ FRONTEND FRESHER INTERVIEW QUESTIONS - HTML, CSS, JS, REACT
 ===================== HTML =====================
 
 1. What is the difference between HTML elements and tags?
-A tag is the markup syntax itself, like <p> or </p>. An element is the
-combination of the opening tag, content, and closing tag together, e.g.
-<p>Hello</p>. Some elements (like <img> or <br>) are self-closing/void
-and don't have a closing tag.
+	A tag is the markup syntax itself, like <p> or </p>. An element is the
+	combination of the opening tag, content, and closing tag together, e.g.
+	<p>Hello</p>. Some elements (like <img> or <br>) are self-closing/void
+	and don't have a closing tag.
 
 2. What is semantic HTML and why is it important?
-Semantic HTML uses tags that describe their meaning/content, such as
-<header>, <nav>, <article>, <section>, and <footer>, instead of generic
-<div>s. It improves accessibility (screen readers), SEO, and code
-readability.
+	Semantic HTML uses tags that describe their meaning/content, such as
+	<header>, <nav>, <article>, <section>, and <footer>, instead of generic
+	<div>s. It improves accessibility (screen readers), SEO, and code
+	readability.
 
 3. What is the difference between div and span?
-<div> is a block-level element used to group larger sections of content
-(takes full width, starts on a new line). <span> is an inline element
-used to wrap small pieces of content like a word or phrase, without
-breaking the flow.
+	<div> is a block-level element used to group larger sections of content
+	(takes full width, starts on a new line). <span> is an inline element
+	used to wrap small pieces of content like a word or phrase, without
+	breaking the flow.
 
 4. What are data attributes in HTML?
-Data attributes are custom attributes prefixed with data- (e.g.
-data-user-id="123") used to store extra information on HTML elements.
-They can be accessed in JavaScript via element.dataset.userId and are
-useful for passing data without using non-standard attributes.
+	Data attributes are custom attributes prefixed with data- (e.g.
+	data-user-id="123") used to store extra information on HTML elements.
+	They can be accessed in JavaScript via element.dataset.userId and are
+	useful for passing data without using non-standard attributes.
 
 5. What is the purpose of the <meta> viewport tag?
-<meta name="viewport" content="width=device-width, initial-scale=1">
-controls how a page is scaled and displayed on mobile devices, making
-layouts responsive. It controls the viewport's width and zoom level for
-responsive design.
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	controls how a page is scaled and displayed on mobile devices, making
+	layouts responsive. It controls the viewport's width and zoom level for
+	responsive design.
 
 ===================== CSS =====================
 
 6. What is the difference between Flexbox and Grid?
-Flexbox is a one-dimensional layout system - it arranges items in a row
-or column and is great for distributing space along a single axis. Grid
-is two-dimensional - it lets you define rows and columns simultaneously,
-making it ideal for complex page layouts.
+	Flexbox is a one-dimensional layout system - it arranges items in a row
+	or column and is great for distributing space along a single axis. Grid
+	is two-dimensional - it lets you define rows and columns simultaneously,
+	making it ideal for complex page layouts.
 
 7. What is the CSS box model?
-The box model describes how every element is rendered as a box made of:
-content, padding (space inside the border), border, and margin (space
-outside the border). box-sizing: border-box makes padding and border
-count within the specified width/height.
+	The box model describes how every element is rendered as a box made of:
+	content, padding (space inside the border), border, and margin (space
+	outside the border). box-sizing: border-box makes padding and border
+	count within the specified width/height.
 
 8. What is the difference between position: relative, absolute, fixed,
 and sticky?
-- relative: positions an element relative to its normal position.
-- absolute: positions it relative to its nearest positioned ancestor.
-- fixed: positions it relative to the viewport, staying in place on
-  scroll.
-- sticky: toggles between relative and fixed based on scroll position.
+	- relative: positions an element relative to its normal position.
+	- absolute: positions it relative to its nearest positioned ancestor.
+	- fixed: positions it relative to the viewport, staying in place on
+	  scroll.
+	- sticky: toggles between relative and fixed based on scroll position.
 
 9. What is specificity in CSS?
-Specificity determines which CSS rule applies when multiple rules target
-the same element. Order of precedence (lowest to highest): type
-selectors (e.g. p), class selectors (.class), ID selectors (#id), and
-inline styles - with !important overriding all of them.
+	Specificity determines which CSS rule applies when multiple rules target
+	the same element. Order of precedence (lowest to highest): type
+	selectors (e.g. p), class selectors (.class), ID selectors (#id), and
+	inline styles - with !important overriding all of them.
 
 10. What is the difference between em, rem, %, and px units?
-px is a fixed pixel unit. em is relative to the parent element's font
-size. rem is relative to the root (html) font size, making it more
-predictable for consistent scaling. % is relative to the parent
-element's corresponding property.
+	px is a fixed pixel unit. em is relative to the parent element's font
+	size. rem is relative to the root (html) font size, making it more
+	predictable for consistent scaling. % is relative to the parent
+	element's corresponding property.
 
 ================== JAVASCRIPT ==================
 
 11. What is the difference between let, const, and var with respect to
 scope?
-var is function-scoped (or globally scoped if declared outside a
-function) and can be re-declared. let and const are block-scoped, meaning
-they only exist within the {} they are declared in - useful for avoiding
-accidental variable leaks in loops and conditionals.
+	var is function-scoped (or globally scoped if declared outside a
+	function) and can be re-declared. let and const are block-scoped, meaning
+	they only exist within the {} they are declared in - useful for avoiding
+	accidental variable leaks in loops and conditionals.
 
 12. What is a closure? Can you give a simple real-world example?
-A closure is a function that retains access to variables from its
-enclosing scope even after that scope has finished executing. Example:
+	A closure is a function that retains access to variables from its
+	enclosing scope even after that scope has finished executing. Example:
 
-function makeCounter() {
-  let count = 0;
-  return () => ++count;
-}
-const counter = makeCounter();
-counter(); // 1
-counter(); // 2
+	function makeCounter() {
+	  let count = 0;
+	  return () => ++count;
+	}
+	const counter = makeCounter();
+	counter(); // 1
+	counter(); // 2
 
 13. What is the difference between synchronous and asynchronous code,
 with an example?
-Synchronous code executes line by line, blocking until each line
-finishes. Asynchronous code (like fetch or setTimeout) lets other code
-run while waiting for a result.
+	Synchronous code executes line by line, blocking until each line
+	finishes. Asynchronous code (like fetch or setTimeout) lets other code
+	run while waiting for a result.
 
-console.log('A');
-setTimeout(() => console.log('B'), 0);
-console.log('C');
-// Output: A, C, B
+	console.log('A');
+	setTimeout(() => console.log('B'), 0);
+	console.log('C');
+	// Output: A, C, B
 
 14. How do you reverse a string in JavaScript?
-The most common approach converts the string to an array, reverses it,
-and joins it back:
+	The most common approach converts the string to an array, reverses it,
+	and joins it back:
 
-function reverseStr(str) {
-  return str.split('').reverse().join('');
-}
-reverseStr('hello'); // 'olleh'
+	function reverseStr(str) {
+	  return str.split('').reverse().join('');
+	}
+	reverseStr('hello'); // 'olleh'
 
-Interviewers often ask you to also write this manually using a loop
-without built-in methods.
+	Interviewers often ask you to also write this manually using a loop
+	without built-in methods.
 
 15. What is the difference between == and === ? Give an example.
-== compares values after converting types (loose equality), while ===
-compares both value and type (strict equality).
+	== compares values after converting types (loose equality), while ===
+	compares both value and type (strict equality).
 
-0 == '0';   // true  (coercion)
-0 === '0';  // false (different types)
-null == undefined;  // true
-null === undefined; // false
+	0 == '0';   // true  (coercion)
+	0 === '0';  // false (different types)
+	null == undefined;  // true
+	null === undefined; // false
 
-Always prefer === in production code.
+	Always prefer === in production code.
 
 ==================== REACT =====================
 
 16. What is the difference between functional and class components?
-Functional components are plain JavaScript functions that return JSX and
-use hooks (useState, useEffect) for state and side effects. Class
-components extend React.Component and use this.state and lifecycle
-methods. Functional components with hooks are the modern standard.
+	Functional components are plain JavaScript functions that return JSX and
+	use hooks (useState, useEffect) for state and side effects. Class
+	components extend React.Component and use this.state and lifecycle
+	methods. Functional components with hooks are the modern standard.
 
 17. How do you pass data from a parent component to a child component?
-Data is passed via props - attributes you set on the child component in
-JSX.
+	Data is passed via props - attributes you set on the child component in
+	JSX.
 
-function Parent() {
-  return <Child name="Alice" />;
-}
-function Child({ name }) {
-  return <p>Hello, {name}</p>;
-}
+	function Parent() {
+	  return <Child name="Alice" />;
+	}
+	function Child({ name }) {
+	  return <p>Hello, {name}</p>;
+	}
 
-Props flow one-way: from parent to child only.
+	Props flow one-way: from parent to child only.
 
 18. What is the use of useEffect and when does it run?
-useEffect runs side effects (data fetching, subscriptions, timers) after
-the component renders. With an empty dependency array [], it runs once on
-mount. With dependencies [value], it runs whenever those values change. A
-returned function runs as cleanup.
+	useEffect runs side effects (data fetching, subscriptions, timers) after
+	the component renders. With an empty dependency array [], it runs once on
+	mount. With dependencies [value], it runs whenever those values change. A
+	returned function runs as cleanup.
 
 19. How would you handle a button click to update state in React?
-Use useState to declare state, and update it inside an event handler
-attached via onClick.
+	Use useState to declare state, and update it inside an event handler
+	attached via onClick.
 
-function Counter() {
-  const [count, setCount] = useState(0);
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      Count: {count}
-    </button>
-  );
-}
+	function Counter() {
+	  const [count, setCount] = useState(0);
+	  return (
+		<button onClick={() => setCount(count + 1)}>
+		  Count: {count}
+		</button>
+	  );
+	}
 
 20. How do you render a list of items in React, and why do you need keys?
-Use .map() to transform an array into JSX elements, and provide a unique
-key prop for each item so React can efficiently track changes during
-re-renders.
+	Use .map() to transform an array into JSX elements, and provide a unique
+	key prop for each item so React can efficiently track changes during
+	re-renders.
 
-{items.map(item => (
-  <li key={item.id}>{item.name}</li>
-))}
+	{items.map(item => (
+	  <li key={item.id}>{item.name}</li>
+	))}
 
-Without keys (or using unstable keys like array index), React may
-misidentify elements during updates, causing bugs.
+	Without keys (or using unstable keys like array index), React may
+	misidentify elements during updates, causing bugs.
