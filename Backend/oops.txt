@@ -1,0 +1,116 @@
+1. Classes and Objects
+
+Class: A blueprint, template, or custom data type used to create objects.
+
+Object: An instance of a class that holds actual data values.
+
+# Defining a class
+class Car:
+    # Class attribute (shared by all instances)
+    wheels = 4 
+
+    # Constructor method to initialize instance attributes
+    def __init__(self, brand, model):
+        self.brand = brand    # Instance attribute
+        self.model = model    # Instance attribute
+
+    # Instance method (behavior)
+    def display_info(self):
+        return f"This is a {self.brand} {self.model}."
+
+# Creating objects (Instantiation)
+car1 = Car("Toyota", "Corolla")
+car2 = Car("Tesla", "Model 3")
+
+print(car1.display_info())  # Output: This is a Toyota Corolla.
+
+2. __init__ and self
+
+__init__: The special constructor method that runs automatically when a new object is created.
+
+self: A reference pointing to the current object instance, used to access variables bound to that specific object.
+
+The 4 Pillars of OOP
+
+1. Inheritance
+
+Inheritance allows a new class (Child/Derived class) to inherit attributes and methods from an existing class (Parent/Base class), promoting code reusability.
+
+class Animal:
+    def breathe(self):
+        return "Breathing..."
+
+# Dog inherits from Animal
+class Dog(Animal):
+    def bark(self):
+        return "Woof!"
+
+my_dog = Dog()
+print(my_dog.breathe())  # Inherited method -> Output: Breathing...
+print(my_dog.bark())     # Child method -> Output: Woof!
+
+2. Polymorphism
+
+Polymorphism means "many forms". 
+It allows different classes to implement the same method name but execute completely different behaviors.
+
+class Cat:
+    def make_sound(self):
+        return "Meow"
+
+class Dog:
+    def make_sound(self):
+        return "Woof"
+
+# A single interface handling multiple forms
+for animal in [Cat(), Dog()]:
+    print(animal.make_sound())
+
+3. Encapsulation
+
+Encapsulation wraps data and the methods that manipulate it into a single class unit. 
+It limits direct access to data variables to prevent accidental modifications.
+
+Python uses underscores as a convention to denote access visibility:
+
+    _variable: Protected (A warning convention to not access it outside the class).
+
+    __variable: Private (Triggers Name Mangling; makes it harder to access from outside).
+
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance  # Private attribute
+
+    # Getter method to access private data safely
+    def get_balance(self):
+        return self.__balance
+
+account = BankAccount("Alice", 5000)
+# print(account.__balance)  # Throws an AttributeError
+print(account.get_balance()) # Output: 5000
+
+4. Abstraction
+
+Abstraction hides complex background implementation details and only exposes essential features to the user.
+
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):  # Abstract Class
+    @abstractmethod
+    def start_engine(self):
+        pass
+
+class Bike(Vehicle):
+    def start_engine(self):
+        return "Bike engine started."
+
+# my_vehicle = Vehicle() # Throws an error; cannot instantiate an abstract class directly
+my_bike = Bike()
+print(my_bike.start_engine())
+
+
+
+
+
+
