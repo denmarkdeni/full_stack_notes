@@ -1,0 +1,43 @@
+1. Reverse String (No slicing)
+
+Input: "hello"
+Output: "olleh"
+
+2. First Non-Repeating Character
+
+Input: "aabbccddefg"
+Output: "e"
+
+3. Find Duplicates
+
+Input: [1,2,3,2,4,5,1]
+Output: [1,2]
+
+4. Character Frequency	
+
+Input: "aabbbcc"
+Output: {'a':2, 'b':3, 'c':2}
+
+5. Second Largest (No sort)
+
+Input: [10, 20, 4, 45, 99]
+Output: 45
+
+6. Check Armstrong number
+
+Input: 153
+Output: True
+
+7. Exception Handling 
+
+Input: ["10", "2", "a"]
+Find Total sum without getting error.
+Output: can not add string with number
+________________________________________
+Explain the difference:
+
+8. List vs Tuple
+
+9. *args vs **kwargs
+
+10. == vs is

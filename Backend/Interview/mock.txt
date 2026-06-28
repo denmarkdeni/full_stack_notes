@@ -1,0 +1,38 @@
+Self Intro(check communication , Confidence)
+Difference between list, tuple, set, dictionary
+Mutable vs immutable types
+Difference between == and is
+What are Python data types?
+What is dynamic typing?
+What is type casting?
+What is slicing?
+What is negative indexing?
+Difference between append() and extend()
+Difference between remove() and pop()
+What is a function?
+Parameter vs argument
+What is default parameter?
+What is *args?
+What is **kwargs?
+What is lambda function?
+Difference between return and print
+What is recursion?
+What is base condition?
+What is class and object?
+What is constructor?
+What is self?
+What is inheritance?
+Types of inheritance
+What is polymorphism?
+What is method overriding?
+What is encapsulation?
+What is abstraction?
+Difference between class method and instance method
+What is decorator?
+What is exception handling?
+try, except, finally difference
+Tell me any 3 file modes
+Why use with open()?
+Difference between read(), readline(), readlines()
+How to handle file not found error?
+

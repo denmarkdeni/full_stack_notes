@@ -1,0 +1,101 @@
+
+⭐ AI-Assisted Full Stack Development 
+
+1. Software Development Life Cycle (SDLC)
+
+    Requirement Gathering 
+    ↓ 
+    Analysis  
+    ↓  
+    Design  
+    ↓  
+    Development  
+    ↓  
+    Testing  
+    ↓  
+    Deployment  
+    ↓  
+    Maintenance
+
+2. Monolithic vs Microservices Architecture
+
+    Software Architecture
+
+    Monolithic - Everything exists inside one application.
+
+    Microservices - Application divided into multiple services.
+
+3. AI Tools for Modern Development
+
+    ChatGPT
+    
+    Claude
+    
+    DeepSeek
+    
+    GitHub Copilot
+    
+    DeepCode
+    
+    Cursor
+    
+  Usage:
+    
+    👉 Autocompletion , Debugging , Code Generation
+    
+    👉 API Design , SQL Queries , Documentation
+    
+    👉 Optimization , Suggestions 
+
+4. GitHub for Developers
+    
+    Git is a Version Control tool.
+    
+    GitHub stores repositories online.
+    
+5. Jira Project Management
+    
+    To Do 👉 In Progress 👉 Code Review 👉 Testing 👉 Done
+    
+6. Building Frontend Applications Using AI
+    
+    AI generates UI instantly.
+    
+7. Backend API Development Using AI
+    
+    API allows frontend and backend communication.
+    
+  API Example:
+    
+    GET /employees
+    
+    GET /employees/{id}
+    
+    POST /employees  
+    
+    PUT /employees/{id}  
+    
+    DELETE /employees/{id}
+    
+8. AI for Database
+    
+    AI can generate:
+    
+    Tables , Relationships , Queries
+    
+9. CI/CD Pipeline
+    
+    CI = Continuous Integration 
+    
+    CD = Continuous Deployment
+    
+    👉 Traditional Deployment
+    
+    👉 CI/CD Deployment
+    
+    👉 GitHub Actions Workflow
+    
+10. Production
+    
+    
+    
